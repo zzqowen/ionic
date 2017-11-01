@@ -1,0 +1,74 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container">
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+    <h1 class="bar-title flex-center-container" style="line-height:12px;border-radius:4px;">
+      <div ng-repeat="item in rollAndHistory" class="pk-history-roll" ng-class="{rollHistoryActive: item.selected ,borderLeft:$index==0,borderRight:$index==1}" ng-click="pkRollAndHistory(item, $index)" style="font-size:14px;border:1px solid white;padding:4px 25px;color:white;">{{item.name}}</div>
+    </h1>
+  </ion-header-bar>
+  <ion-content scroll="false" class="rank-content" style="background-color:#393a4c;">
+    <div ng-if="rollAndHistory[0].selected">
+      <div class="flex-container" style="justify-content: space-between;padding: 30px 20px;position: relative;z-index: 2;background-color: #393a4c;">
+        <div class="flex-column-container">
+          <div style="font-size: 18px;color:white;"  class="banOnLine">{{user.displayName}}</div>
+          <div style="color:#ffb51f;font-size:12px;">我的排名 : {{user.rank}}</div>
+          <div style="color:white;font-size:12px;">{{user.location.slice(3,6)}}</div>
+        </div>
+        <div background-img src="{{user.avatar}}" round width="64px" height="64px"></div>
+      </div>
+      <ul class="flex-container" style="justify-content: space-between;padding:5px 0;border-bottom:2px solid #414354;font-size:14px;position: relative;z-index: 2;background-color: #393a4c;">
+        <li class="flex-container">
+          <span style="width:36px;text-align:center;margin-right:10px;color:white;">排名</span>
+          <span style="width:40px;text-align: center;color:white;">用户</span>
+        </li>
+        <li style="margin-right:10px;color:white;">总分</li>
+      </ul>
+      <ion-content scroll="true" style="top: 157px;">
+        <ion-refresher class="refresher-style" pulling-text="下拉更新..." on-refresh="refreshPkRank(true)">
+        </ion-refresher>
+        <div ng-repeat="item in pkRankData | pkRankSort" class="flex-container" style="justify-content: space-between;padding: 10px 0;border-bottom:2px solid #424254;margin: 0 5px;">
+          <div class="flex-container">
+            <div style="width: 36px;margin-right:10px;" class="flex-column-center-container" ng-if="item.rank == 1"><div background-img src="data/number1.png" round width="26px" height="28px"></div></div>
+            <div style="width: 36px;margin-right:10px;" class="flex-column-center-container" ng-if="item.rank == 2"><div background-img src="data/number2.png" round width="26px" height="28px"></div></div>
+            <div style="width: 36px;margin-right:10px;" class="flex-column-center-container" ng-if="item.rank == 3"><div background-img src="data/number3.png" round width="26px" height="28px"></div></div>
+            <div style="width: 36px;text-align:center;margin-right:10px;color:white;" ng-if="item.rank > 3">{{item.rank}}</div>
+            <div background-img src="{{item.avatar}}" round width="40px" height="40px"></div>
+            <div style="margin-left:18px;color:white;font-size:16px;text-align:left;width:130px;" class="banOnLine">{{item.displayName}}</div>
+          </div>
+          <div style="margin-right:10px;font-size:16px;" ng-class="{true: 'colorRed', false: 'colorWhite'}[item.rank <= 3]">{{item.score}}<span style="font-size:12px;transform:scale(0.8);display:inline-block;">分</span></div>
+        </div>
+        <ion-infinite-scroll ng-if="!rankNotMore" style="position: relative;" ng-if="true" on-infinite="refreshPkRank(false)" immediate-check="false" distance="1%"></ion-infinite-scroll>
+        <div ng-if="rankNotMore" style="text-align: center;color:white;">没有更多的排名记录了</div>
+      </ion-content>
+    </div>
+    <div ng-if="rollAndHistory[1].selected">
+      <ion-content>
+        <ion-refresher class="refresher-style" pulling-text="下拉更新..." on-refresh="refreshPkHistory(true)">
+        </ion-refresher>
+        <div ng-repeat="item in pkHistoryData track by $index" ng-click="showHistoryDetail(item)">
+            <div class="flex-container" style="justify-content: space-between;padding:10px 10px 25px;height: 80px;border-bottom: 1px solid #414354;position: relative;">
+                <div class="flex-container" style="width: 45%;justify-content: flex-start;width:37%;">
+                    <div background-img src="{{item.author.avatar}}" round width="50px" height="50px"></div>
+                    <div style="font-size: 16px;padding-left: 2px;color:white;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;text-align:left;flex:1;">{{item.author.displayName}}</div>
+                </div>
+                <div class="flex-warp-container" style="text-align: center;width:26%;">
+                    <div class="flex-container" style="justify-content: center;font-size: 24px;">
+                        <div style="font-size:14px;color: #ff2f71;padding-right:4px;flex:1;">{{item.author.score}}</div>
+                        <div background-img src="data/vs.png" width="16px" height="16px" background-size="100%"></div>
+                        <div style="font-size:14px;color: #2caeff;padding-left:4px;flex:1;">{{item.opponent.score}}</div>
+                    </div>
+                    <div style="padding-top: 3px;font-size: 16px;color:white;padding:0 8px;">{{item.pkResult}}</div>
+                </div>
+                <div class="flex-container" style="width: 45%;justify-content: flex-end;width:37%;">
+                    <div style="font-size: 16px;padding-right: 2px;color:white;white-space:nowrap;text-overflow:ellipsis;overflow: hidden;text-align:right;flex:1;">{{item.opponent.displayName}}</div>
+                    <div background-img src="{{item.opponent.avatar}}" round width="50px" height="50px"></div>
+                </div>
+                <div style="position: absolute; left:10px; bottom: 4px;line-height: 1;transform: scale(0.8);color: #686b75;">{{item.end | date : 'MM-dd HH:mm'}}</div>
+                <div style="position: absolute; right:10px; bottom: 4px;line-height: 1;transform: scale(0.8);color: #686b75;">{{item.messages[0].type | typeChange}}</div>
+            </div>
+        </div>
+        <ion-infinite-scroll ng-if="!historyNotMore" on-infinite="refreshPkHistory(false)" immediate-check="false" distance="1%"></ion-infinite-scroll>
+        <div ng-if="historyNotMore" style="text-align: center;color:white;">没有更多的历史记录了</div>
+      </ion-content>
+    </div>
+  </ion-content>
+</ion-view>

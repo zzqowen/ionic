@@ -1,0 +1,104 @@
+.register-view
+{
+  .button.register
+  {
+    margin-top: 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba($walkthrough-btn-color-1, .9);
+    background-color: rgba($walkthrough-btn-bg-1, .85);
+    border-color: rgba(darken($walkthrough-btn-bg-1, 1), .9);
+  }
+
+  div.avatar {
+    width: 100%;
+    height: 44px;
+  }
+
+  ul.avatar {
+    max-height: 44px;
+    padding: 2px;
+    overflow-x: auto;
+    overflow-y: disabled;
+    white-space: nowrap;
+    list-style: none;
+  }
+
+  li.avatar {
+      display: inline-block;
+      vertical-align: top;
+      height: 40px;
+      width: 40px;
+      white-space: normal;
+      margin: 0 3px 0 3px;
+  }
+
+  img {
+    opacity: 0.5;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+
+  img:hover {
+    opacity: 1.0;
+    max-width: 110%;
+    max-height: 110%;
+    border-radius: 50%;
+  }
+
+  img.selected {
+    opacity: 1.0;
+    max-width: 110%;
+    max-height: 110%;
+    border-radius: 50%;
+    border: 3px solid orange;
+  }
+
+  .login-container {
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 111px;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    }
+
+    .flex-space-end-container {
+      p{
+        margin-bottom: 10px;
+      }
+    }
+
+    input {
+      text-align: left;
+    }
+
+    .button.login {
+      background-color: $highlighted-comment;
+    }
+  }
+
+  .login-input {
+    color: white;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .getCode{
+    border-bottom: 1px solid $theme-color-13;
+    input{
+      border: none !important;
+    } 
+  }
+  h3{
+    font-size: 16px;
+    font-weight: normal;
+  }
+  a.cancel {
+    text-decoration: none;
+    color: $theme-color-12;
+    font-size: 15px;
+    padding: 10px;
+  }
+}

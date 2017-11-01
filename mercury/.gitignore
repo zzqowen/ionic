@@ -1,0 +1,9 @@
+/node_modules/*
+/media/*
+!/media/banner1.png
+/logs/*
+.DS_Store
+.swp
+.idea
+build
+nextId.txt

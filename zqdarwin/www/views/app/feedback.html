@@ -1,0 +1,42 @@
+<ion-view class="post-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor" style="border:0;">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <h1 class="h1 bar-title">{{feedback}}</h1>
+    <div class="buttons pull-right">
+      <button class="button self-bar-button-right" style="color: #242624;font-size: 15px;" ng-disabled="!data.detail && post.photoFiles.length==0" ng-click="complaintsOrFeedback()">确定</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content scroll="false">
+    <div class = "flex-column-space-container newPost-container" style="background: #fafafa">
+        <div class="posts flex-item-expand question-padding" style="padding:0;">
+          <div class="post-card flex-column-space-container">
+            <div class="flex-item-expand">
+              <textarea class="post-input" rows="9" ng-model="data.detail" placeholder="请输入遇到的问题或建议…" style="color:#999;font-size:16px;padding:19px 15px 0;height:165px;resize: none;line-height:16px;overflow: hidden;text-align: justify;"></textarea>
+            </div>
+            <div class="flex-container" style="padding:0px 15px;">
+              <ion-scroll direction="x" style="height:100px;width: 100%;overflow:hidden;" scrollbar-x="false">
+                <div ng-style="{width: (post.photoFiles.length+1)*94+'px'}">
+                  <div ng-repeat="photo in post.photoFiles track by $index" style="display: inline-block;">
+                    <div class="photo-show" style="margin:10px 10px 0 0;">
+                      <div background-img src="{{photo.src}}" huge curve ng-click="previewPhoto($index, $event)" class='thePictureIcon'>
+                        <i class="icon ion-close-circled" ng-click="removePhoto($index, $event)"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="media-container"  ng-if="post.photoFiles.length ==0" style="margin:10px 10px 0 0;display: inline-block;">
+                    <div background-img src="data/img@3x.png" huge ng-click="showPhotoChoice($event)"></div>
+                  </div>
+                    <div class="media-container"  ng-if="post.photoFiles.length>0&&post.photoFiles.length <=8" style="margin:10px 10px 0 0;display: inline-block;">
+                  <div background-img src="data/img@3x.png" huge ng-click="showPhotoChoice($event)"></div>
+                  </div>
+                </div>
+              </ion-scroll>
+            </div>
+          </div>
+        </div>
+  </ion-content>
+</ion-view>

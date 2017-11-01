@@ -1,0 +1,127 @@
+<!--<ion-view class="userInfo-view">
+  <ion-header class="other-account">
+    <ion-header-bar align-title="center" class="bar-light flex-space-container">
+    <button style="color: white;" class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+      <button class="button self-bar-button-right" ng-click="share(self)">
+        <div background-img src="data/share.png" width="20px" height="20px"></div>
+      </button>
+    </ion-header-bar>
+    <div background-img src="data/back.png" opacity="1" height="100%" width="110%" position="absolute" z-index="-2" top="-5px" left="-5px"></div>
+    <div class="flex-start-container" style="color: white;">
+      <div background-img src="{{setAvatar(self.avatar)}}" round width="63px" height="63px" margin="18% 4% 5% 8%" ng-click="changeAvatarImg()"></div>
+      <div class="name-style flex-column-container" style="width: 38%;">
+        <span class="cut-name" style="max-width: 120px;">{{self.displayName}}</span>
+        <span style="font-size: 15px; color: white;">答尔号：{{self.id}}</span>
+      </div>
+      <div class="add-delete" ng-if="!isSelf">
+        <div class="btn add-btn" ng-click="addFriends()" ng-if="canAddFriend">关注</div>
+        <div class="btn delete-btn" ng-click="deleteFriend(self)" ng-if="!canAddFriend">取消</div>
+      </div>
+    </div>
+    <div class="flex-space-container" style="width: 83%; margin: 0px auto;">
+      <div class="flex-column-space-container self-info-detail">
+        <span class="info">等级</span>
+        <span class="info">{{self.level}}级</span>
+      </div>
+      <span class="info-border"></span>
+      <div class="flex-column-space-container self-info-detail">
+        <span class="info">积分</span>
+        <span class="info">{{self.score}}分</span>
+      </div>
+      <span class="info-border"></span>
+      <div class="flex-column-space-container self-info-detail">
+        <span class="info">提问</span>
+        <span class="info">{{self.summary.asked}}</span>
+      </div>
+      <span class="info-border"></span>
+      <div class="flex-column-space-container self-info-detail">
+        <span class="info info-size">回答</span>
+        <span class="info">{{self.summary.answered}}</span>
+      </div>
+    </div>
+  </ion-header>
+  <ion-content style="top: 34%;" scroll="true" class="has-header" style="background-color: white;">
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()" refreshing-icon="ion-load-d" class="ion-refresh"></ion-refresher>
+    <div ng-if="!isEmpty" style="text-align: center; padding-top: 60px;">该朋友暂时没有新动态哟</div>
+    <ul class="list circleFriends">
+      <li class="item" ng-repeat="item in selfPosts track by $index" style="white-space: normal;">
+        <div class="flex-column-container" style="border-bottom: 1px solid #f2f2f2;">
+          <div class="flex-space-container" style="padding-right: 0px; margin-bottom: 5px;">
+            <div style="width: 85%; padding-left: 5px;">
+              <h1 class="friends-content" ui-sref="post({postId: item._id})">{{item.content | textOverflow : 3}}</h1>
+            </div>
+            <div class="see-btn" ng-if="item.peek && item.isPaid == false" ng-click="payForAnswers(item._id, item.price, $index)">偷看</div>
+            <div class="see-btn see-btn1" ng-if="item.peek && item.isPaid == true" ui-sref="post({postId: item._id})">查看</div>
+          </div>
+          <div ui-sref="post({postId: item._id})" style="width: 100%; border: none; margin-bottom: 10px;" ng-if="item.photoFiles.length > 0 && item.photoFiles.length < 2">
+            <div background-img src="{{photo.src}}" thumbnail width="97%" height="120px" margin="0px auto" ng-repeat="photo in item.photoFiles track by $index" ng-click="showPhotoFiles(item.photoFiles, $index, myScope, $event, 'home')"></div>
+          </div>
+          <div ui-sref="post({postId: item._id})" style="width: 225px; padding-left: 5px; border: none; margin-bottom: 10px; display: flex;" ng-if="item.photoFiles.length > 1">
+            <div background-img src="{{photo.src}}" thumbnail width="106px" height="106px" margin="0px 3px 0px 0px" ng-repeat="photo in item.photoFiles track by $index" ng-click="showPhotoFiles(item.photoFiles, $index, myScope, $event, 'home')"></div>
+          </div>
+          <div voice-button  ng-if="item.audioFiles && item.audioFiles.length && item.content.length > 0" file="{{item.audioFiles[0].src}}" seconds="{{item.audioFiles[0].dur}}"></div>
+          <div style="margin-top: 2px; padding: 0px 0px 5px 5px; font-size: 12px;" class="flex-space-container">
+            <div>
+              <span style="color: #8f8f8f; margin-right: 5px;">{{item.date | date : 'yy-MM-dd HH:mm'}}</span>
+              <span ng-if="item.status == 0" style="color: #ff2686;">等待抢单</span>
+              <span ng-if="item.status == 1" style="color: #ff2686;">进行中</span>
+              <span ng-if="item.status == 3" style="color: #8f8f8f;">已完结</span>
+            </div>
+            <span class="price-text" style="font-size: 12px;"><span style="font-size: 12px;">赏</span>{{item.price}}<span style="font-size: 12px;">金币</span></span >
+          </div>
+        </div>
+      </li> 
+    </ul>
+    <div ng-if="hasMore && showLoading" class="flex-space-container load-waiting" style="padding: 0px;">
+      <span class="no-more">正在加载中</span>
+      <i class="icon ion-load-c"></i>
+    </div> 
+     <ion-infinite-scroll class="infinite-scroll" ng-if="hasMore" on-infinite="getSelfPosts()"></ion-infinite-scroll>   
+    <div style="text-align: center; padding-bottom: 10px;" ng-if="isEmpty && hasMore == false"><span class="no-more">没有更多了</span></div>
+  </ion-content>
+</ion-view>-->
+
+<ion-view class="userInfo-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <!--<div width="22px" height="22px" background-img src="data/toGoBack.png" ng-click="goBack()"> </div>-->
+    <button class="button buttonLeft self-bar-button-left" ng-click="goBack()" style="padding:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">答友资料</div>
+    <div style="width: 25px; height: 40px; padding-top: 10px; padding-left: 4px;" ng-click="toReport()" ng-if="!isSelf">
+      <div background-img src="data/v_jubao@3x.png" width="22px" height="22px"></div>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background-color:#ebebeb;">
+    <div style="padding: 0 15px;background-color:white;">
+      <div class="flex-start-container" style="padding:40px 0 22px">
+        <h2 style="font-size: 29px;color:#242624;margin:0 5px 0 0;">{{self.displayName | displayName}}</h2>
+        <div background-img ng-if="self.gender" ng-src="{{self.gender=='F' ? 'data/v_girl@3x.png' : 'data/v_boy@3x.png'}}" round width="22px" height="22px" class="per-img"></div>
+      </div>
+      <ul class="flex-start-container">
+        <li background-img src="{{setAvatar(self.avatar)}}" width="68%" height="200px" border="1px solid #ebebeb"></li>
+        <li style="margin:0 0 0 7.5%;">
+          <div class="flex-start-container"><div background-img src="{{integralIcon}}" width="24px" height="24px" margin="0 12px 0 0"></div><span style="color:#F8C34E;font-size: 14px;">{{self.score}}</span></div>
+          <div class="flex-start-container" style="margin: 28px 0;"><div background-img src="data/v_guanzhu@3x.png" width="24px" height="24px" margin="0 12px 0 0"></div><span style="color:#8C8D8c;font-size: 14px;">{{self.summary.answered}}</span></div>
+          <div class="flex-start-container" style="margin: 0 0 28px 0;"><div background-img src="data/v_huida@3x.png" width="24px" height="24px" margin="0 12px 0 0"></div><span style="color:#8C8D8c;font-size: 14px;">{{self.summary.answered}}</span></div>
+          <div class="flex-start-container"><div background-img src="data/v_tiwen@3x.png" width="24px" height="24px" margin="0 12px 0 0"></div><span style="color:#8C8D8c;font-size: 14px;">{{self.summary.asked}}</span></div>
+        </li>
+      </ul>
+      <!--<p ng-show="self.myProfile" style="font-size:14px;color:#242624;padding:20px 0 20px;line-height: 20px;margin:0;">{{self.myProfile}}个人简介为空，请暂时脑补!</p>-->
+      <p style="font-size:14px;color:#242624;padding:20px 0 20px;line-height: 20px;margin:0;border-bottom:1px solid #ebebeb;">{{self.myProfile ? self.myProfile : '个人简介为空，请暂时脑补!'}}</p>
+    </div>
+    <ol style="padding:40px 15px 0;background-color: white;">
+      <li style="margin-bottom:40px;">
+        <h2 style="font-size: 19px;color:#242624;margin-bottom: 14px;">TA的成就</h2>
+        <div style="margin-left:12px;width:60px;text-align: center;">
+          <div background-img src="data/a_1@3x.png" width="60px" height="60px"></div>
+          <p style="color:#8C8D8C;font-size:12px;">初来乍到</p>
+        </div>
+      </li>
+      <li style="padding-bottom:35px;">
+        <h2 style="font-size: 19px;color:#242624;margin-bottom: 14px;">账号信息</h2>
+        <p style="color:#242624;font-size:14px;" class="flex-start-container"><span style="color:#242624;font-size:14px;">ID:{{self.id}}</span><span style="width:1px;height:15px;background-color:#242624;display: block;margin:0 30px;"></span><span style="color:#242624;font-size:14px;">注册日期:{{self.registered.slice(0,10)}}</span></p>
+      </li>
+    </ol>
+  </ion-content>
+</ion-view>

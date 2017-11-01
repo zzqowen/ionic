@@ -1,0 +1,63 @@
+<ion-view class="home-view" view-title="答尔文">
+  <ion-header-bar align-title="center" class="bar-bgcolor flex-space-container">
+    <h1 class="bar-title">问答</h1>
+  </ion-header-bar>
+
+  <div class="bar-subheader historyChoose">
+    <div class="choose-content">
+      <div class="choose" ng-repeat="slide in slides track by $index">
+          <div class="bottomLine" ng-if="$index == currentIndex"></div>
+          <span ng-class="{true:'myChoose'}[$index == currentIndex]" ng-click="slideChanged($index)">{{slide.name}}</span>
+          <span class="new-message" style="position:absolute;right:5vmin;" ng-if="$index == 1 && pushMessage.history.answer.length"></span>
+          <span class="new-message" style="position:absolute;right:5vmin;" ng-if="$index == 2 && pushMessage.history.question.length"></span>
+      </div>
+    </div>
+  </div>
+
+  <ion-content scroll="false" class="history-content has-subheader">
+    <ion-slide-box style="height: 100%;" delegate-handle="historySlideBox" show-pager="false" class="home-content" on-slide-changed="slideChanged($index)">
+      <ion-slide ng-repeat="slide in slides track by $index" style="height: 100%;">
+        <ion-content delegate-handle="history">
+          <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh()" class="ion-refresh"></ion-refresher>
+          <div class="full-height post-card flex-column-center-container" ng-if="$index == 0 && !slide.list.length && nothing" style="position:absolute; height:80%;">
+            <div class="primary-text-top">让我猜猜你喜欢什么</div>
+            <div class="primary-text-middle flex-column-center-container">
+              如果你对某个问题感兴趣，只需将它关注，就可以在这里找到。
+            </div>
+            <div class="primary-text-bottom" ui-sref="tab.home">走，去闹市</div>
+          </div>
+          <div class="full-height post-card flex-column-center-container" ng-if="$index == 1 && !slide.list.length && nothing" style="position:absolute; height:80%;">
+            <div class="primary-text-top">这里暂时空空如也</div>
+            <div class="primary-text-middle flex-column-center-container">
+              分享自己的知识、经验，帮助需要的人解答，共同分享喜悦，成为一个有趣的人。
+            </div>
+            <div class="primary-text-bottom" ui-sref="tab.home">少侠，大展身手吧</div>
+          </div>
+          <div class="full-height post-card flex-column-center-container" ng-if="$index == 2 && !slide.list.length && nothing" style="position:absolute; height:80%;">
+            <div class="primary-text-top">别让好奇停滞不前</div>
+            <div class="primary-text-middle flex-column-center-container">
+              世界这么大，总有你想问的，有疑惑，会好奇，那就大胆提出来。
+            </div>
+            <div class="primary-text-bottom" ui-sref="newpost">朕有一事相问</div>
+          </div>
+          <div class="full-height" auto-height on-swipe-up="canSwipe(false)" on-swipe-down="canSwipe(false)" on-swipe-left="canSwipe(true)" on-swipe-right="canSwipe(true)">
+            <div post-card ng-repeat="post in slide.list | orderBy:'timestamp':true track by $index"></div>
+          </div>
+          <div class="has-nomore flex-column-nojust-container" ng-if="slide.list.length && !slide.hasMore">
+            <div class="no-more flex-space-container">
+              <span>--</span>
+              <span>THE END</span>
+              <span>--</span>
+            </div>
+          </div>
+          <div ng-if="slide.hasMore && slide.list.length" class="flex-space-container load-waiting">
+            <span class="has-more">正在加载中</span>
+            <i class="icon ion-load-c"></i>
+          </div>
+          <ion-infinite-scroll ng-if="slide.hasMore" class="infinite-scroll" on-infinite="pullLoad()" immediate-check="false" distance="1%"></ion-infinite-scroll>
+        </ion-content>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+
+</ion-view>

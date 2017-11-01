@@ -1,0 +1,89 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button self-bar-button-left"  ui-sref="creditScore" nav-direction="back" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">获取信用</div>
+  </ion-header-bar>
+  <ion-content style="background-color:#f3f3f4;">
+    <ul style="padding:0 15px;background-color:white;">
+      <li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container" ng-if="user.avatar&&user.displayName&&user.gender">
+        <div class="flex-start-container">
+          <div background-img src="data/h_1@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">完善资料</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">头像+昵称+性别+签名</p>
+          </div>
+        </div>
+        <div style="text-align: right;" ng-if="user.avatar&&user.displayName&&user.gender">
+          <p style="font-size: 17px;color:#1AAD19;margin-bottom: 12px;line-height: 17px;">+20</p>
+          <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">已完善</p>
+        </div>
+      </li>
+      <li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container" ng-if="!user.avatar || !user.displayName || !user.gender" ui-sref="personalDetails" nav-direction="forward">
+        <div class="flex-start-container">
+          <div background-img src="data/h_1@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">完善资料</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">头像+昵称+性别+签名</p>
+          </div>
+        </div>
+        <div style="text-align: right;" class="flex-start-container">
+          <p style="font-size: 17px;color:#1AAD19;margin:0 5px 0 0;">+20</p>
+          <div background-img src="data/a_right_gray@3x.png" round width="6px" height="12px"></div>
+        </div>
+      </li>
+      <!--<li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container">
+        <div class="flex-start-container">
+          <div background-img src="data/h_2@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">浏览答尔文APP</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">浏览满10分钟可获得信用积分</p>
+          </div>
+        </div>
+        <div style="text-align: right;" class="flex-start-container">
+          <p style="font-size: 17px;color:#1AAD19;margin:0 5px 0 0;">+5</p>
+          <div background-img src="data/a_right_gray@3x.png" round width="6px" height="12px"></div>
+        </div>
+      </li>-->
+      <li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container" ui-sref="newpost" nav-direction="forward">
+        <div class="flex-start-container">
+          <div background-img src="data/h_3@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">发布问题</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">提出你的问题且正常支付</p>
+          </div>
+        </div>
+        <div style="text-align: right;" class="flex-start-container">
+          <p style="font-size: 17px;color:#1AAD19;margin:0 5px 0 0;">+10</p>
+          <div background-img src="data/a_right_gray@3x.png" round width="6px" height="12px"></div>
+        </div>
+      </li>
+      <li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container" ui-sref="tab.home" nav-direction="forward">
+        <div class="flex-start-container">
+          <div background-img src="data/h_4@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">回答问题</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">回答问题并获得赏金</p>
+          </div>
+        </div>
+        <div style="text-align: right;" class="flex-start-container">
+          <p style="font-size: 17px;color:#1AAD19;margin:0 5px 0 0;">+1</p>
+          <div background-img src="data/a_right_gray@3x.png" round width="6px" height="12px"></div>
+        </div>
+      </li>
+      <li style="border-bottom: 1px solid #ebebeb;justify-content: space-between;padding: 22.5px 0;" class="flex-center-container" ui-sref="purchase" nav-direction="forward">
+        <div class="flex-start-container">
+          <div background-img src="data/h_5@3x.png" round width="45px" height="45px" margin="0 15px 0 0"></div>
+          <div>
+            <p style="font-size: 17px;color:#242624;">充值</p>
+            <p style="font-size: 13px;color: #999;margin:0;line-height: 13px;height:13px;">1元=1积分，充多少送多少</p>
+          </div>
+        </div>
+        <div style="text-align: right;" class="flex-start-container">
+          <div background-img src="data/a_right_gray@3x.png" round width="6px" height="12px"></div>
+        </div>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

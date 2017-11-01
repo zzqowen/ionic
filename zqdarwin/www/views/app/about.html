@@ -1,0 +1,11 @@
+<ion-view class="page-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">{{theTitle}}</div>
+  </ion-header-bar>
+  <ion-content scroll="true" overflow-scroll="true" style="top: 44px;">
+    <iframe data-tap-disabled="true" style="height:100%;width:100%;min-height:100%;" ng-src="{{paySrc}}"></iframe>
+  </ion-content>
+</ion-view>

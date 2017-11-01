@@ -1,0 +1,93 @@
+.settings-view
+{
+  background-color: $theme-color-5;
+
+  .item-title
+  {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    // span
+    // {
+    //   margin: 0px 8px;
+    // }
+  }
+
+  .option
+  {
+    i
+    {
+      margin-right:12px;
+      font-size: 18px;
+    }
+  }
+
+  .item-divider
+  {
+    padding-top: 22px;
+    padding-bottom: 6px;
+    color: lighten($content-color, 30);
+    font-weight: 400;
+  }
+
+  .input-label{
+    font-size: 17px;
+    color: #242624;
+    padding: 0;
+  }
+  .item-input{
+    padding: 27px 0px;
+  }
+
+  .toggle .track{
+    height: 16px;
+    width: 46px;
+  }
+  .item-toggle .toggle{
+    top: 27px;
+  }
+  .toggle .handle{
+    width: 32px;
+    height: 32px;
+    top: -3px;
+    left: 5px;
+  }
+  .toggle input:checked + .track .handle{
+    border-color: #1aac19;
+    background-color: #1aac19;
+  }
+  .item-toggle .toggle{
+    right: 8px;
+  }
+}
+
+.terms-of-service
+{
+  padding: 20px;
+  text-align: justify;
+
+  .title{
+    margin-top: 30px;
+  }
+}
+
+.debug
+{
+  padding: 20px;
+  text-align: justify;
+}
+
+.faqs
+{
+  padding: 20px;
+  text-align: justify;
+
+  .faq-item
+  {
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid lighten($content-color, 60);
+  }
+}

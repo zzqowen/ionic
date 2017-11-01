@@ -1,0 +1,17 @@
+<ion-view class="category-view">
+  <ion-content>
+      <div class="flex-column-space-container" style='background-color:white;padding:0 46px;justify-content: space-around;'>
+        <ul class="flex-column-center-around-container">
+          <li ng-repeat="list in categories" class="flex-center-container" style="margin-bottom:10px;">
+            <div ng-repeat='category in list' class="theLable">
+              <div ng-class='{"margin": $index ==1 , "border": category.selected}' class="flex-column-center-container" ng-click="selectionChanged(category)" >
+                <img ng-src='{{category.imgSrc}}' alt="" />
+                <p>{{category.name}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="flex-column-center-container"><p class='toOpen' ng-click="accept()">{{isInvite ? "开启" : "确定"}}</p></div>
+      </div>
+  </ion-content>
+</ion-view>

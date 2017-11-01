@@ -1,0 +1,35 @@
+<ion-modal-view class="self-ionicShare" ng-click="releaseBackdrop()">
+  <ion-content>
+    <div class="flex-column-space-container" style="width:100%;">
+      <h2 style="font-size: 20px;color: #242624;line-height: 20px;padding: 24px 0 45px;text-align: center;margin:0;">分享到</h2>
+      <ul class="flex-container">
+          <li ng-click="share(0, 'wx')" class="flex-column-center-container">
+            <!--<img src="data/i_watche@3x.png"/>-->
+            <div background-img src="data/i_watche@3x.png"  width="40px" height="40px"></div>
+            <p>微信</P>
+          </li>
+          <li ng-click="share(1, 'wx')" class="flex-column-center-container">
+            <!--<img src="data/i_pyq@3x.png" alt=""/>-->
+            <div background-img src="data/i_pyq@3x.png"  width="40px" height="40px"></div>
+            <p>朋友圈</P>
+          </li>
+          <!--<li ng-click="share(1, 'qq')" class="flex-column-center-container">
+            <img src="data/ShareQqSpace.png" alt=""/>
+            <p>QQ空间</p>
+          </li>-->
+          <li ng-click="share(0, 'qq')" class="flex-column-center-container">
+            <!--<img src="data/i_qq@3x.png" alt=""/>-->
+            <div background-img src="data/i_qq@3x.png"  width="40px" height="40px"></div>
+            <p>QQ</p>
+          </li>
+          <li ng-click="share(1, 'qq')" class="flex-column-center-container">
+            <!--<img src="data/i_weibo@3x.png" alt=""/>-->
+            <div background-img src="data/ShareQqSpace.png"  width="40px" height="40px"></div>
+            <p>QQ空间</p>
+          </li>
+      </ul>
+      <!--<button class="ios-btn" ng-click="close()" style="font-size: 17px;color:#242624;line-height: 17px;padding: 36px 0 24px;">取消</button>-->
+      <div ng-click="close()" style="font-size: 17px;color:#242624;line-height: 17px;padding: 36px 0 24px;text-align: center;">取消</div>
+    </div>
+  </ion-content>
+</ion-modal-view>

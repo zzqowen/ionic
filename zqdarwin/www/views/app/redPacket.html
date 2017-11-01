@@ -1,0 +1,29 @@
+<ion-view class="redPacket-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container" style="background-color:transparent;border-color:none;background-image:none;">
+    <button class="button icon ion-chevron-left self-bar-button" ui-sref="tab.account" nav-direction="back" ng-click="saveOriginal()"></button>
+    <button class="button self-bar-button-right" ng-click="share(user)"  ng-if="user.packetRemind">分享</button>
+  </ion-header-bar>
+  <ion-content scroll="false" background-img src="data/shareCash.png" width="100%" height="100%" background-size="100%" position="absolute">
+    <div style="display:flex;flex-direction:column;height:61%;position:fixed;left:2%;bottom:10px;width:96%;background-color:white;padding:0 3%;border:1px solid #d7dde5;" ng-if="user.packetRemind">
+      <div>
+        <ul class="flex-column-center-container" style="padding:5% 0;border-bottom:1px solid #f6f6f6;">
+          <li background-img src="{{user.avatar}}" round width="64px" height="64px" class="per-img" margin="0 auto"></li>
+          <li style="margin:4% 0 3%;color:#969696;font-size:12px;">{{user.displayName}} 共收到</li>
+          <li style="font-size:16px;color:#090909;">{{redHistory.sumMoney.sum}}金币</li>
+        </ul>
+        <div style="width:33%;height:33%;position:absolute;top:-16%;right:-6%;" ng-click="toGetCash()"><div background-img src="data/aRedEnvelope.png" width="100%" height="100%" background-size="100%"></div></div>
+      </div>
+
+      <ion-scroll style="position:relative;flex:1;" scroll="true">
+        <div class="flex-space-container theRecords"  ng-repeat="item in (redHistory.details | orderBy: '-time') track by $index" ng-if="$index < redRecord"><span>{{item.date}}</span><span>{{item.amount}}金币</span></div>
+        <ion-infinite-scroll ng-if="hasMore" on-infinite="envelopeHistory()" immediate-check="false" distance="1%"></ion-infinite-scroll>
+        <div ng-if="rankNotMore" style="text-align: center;">没有更多的历史记录了</div>
+      </ion-scroll>
+
+      <p style="font-size:12px;text-align:center;margin:20px 0 10px;color:#979797;">分享邀请就可以得到红包(每天前7次)</p>
+    </div>
+    <div ng-if="user.packetRemind == undefined" style="position:fixed;bottom:16.5%;width:100%;">
+        <button ng-click="share(user)" style="display:block;margin:0 auto;border:none;outline:none;width:60%;padding:10px 0;background-color:#66e99f;border-radius:40px;font-size:18px;color:white;">分享朋友圈</button>
+    </div>
+  </ion-content>
+</ion-view>

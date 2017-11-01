@@ -1,0 +1,78 @@
+<!--<ion-view class="register-view">
+  <ion-content>
+    <div style="margin: 20px 10px;"><a ui-sref="phoneLogin" class="cancel">取消</a></div>
+    <div class="login-container">
+      <h3 style="margin-bottom:15px;">请输入你的手机号</h3>
+      <form name="signup_form" novalidate style="width:100%;margin-bottom:40px;">
+        <div class="login-content">
+          <div class="login-input">
+            <input type="number" id="user_name" class="flex-item-expand" ng-pattern="/^1[3578]\d{9}$/" ng-click='focus()' ng-blur='blur()' ng-model="user.userName" oninput="if(value.length>11) value=value.slice(0,11)" autofocus required placeholder="手机号码" maxlength="11">
+          </div>
+          <div class="login-input">
+            <input type="password" class="flex-item-expand" name="password" ng-model="user.password" required placeholder="密码(长度为6-16位)" minlength="6" maxlength="16">
+          </div>
+          <div class="login-input">
+            <input type="password" class="flex-item-expand" name="password" ng-blur='verifyPassword()' ng-model="user.truePassword" required placeholder="请再次输入密码" minlength="6" maxlength="16">
+          </div>
+          <div class='getCode'>
+            <button class='button' ng-click="getSmsCode()" ng-disabled="!isCodeClicked">{{btnName}}</button>
+            <input type="number" placeholder="验证码" maxlength="6" minlength="6" ng-model="user.valid" oninput="if(value.length>6)value=value.slice(0,6)">
+          </div>
+          <p class="message error" style="margin-top:10px;">{{error}}</p>
+          <button type="submit" class="button button-block" ng-click="doRegister()" ng-disabled="!user.userName || !user.password || !user.valid" style="margin-top:20px;">
+            注册
+          </button>
+        </div>
+      </form>
+      <div style="flex:1;" class="hide-on-keyboard-open flex-column-center-end-container toChoose">
+        <p>已有账号？<a ui-sref="phoneLogin">登录</a></p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>-->
+<ion-view class="phoneLogin-view">
+  <ion-content style="overflow: hidden;">
+    <div class="spinner" ng-show="showSpinner">
+       <ion-spinner ng-show="!loaded" class="spinner-on-load"></ion-spinner>
+    </div>
+    <div style="height:42px;"><div margin="20px 10px 0px 20px" width="22px" height="22px" background-img src="data/toClose.png" ng-click="visitorLogin()"></div></div>
+    <form name="signup_form" novalidate ng-style="{height:theHeight}">
+      <ul class="flex-center-container" style="justify-content: center;margin-bottom:20px;height:92px;">
+      <li class="flex-column-center-container">
+        <h1 style="color:#242624;" ui-sref="phoneLogin" nav-direction="back">登录</h1>
+        <div style="width:18px;height:4px;background-color:transparent;"></div>
+      </li>
+      <li style="margin-left: 85px;" class="flex-column-center-container">
+        <h1>注册</h1>
+         <div style="width:18px;height:4px;background-color:#17ae15;"></div>
+      </li>
+    </ul>
+      <div class="login-content phoneLogin-container" style="height:276px;">
+        <div class="login-input phoneLogin-input"> 
+            <!--<input type="number" name="user_name" ng-model="user.userName" ng-click='focus()' ng-blur="blur()" minlength="11" maxlength="11" required placeholder="请输入手机号码" ng-pattern="/^1[3578]\d{9}$/" oninput="if(value.length>11) value=value.slice(0,11)" style="width:55%;margin-left:10px;">-->
+            <input type="number" name="user_name" ng-model="user.userName" ng-click='focus()' ng-blur="blur()" minlength="11" maxlength="11" required placeholder="请输入手机号码" ng-pattern="/^1[3578]\d{9}$/" onkeyup="value=this.value.replace(/\D+/g,'')" oninput="if(value.length>11) value=value.slice(0,11)" style="width:55%;margin-left:10px;">
+            <button class='button' ng-click="getSmsCode()" ng-disabled="!user.userName" ng-class=" !user.userName ? '' : 'colorGreen'">{{btnName}}</button>
+          </div>
+          <div class="login-input phoneLogin-input">
+            <input type="number" name="password" ng-model="user.valid" ng-click='focus()' ng-blur="blur()" required placeholder="请输入验证码" minlength="6" maxlength="6" onkeyup="value=this.value.replace(/\D+/g,'')" oninput="if(value.length>6)value=value.slice(0,6)" style="width:100%;margin-left:10px;">
+          </div>
+          <p class="message error">{{error}}</p>
+          <div ng-click="doRegister()" background-img ng-src="{{ user.userName&&user.valid ? 'data/canGo.png' : 'data/notGo.png'}}" width="62px" height="62px" margin="52px auto 0" ng-disabled="!user.userName || !user.valid"></div>
+      </div>
+
+      <div ng-style="{height:theHeightSecond}" class="flex-column-center-end-container" ng-if="config.isWxInstalled || config.isQQInstalled">
+        <div style="width:100%;">
+          <p class="otherWay">快速登录答尔文，开启你的探索之旅</p>
+          <div class="flex-space-container" style="height:89px;justify-content: center;">
+            <div style="padding:10px 32px;" ng-click='setSource("wx")' class="flex-column-center-container" ng-if="config.isWxInstalled">
+              <img src="data/wxLogin.png" alt="" style="height:34px;" />
+            </div>
+            <div style="padding:13.5px 35.5px;" ng-click='setSource("qq")' class="flex-column-center-container" ng-if="config.isQQInstalled">
+              <img src="data/qqLogin.png" alt="" style="height:27px;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href="/common/css/bootstrap.min.css"rel="stylesheet"  type="text/css">
+<script src="/common/js/jquery-1.11.3.min.js"></script>
+<script src="/common/js/bootstrap.min.js"></script>
+<script src="/common/js/angular.js"></script>
+<script src="/question/view/question.js"></script>
+<style>
+    th {
+        text-align: left;
+    }
+    * {
+    font-family:"Glyphicons Halflings", "Microsoft YaHei" ! important;
+    }
+</style>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="container">
+    <h3>Pk题库</h3>
+    <a class="btn btn-primary" style="padding-left: 25px; padding-right: 25px; margin: 5px;" ng-click="sendToAddPage()">新增</a>
+    <table class="table table-striped">
+        <tr>
+            <th>序号</th>
+            <th>操作</th>
+            <th>问题</th>
+        </tr>
+        <tr ng-repeat="question in questions">
+            <td width="50">{{question.index}}</td>
+            <td width="200">
+                <a href="javascript: void(0);" ng-click="showDetail(question._id)">查看</a>
+                <a href="javascript: void(0);" ng-click="editQuestion(question._id)">修改</a>
+                <a ng-click="deleteQuestion(question._id)" href="javascript: void(0);">删除</a>
+            </td>
+            <td>{{question.content}}</td>
+        </tr>
+    </table>
+    <span class="pull-right" style="line-height: 34px; padding: 0 20px;">共{{totalPage}}页</span>
+    <ul class="pagination pull-right" style="margin: 0px;padding: 0px;">
+        <li><a href="#" ng-click="prePage()">&laquo;</a></li>
+        <li ng-repeat="page in pages" ng-class="curpage==page ? 'active': '' "><a ng-click="bindClick(page,pageSize)">{{page}}</a></li>
+        <li><a href="#" ng-click="nextPage()">&raquo;</a></li>
+    </ul>
+
+</div>
+</body>
+</html>

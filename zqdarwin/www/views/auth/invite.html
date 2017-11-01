@@ -1,0 +1,20 @@
+<ion-view class="invite-view">
+  <ion-content>
+    <div class="posts">
+      <div class='flex-column-center-space-container full-height'>
+        <div class="flex-column-center-container full-height">
+          <p style="margin:40% 0 20%;">请输入你的好友ID</p>
+          <input type="number" maxlength="6" minlength="4" ng-model='data.friendId'/>
+          <p ng-show="error" style='margin:0;color:red;'>{{error}}</p>
+          <button type="submit" class="button button-block" style="margin:20% 0 10%;color:white;" ng-click="addFriend()" ng-disabled="
+          !data.friendId">提交</button>
+          <p style='text-align:center;'>提交成功你和你的好友都将获得<br>奖励</P>
+          <div class="flex-column-center-container" style="margin-top:40%;;">       
+            <div><i class="icon ion-chevron-down" style='color:black;'></i></div>
+            <div style="padding:0 20px 20px;" ui-sref="shareGetCash">直接跳过</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

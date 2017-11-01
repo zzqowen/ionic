@@ -1,0 +1,16 @@
+[Unit]
+Description=Mercury Service
+After=syslog.target
+
+[Service]
+WorkingDirectory=/data/mercury
+ExecStart=/root/.nvm/versions/node/v6.9.5/bin/node /data/mercury/index.js
+Restart=on-abort
+StandardOutput=syslog
+SyslogIdentifier=mercury
+Environment=PATH=/root/.nvm/versions/node/v6.9.5/bin:/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+Environment=PORT=443
+
+[Install]
+WantedBy=multi-user.target

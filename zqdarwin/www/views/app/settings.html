@@ -1,0 +1,38 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">设置</div>
+  </ion-header-bar>
+  <ion-content style="background-color:#f3f3f3;">
+    <div style="padding:0 15px;background-color: white;">
+    <ion-list class="setting-style setUp" style="background-color:white;">
+      <ion-toggle class="item item-input setting-mail-content" ng-model="notifications" toggle-class="toggle-positive">
+        <div class="input-label">消息推送</div>
+      </ion-toggle>
+      <div class="item item-input item-text flex-space-container" ng-click="clearCache()">
+        <div class="input-label">清除缓存</div>
+        <div>{{theCacheSize}}</div>
+      </div>
+      <div class="item item-input item-text flex-space-container" ng-click="toScore()">
+        <div class="input-label">给答尔文评分</div>
+      </div>
+      <div class="item item-input item-text flex-space-container" ng-click="toUpdate()">
+        <div class="input-label">检查版本更新</div>
+      </div>
+      <div class="item item-input item-text flex-space-container" ng-click="showAbout('service.html')">
+        <div class="input-label">用户协议</div>
+      </div>
+      <div class="item item-input item-text" ng-click="contactUs()" style="border:0;">
+        <div class="input-label">联系我们</div>
+      </div>
+    </ion-list>
+    </div>
+    <div style="padding:0 15px;">
+    <a class="button button-block setting-logOut" ng-click="showLogOutMenu()" style="margin-top:40px;">
+      <span class="title" style="color:#FC0035;font-size: 17px;line-height:55px;height:55px;">退出登录</span>
+    </a>
+    </div>
+</ion-content>
+</ion-view>

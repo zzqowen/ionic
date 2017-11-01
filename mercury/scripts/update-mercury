@@ -1,0 +1,7 @@
+#!/bin/bash
+clear
+cd /data/mercury
+git pull origin master
+sudo service mercury restart
+sudo service mercury status
+

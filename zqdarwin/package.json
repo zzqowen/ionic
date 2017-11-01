@@ -1,0 +1,185 @@
+{
+    "name": "答尔文",
+    "version": "0.4.0",
+    "homepage": "http://www.aihuawen.com",
+    "description": "答尔文",
+    "scripts": {
+        "postinstall": "bower install"
+    },
+    "engines": {
+        "node": "5.6.0",
+        "npm": ">=1.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://huawen@git.aihuawen.com/huawen/darwin.git/"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/common": "2.0.0-rc.1",
+        "@angular/compiler": "2.0.0-rc.1",
+        "@angular/core": "2.0.0-rc.1",
+        "@angular/http": "2.0.0-rc.1",
+        "@angular/platform-browser": "2.0.0-rc.1",
+        "@angular/platform-browser-dynamic": "2.0.0-rc.1",
+        "@angular/router": "2.0.0-rc.1",
+        "Umeng": "/Users/huawenkeji/zqdarwin/plugins/umeng_plugin",
+        "angular-moment": "^1.0.1",
+        "ansi-styles": "^3.2.0",
+        "async": "^1.4.0",
+        "bower": "^1.8.0",
+        "com.verso.cordova.clipboard": "^0.1.0",
+        "connect-phonegap": "0.23.1",
+        "cordova-android": "^6.2.3",
+        "cordova-browser": "^4.1.0",
+        "cordova-huawei-push": "^0.3.1",
+        "cordova-ios": "^4.4.0",
+        "cordova-media-with-compression": "^2.1.1",
+        "cordova-plugin-app-version": "git+https://github.com/whiteoctober/cordova-plugin-app-version.git",
+        "cordova-plugin-apprate": "^1.3.0",
+        "cordova-plugin-camera": "^2.4.1",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-console": "^1.0.7",
+        "cordova-plugin-crop": "git+https://github.com/epetre/cordova-plugin-crop.git",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-dialogs": "^1.3.3",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-file-opener2": "^2.0.19",
+        "cordova-plugin-file-transfer": "^1.6.3",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-globalization": "^1.0.7",
+        "cordova-plugin-image-picker": "^1.1.3",
+        "cordova-plugin-inappbrowser": "^1.7.1",
+        "cordova-plugin-inapppurchase": "^1.1.0",
+        "cordova-plugin-media-capture": "^1.4.3",
+        "cordova-plugin-mipush": "~0.1.0",
+        "cordova-plugin-nativeaudio": "^3.0.9",
+        "cordova-plugin-qqsdk": "^0.9.6",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-statusbar": "^2.2.3",
+        "cordova-plugin-transport-security": "^0.1.2",
+        "cordova-plugin-wechat": "^1.4.0",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "es6-shim": "0.35.0",
+        "express": "~4.4.3",
+        "gulp": "^3.9.1",
+        "gulp-angular-templatecache": "^1.9.1",
+        "gulp-sass": "^2.3.2",
+        "gulp-sourcemaps": "^1.12.0",
+        "gulp-util": "^2.2.20",
+        "ionic-angular": "^2.0.0-beta.9",
+        "ionic-plugin-deeplinks": "git+https://github.com/zigoola/ionic-plugin-deeplinks.git",
+        "ionic-plugin-keyboard": "^2.2.1",
+        "ionicons": "3.0.0",
+        "jshint": "^2.9.2",
+        "minimatch": "^3.0.2",
+        "mipush-cordova-plugin": "^1.0.2",
+        "moment": "^2.18.1",
+        "phonegap-plugin-push": "git+https://github.com/phonegap/phonegap-plugin-push.git",
+        "reflect-metadata": "0.1.3",
+        "require-dir": "^0.3.2",
+        "rxjs": "5.0.0-beta.6",
+        "shelljs": "^0.3.0",
+        "umeng_plugin": "file:plugins/umeng_plugin",
+        "zone.js": "0.6.12"
+    },
+    "devDependencies": {
+        "del": "^1.2.0",
+        "gulp-flatten": "^0.1.1",
+        "gulp-if": "^1.2.5",
+        "gulp-json-editor": "^2.2.1",
+        "gulp-minify-css": "^1.2.0",
+        "gulp-ng-annotate": "^1.1.0",
+        "gulp-ng-constant": "^0.3.0",
+        "gulp-preprocess": "^1.2.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-shell": "^0.4.2",
+        "gulp-uglify": "^1.2.0",
+        "gulp-useref": "^1.2.0",
+        "gulp-zip": "^3.0.2",
+        "jshint": "^2.8.0",
+        "minimist": "^1.1.2",
+        "mv": "^2.1.1"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-huawei-push": {
+                "APPID": "100020037",
+                "PACKAGENAME": "com.aihuawen.darwin"
+            },
+            "cordova-media-with-compression": {
+                "MICROPHONE_USAGE_DESCRIPTION": "答尔文需要使用您的录音功能"
+            },
+            "cordova-plugin-app-version": {},
+            "cordova-plugin-camera": {
+                "CAMERA_USAGE_DESCRIPTION": "答尔文需要使用您的照相功能",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": "答尔文需要使用您的图片库"
+            },
+            "cordova-plugin-console": {},
+            "cordova-plugin-inapppurchase": {},
+            "cordova-plugin-media-capture": {
+                "CAMERA_USAGE_DESCRIPTION": "答尔文需要使用您的照相功能",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": "答尔文需要使用您的图片库",
+                "MICROPHONE_USAGE_DESCRIPTION": "答尔文需要使用您的录音功能"
+            },
+            "cordova-plugin-nativeaudio": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-wechat": {
+                "WECHATAPPID": "wx3e6682d35cde1fee"
+            },
+            "cordova-plugin-whitelist": {},
+            "ionic-plugin-keyboard": {},
+            "phonegap-plugin-push": {
+                "SENDER_ID": "12341234"
+            },
+            "ionic-plugin-deeplinks": {
+                "URL_SCHEME": "darwin",
+                "DEEPLINK_SCHEME": "https",
+                "DEEPLINK_HOST": "svc.aihuawen.com",
+                "ANDROID_PATH_PREFIX": "/",
+                "ANDROID_2_PATH_PREFIX": "/",
+                "ANDROID_3_PATH_PREFIX": "/",
+                "ANDROID_4_PATH_PREFIX": "/",
+                "ANDROID_5_PATH_PREFIX": "/",
+                "DEEPLINK_2_SCHEME": " ",
+                "DEEPLINK_2_HOST": " ",
+                "DEEPLINK_3_SCHEME": " ",
+                "DEEPLINK_3_HOST": " ",
+                "DEEPLINK_4_SCHEME": " ",
+                "DEEPLINK_4_HOST": " ",
+                "DEEPLINK_5_SCHEME": " ",
+                "DEEPLINK_5_HOST": " "
+            },
+            "cordova-plugin-apprate": {},
+            "cordova-plugin-transport-security": {},
+            "cordova-plugin-qqsdk": {
+                "QQ_APP_ID": "101407918"
+            },
+            "cordova-plugin-crop": {},
+            "cordova-plugin-geolocation": {
+                "GEOLOCATION_USAGE_DESCRIPTION": "答尔文需要获取您的当前位置"
+            },
+            "cordova-plugin-image-picker": {
+                "PHOTO_LIBRARY_USAGE_DESCRIPTION": " "
+            },
+            "com.verso.cordova.clipboard": {},
+            "cordova-plugin-device": {},
+            "Umeng": {},
+            "cordova-plugin-mipush": {
+                "PACKAGE_NAME": "com.aihuawen.darwin",
+                "MI_PUSH_APP_KEY": "5761756541255",
+                "MI_PUSH_APP_ID": "2882303761517565255",
+                "MI_PUSH_APP_IOS_KEY": "5761756541255",
+                "MI_PUSH_APP_IOS_ID": "2882303761517565255"
+            },
+            "cordova-plugin-file-opener2": {},
+            "cordova-plugin-file-transfer": {}
+        },
+        "platforms": [
+            "android",
+            "browser",
+            "ios"
+        ]
+    }
+}

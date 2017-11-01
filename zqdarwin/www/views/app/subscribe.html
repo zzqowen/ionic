@@ -1,0 +1,14 @@
+<ion-view class="subscribe-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container">
+      <button class="button icon ion-chevron-left self-bar-button" ui-sref="tab.account" nav-direction="back" ng-click="saveOriginal()"></button>
+      <h1 class="bar-title">答尔文订阅号</h1>
+      <button class="button self-bar-button-right" ng-show="hasSettingChange" ng-click="submitSettingChanges()">保存</button>
+  </ion-header-bar>
+  <ion-content scroll="false" style="background-color:#fafafa;">
+      <div style="background-color:white;padding-top:40px;">
+        <div background-img src="data/daerwen@3x.png" height="192px" width="192px" margin="0 auto"></div>
+        <p style="color:#303030;font-size:17px;text-align: center;padding-top:60px;">关注答尔文微信公众号</p>
+        <p style="color:#606060;font-size:14px;text-align: center;padding-bottom:20px;">每周为你更新精美好文，有奖问答不定时推送哦</p>
+      </div>
+  </ion-content>
+</ion-view>

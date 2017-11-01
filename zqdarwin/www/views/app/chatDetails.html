@@ -1,0 +1,34 @@
+<ion-view class="chatDetails-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor" style="border:0;">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <h1 class="h1 bar-title">聊天详情</h1>
+  </ion-header-bar>
+  <ion-content class="self-content" style="background-color:white;">
+    <ul class="list">
+      <div  style="padding: 10px 12px 24px;" class="flex-space-container">  
+        <ul class="flex-wrap-container">
+          <li background-img src="{{user.avatar}}" round width="64px" height="64px" class="per-img" margin="0 auto"></li>
+          <li style="margin-left: 20px;font-size: 15px;">
+            <p style="margin:0;">{{user.displayName}}</p>
+            <p style="margin:0;">答尔号:{{user.id}}</p>
+          </li>
+        </ul>
+      </div>
+      <div style="background-color:#fafafa;padding:12px 0;"> 
+        <ion-toggle ng-model="data.isHidden">
+          隐藏信息
+        </ion-toggle>
+      </div>
+      <div class="item flex-space-container" ui-sref="feedback">
+        <div class="item-title">
+          <span>投诉</span>
+        </div>
+        <div class="flex-container">
+          <i class="icon ion-chevron-right self-ion-right"></i>
+        </div>
+      </div>
+    </ul>
+  </ion-content>
+</ion-view>

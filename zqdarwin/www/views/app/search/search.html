@@ -1,0 +1,17 @@
+<div class="search">
+	<div class="search-box-wrapper">
+		<div class="bar bar-header item-input-inset">
+			<label class="item-input-wrapper">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="search" ng-model="query" placeholder="最新提问" search-input>
+			</label>
+			<button ng-click="closeSearch($event)" class="button button-clear button-icon icon ion-close-circled"></button>
+		</div>
+	</div>
+	<search-results>
+		<my-tab title="分类" tabid="posts" query="{{query}}">
+		</my-tab>
+		<my-tab title="关键字" tabid="tags" query="{{query}}">
+		</my-tab>
+	</search-results>
+</div>

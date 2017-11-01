@@ -1,0 +1,36 @@
+<div class="flex-column-space-container postCardView" nav-direction="forward" ng-click="goPost(post._id, stopInertiaMove)">
+  <div class="card-top">
+    <div class="card-content">
+      <div style="display:inline-block">
+        <img ng-if="post.price < 2 || post.photoFiles.length" src="data/icon_shang@3x.png"/>
+        <span ng-if="post.price < 2 || post.photoFiles.length" class="price">{{post.price*10}}币</span>
+      </div>
+      {{post.content | textOverflow : 1}}
+    </div>
+    <div class="img-content" ng-if="post.photoFiles.length || post.price > 1">
+        <div ng-if="!post.photoFiles.length && post.price > 1" background-img width="100%" height="180px" radius="15px" src="data/img_hongbao_1@3x.png">
+          <div class="priceNum">{{post.price*10}}</div>
+        </div>
+        <div ng-if="post.photoFiles.length && post.photoFiles.length < 3" background-img thumbnail width="92vw" height="52vw" src="{{post.photoFiles[0].src}}"></div>
+        <div ng-if="post.photoFiles.length > 2" class="flex-space-container" style="position: relative;">
+          <div background-img src="{{photo.src}}" thumbnail width="30vw" height="30vw" ng-repeat="photo in (post.photoFiles | limitTo : 3) track by $index"></div>
+        </div>
+    </div>
+    <div class="flex-container voice-content" ng-if="post.audioFiles && post.audioFiles.length">
+      <div voice-button file="{{post.audioFiles[0].src}}" seconds="{{post.audioFiles[0].dur}}" class="postVoice"></div>
+    </div>
+    <div class="info-content">
+      <span class="category">#{{post.category | categoryName}}</span>
+      <span am-time-ago="post.date"></span>
+    </div>
+  </div>
+  <div class="card-bottom flex-space-container">
+    <div class="userInfo flex-start-container">
+      <div background-img ng-if="!post.anonymous" src="{{setAvatar(post.author.avatar)}}" round width="38px" height="38px" ui-sref="userInfo({id: post.author._id})" ng-click="$event.stopPropagation()"></div>
+      <div background-img ng-if="post.anonymous" src="{{post.author.avatar}}" round width="38px" height="38px"></div>
+      <span class="banOnLine">{{post.author.displayName | displayName}}</span>
+      <span class="new-message" ng-if="ifUnread(post._id)"></span>
+    </div>
+    <span style="padding:2px 6px; font-size: 12px">去看看 ></span>
+  </div>
+</div>

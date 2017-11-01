@@ -1,0 +1,332 @@
+<ion-view class="post-view post-card" cache-view="false" close-popup-back-drop>
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button buttonLeft self-bar-button-left" ng-click="goBack()">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <h1 class="bar-title" ng-if="post.status == 1" am-time-ago="timeAgo.time"></h1>
+    <h1 class="bar-title" ng-if="post.status == 0 || post.status == 2 || post.status == 3">问题详情</h1>
+    <div class="buttons titleButtons">
+      <button ng-if="isMine && post.status == 1" class="button buttonRigh self-bar-button-right" ng-disabled="!canClose() " ng-click="confirmAccept()">满意</button>
+      <button ng-if="isGraber() && (post.status == 1 || post.status == 2)" class="button buttonRigh self-bar-button-right" ng-disabled="!canGetPaid() && !getPaid" ng-click="accept()">领赏</button>
+      <button ng-if="post.status == 3" ng-hide="!(isMine || isGraber())" class="button buttonRigh self-bar-button-right" ng-click="getPostId()" ui-sref="chatDetails">详情</button>
+    </div>
+    <button ng-if="post.status == 0" class="button self-bar-button-right" ng-click="share()">
+      <div background-img src="data/share.png" width="22px" height="22px"></div>
+    </button>
+  </ion-header-bar>
+
+  <div ng-if="post.status == 0">
+    <ion-content class="quesion-card-wait flex-column-container has-header" ng-class="{addFooter:!isMine}" overflow-scroll="true">
+      <div class="card-top">
+        <div class="header flex-space-container">
+          <div class="userInfo flex-start-container">
+            <div background-img ng-if="!post.anonymous" src="{{setAvatar(post.author.avatar)}}" round width="44px" height="44px" ui-sref="userInfo({id: post.author._id})" ng-click="$event.stopPropagation()"></div>
+            <div background-img ng-if="post.anonymous" src="{{setAvatar(post.author.avatar)}}" round width="44px" height="44px"></div>
+            <span>{{post.author.displayName | displayName}}</span>
+          </div>
+          <div class="priceInfo flex-start-container">
+            <img src="data/icon_shang@3x.png"/>
+            <span class="price">{{post.price*10}}币</span>
+          </div>
+        </div>
+        <div class="quesion-content" ng-class="{packup:moreContent}">
+          {{showContentText}}
+          <div class="more">
+            <span class="on-off" ng-if="moreContent" ng-click="lookMore()">展开问题</span>
+          </div>
+          <div class="close flex-right-container">
+            <span class="on-off" ng-if="allContent" ng-click="packup()">收起问题</span>
+          </div>
+        </div>
+        <!--<div class="quesion-content" ng-class="{packup:moreContent}">
+          {{showContentText}}
+          <div class="more">
+          </div>
+        </div>-->
+        <div class="img-content" ng-if="post.photoFiles.length || post.price > 6">
+            <div ng-if="!post.photoFiles.length && post.price > 6" background-img width="100%" height="180px" radius="15px" src="data/img_hongbao_1@3x.png">
+              <div class="priceNum">{{post.price*10}}</div>
+            </div>
+            <div ng-if="post.photoFiles.length == 1" background-img thumbnail width="100%" height="180px" src="{{post.photoFiles[0].src}}" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')"></div>
+            <div ng-if="post.photoFiles.length > 1" class="flex-space-warp-container" style="position:relative; width:100%; padding:1vw">
+              <div background-img src="{{photo.src}}" thumbnail width="29vw" height="29vw" margin="0.5vw" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')" ng-repeat="photo in post.photoFiles track by $index"></div>
+            </div>
+        </div>
+        <div class="flex-container voice-content" ng-if="post.audioFiles && post.audioFiles.length">
+          <div voice-button file="{{post.audioFiles[0].src}}" seconds="{{post.audioFiles[0].dur}}" class="postVoice"></div>
+        </div>
+        <div class="info-content flex-space-container">
+          <div>
+            <span class="category">#{{post.category | categoryName}}</span>
+            <span am-time-ago="post.date"></span>
+          </div>
+          <div background-img src="data/followLight.png" width="28px" height="28px" ng-if="ifMyCare" ng-click="Switch()"></div>
+          <div background-img src="data/followDark.png" width="28px" height="28px" ng-if="!ifMyCare" ng-click="Switch()"></div>
+        </div>
+      </div>
+    </ion-content>
+  </div>
+
+  <div ng-if="post.status == 1" ng-click="closeEmoji()">
+    <ion-content id="zqbottom" class="quesion-card-grab flex-column-container has-header has-footer" scroll="false">
+      <ion-content class="message-box" delegate-handle="mainScroll">
+        <div ng-repeat="message in messages track by $index" class="message-bgcolor">
+          <div ng-if="isMine || isGraber()" class="message-contant" ng-class="{'me':message.MMIsSend}">
+            <div class="avatar-content">
+              <div background-img round border="1px solid #ccc" width="37px" height="37px" class="avatar" src={{setAvatar(message.author.avatar)}} ng-click="toUserInfo(message.author._id, message.author.avatar)"></div>
+            </div>
+              <div class="content" ng-if="message.MsgType == 0  || message.MsgType == 1">
+                <div class="message-len" ng-show="message.MsgType == 0" ng-class="{'bubble':true,'bubble_default left':!message.MMIsSend,'bubble_primary right':message.MMIsSend}" >
+                  <div class="bubble_cont" ng-if="message.MsgType == 0">
+                    <div class="plain">
+                      <pre class="js_message_plain">{{message.content}}</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container" ng-if="message.MsgType == 1">
+                <div voice-button file="{{message.src}}" seconds="{{message.dur}}" ng-class="{'messageLeftColor':!message.MMIsSend,'messageRightColor':message.MMIsSend}"></div>
+              </div>
+              <div class="content" ng-if="message.MsgType == 2" style="margin-top:12px;">
+                <div class="bubble content-img">
+                  <div style="margin-bottom: -6px;">
+                    <img class="content-img-style" ng-style="message.MMImgStyle" ng-click="showImage($index, $event)" ng-src={{message.thumb}}>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!--<div ng-if="showAnswer" class="message-contant" ng-class="{'me':message.MMIsAuthorSend}">
+            <div class="avatar-content">
+              <div background-img round border="1px solid #ccc" width="37px" height="37px" class="avatar" src={{setAvatar(message.author.avatar)}} ng-click="toUserInfo(message.author._id, message.author.avatar)"></div>
+            </div>
+              <div class="content" ng-if="message.MsgType == 0  || message.MsgType == 1">
+                <div class="message-len" ng-show="message.MsgType == 0" ng-class="{'bubble':true,'bubble_default left':!message.MMIsAuthorSend,'bubble_primary right':message.MMIsAuthorSend}" >
+                  <div class="bubble_cont" ng-if="message.MsgType == 0">
+                    <div class="plain">
+                      <pre class="js_message_plain">{{message.content}}</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container" ng-if="message.MsgType == 1">
+                <div voice-button file="{{post.audioFiles[0].src}}" seconds="{{post.audioFiles[0].dur}}"></div>
+              </div>
+              <div class="content" ng-if="message.MsgType == 2" style="margin-top:12px;">
+                <div class="bubble content-img">
+                  <div style="margin-bottom: -6px;">
+                    <img class="content-img-style" ng-style="message.MMImgStyle" ng-click="showImage($index, $event)" ng-src={{message.thumb}}>
+                  </div>
+                </div>
+              </div>
+          </div>-->
+        </div>
+      </ion-content>
+      <div class="card-top" ng-class="{zhezhao:openClose}">
+        <div style="background: #fff;">
+          <div class="header flex-column-container" style="background:#fff; padding: 15px;">
+            <div class="userInfo flex-column-container">
+              <div class="flex-space-container">
+                <div class="flex-start-container">
+                  <div background-img ng-if="!post.anonymous && !isMine" src="{{setAvatar(post.author.avatar)}}" round width="25px" height="25px" ui-sref="userInfo({id: post.author._id})" ng-click="$event.stopPropagation()"></div>
+                  <div background-img ng-if="post.anonymous && !isMine" src="{{setAvatar(post.author.avatar)}}" round width="25px" height="25px"></div>
+                  <span ng-if="!isMine" class="displayName">{{post.author.displayName | displayName}}</span>
+                  <span ng-if="isMine" class="mine">我悬赏的问题</span>
+                </div>
+                <div class="priceInfo flex-start-container">
+                  <img src="data/icon_shang@3x.png"/>
+                  <span class="price">{{post.price*10}}币</span>
+                </div>
+              </div>
+              <div class="flex-start-container on-off-content">
+                <span ng-show="!openClose" class="ask">提问：</span>
+                <span ng-if="!openClose" class="content">{{post.content | textOverflow : 5}}</span>
+                <span class="on-off" ng-if="!openClose" ng-click="openQuesion()">展开问题</span>
+                <span class="on-off close" ng-if="openClose" ng-click="closeQuesion()">收起问题</span>
+              </div>
+            </div>
+          </div>
+          <div ng-if="openClose" style="background:#fff; padding: 0 4vw;">
+            <div class="quesion-content" ng-class="{packup:moreContent}">
+              {{post.content}}
+              <!--<div class="more">
+                <span class="short" ng-if="moreContent" ng-click="lookMore()">展开问题</span>
+                <span class="short" ng-if="allContent" ng-click="packup()">收起问题</span>
+              </div>-->
+            </div>
+            <div class="img-content" ng-if="post.photoFiles.length || post.price > 6">
+                <div ng-if="!post.photoFiles.length && post.price > 6" background-img width="100%" height="180px" radius="15px" src="data/img_hongbao_1@3x.png">
+                  <div class="priceNum">{{post.price*10}}</div>
+                </div>
+                <div ng-if="post.photoFiles.length == 1" background-img thumbnail width="100%" height="180px" src="{{post.photoFiles[0].src}}" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')"></div>
+                <div ng-if="post.photoFiles.length > 1" class="flex-space-warp-container" style="position:relative; width:100%; padding:1vw">
+                  <div background-img src="{{photo.src}}" thumbnail width="29vw" height="29vw" margin="0.5vw" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')" ng-repeat="photo in post.photoFiles track by $index"></div>
+                </div>
+            </div>
+            <div class="flex-container voice-content" ng-if="post.audioFiles && post.audioFiles.length">
+              <div voice-button file="{{post.audioFiles[0].src}}" seconds="{{post.audioFiles[0].dur}}" class="postVoice"></div>
+            </div>
+            <div class="info-content flex-space-container">
+              <div>
+                <span class="category">#{{post.category | categoryName}}</span>
+                <span am-time-ago="post.date"></span>
+              </div>
+              <div background-img src="data/followLight.png" width="28px" height="28px" ng-if="ifMyCare" ng-click="Switch()"></div>
+              <div background-img src="data/followDark.png" width="28px" height="28px" ng-if="!ifMyCare" ng-click="Switch()"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </ion-content>
+  </div>
+
+  <div ng-if="post.status == 3 || post.status == 2">
+    <ion-content class="quesion-card-grab flex-column-container has-header" style="bottom:0;">
+      <div class="card-top" style="position: relative; border-top:none;">
+        <div style="background: #fff;">
+          <div class="header flex-space-container" style="background:#fff; padding: 0 15px;">
+            <div class="userInfo flex-column-container">
+              <div class="flex-start-container">
+                <div background-img ng-if="!post.anonymous && !isMine" src="{{setAvatar(post.author.avatar)}}" round width="25px" height="25px" ui-sref="userInfo({id: post.author._id})" ng-click="$event.stopPropagation()"></div>
+                <div background-img ng-if="post.anonymous && !isMine" src="{{setAvatar(post.author.avatar)}}" round width="25px" height="25px"></div>
+                <span ng-if="!isMine" class="displayName">{{post.author.displayName | displayName}}</span>
+                <span ng-if="isMine" class="mine">我悬赏的问题</span>
+              </div>
+            </div>
+            <div class="priceInfo flex-start-container">
+              <img src="data/icon_shang@3x.png"/>
+              <span class="price">{{post.price*10}}币</span>
+            </div>
+          </div>
+          <div style="background:#fff; padding: 0 4vw;">
+            <div class="quesion-content" ng-class="{packup:moreContent}">
+              {{post.content}}
+            </div>
+            <div class="img-content" ng-if="post.photoFiles.length || post.price > 6">
+                <div ng-if="!post.photoFiles.length && post.price > 6" background-img width="100%" height="180px" radius="15px" src="data/img_hongbao_1@3x.png">
+                  <div class="priceNum">{{post.price*10}}</div>
+                </div>
+                <div ng-if="post.photoFiles.length == 1" background-img thumbnail width="100%" height="180px" src="{{post.photoFiles[0].src}}" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')"></div>
+                <div ng-if="post.photoFiles.length > 1" class="flex-space-warp-container" style="position:relative; width:100%; padding:1vw">
+                  <div background-img src="{{photo.src}}" thumbnail width="29vw" height="29vw" margin="0.5vw" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')" ng-repeat="photo in post.photoFiles track by $index"></div>
+                </div>
+            </div>
+            <div class="flex-container voice-content" ng-if="post.audioFiles && post.audioFiles.length">
+              <div voice-button file="{{post.audioFiles[0].src}}" seconds="{{post.audioFiles[0].dur}}" class="postVoice"></div>
+            </div>
+            <div class="info-content flex-space-container">
+              <div>
+                <span class="category">#{{post.category | categoryName}}</span>
+                <span am-time-ago="post.date"></span>
+              </div>
+              <div background-img src="data/followLight.png" width="28px" height="28px" ng-if="ifMyCare" ng-click="Switch()"></div>
+              <div background-img src="data/followDark.png" width="28px" height="28px" ng-if="!ifMyCare" ng-click="Switch()"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="message-box" style="margin-top: 0;">
+        <div ng-repeat="message in messages track by $index" class="message-bgcolor">
+          <div ng-if="isMine || isGraber()" class="message-contant" ng-class="{'me':message.MMIsSend}">
+            <div class="avatar-content">
+              <div background-img round border="1px solid #ccc" width="37px" height="37px" class="avatar" src={{setAvatar(message.author.avatar)}} ng-click="toUserInfo(message.author._id, message.author.avatar)"></div>
+            </div>
+              <div class="content" ng-if="message.MsgType == 0  || message.MsgType == 1">
+                <div class="message-len" ng-show="message.MsgType == 0" ng-class="{'bubble':true,'bubble_default left':!message.MMIsSend,'bubble_primary right':message.MMIsSend}" >
+                  <div class="bubble_cont" ng-if="message.MsgType == 0">
+                    <div class="plain">
+                      <pre class="js_message_plain">{{message.content}}</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container" ng-if="message.MsgType == 1">
+                <div voice-button file="{{message.src}}" seconds="{{message.dur}}" ng-class="{'messageLeftColor':!message.MMIsSend,'messageRightColor':message.MMIsSend}"></div>
+              </div>
+              <div class="content" ng-if="message.MsgType == 2" style="margin-top:12px;">
+                <div class="bubble content-img">
+                  <div style="margin-bottom: -6px;">
+                    <img class="content-img-style" ng-style="message.MMImgStyle" ng-click="showImage($index, $event)" ng-src={{message.thumb}}>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div ng-if="showAnswer" class="message-contant" ng-class="{'me':message.MMIsAuthorSend}">
+            <div class="avatar-content">
+              <div background-img round border="1px solid #ccc" width="37px" height="37px" class="avatar" src={{setAvatar(message.author.avatar)}} ng-click="toUserInfo(message.author._id, message.author.avatar)"></div>
+            </div>
+              <div class="content" ng-if="message.MsgType == 0  || message.MsgType == 1">
+                <div class="message-len" ng-show="message.MsgType == 0" ng-class="{'bubble':true,'bubble_default left':!message.MMIsAuthorSend,'bubble_primary right':message.MMIsAuthorSend}" >
+                  <div class="bubble_cont" ng-if="message.MsgType == 0">
+                    <div class="plain">
+                      <pre class="js_message_plain">{{message.content}}</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-container" ng-if="message.MsgType == 1">
+                <div voice-button file="{{message.src}}" seconds="{{message.dur}}" ng-class="{'messageLeftColor':!message.MMIsAuthorSend,'messageRightColor':message.MMIsAuthorSend}"></div>
+              </div>
+              <div class="content" ng-if="message.MsgType == 2" style="margin-top:12px;">
+                <div class="bubble content-img">
+                  <div style="margin-bottom: -6px;">
+                    <img class="content-img-style" ng-style="message.MMImgStyle" ng-click="showImage($index, $event)" ng-src={{message.thumb}}>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </ion-content>
+  </div>
+
+  <ion-footer-bar class="flex-column-container" keyboard-attach>
+    <div class="flex-center-container flex-item-expand grab" ng-if="!post.status && !isMine" ng-click="startGrab()">
+      <span>抢答</span>
+    </div>
+    <div class="input-box" ng-if="post.status == 1 && ((isMine || isGraber()))">
+      <div class="flex-space-container" style="padding: 0 10px; height: 100%;">
+        <div class="flex-container" style="margin-right: 8px">
+          <div ng-if="isRecord" class="record-img" ng-click="changeRecord(false)" alt="record" ></div>
+          <div ng-if="!isRecord" class="record-img" ng-click="changeRecord(true)" alt="record" ></div>
+          <div style="margin-left: 0px;" class="photoChoice inputPhoto" ng-click="showPhotoChoice()"></div>
+        </div>
+        <label ng-show="!isRecord" style="padding: 6px; margin: 0,6px; width:55vw; height: 36px; border-radius: 5px" class="item item-input">
+          <input id="input" type="text" ng-model="comment.content" ng-keyup="addText($event)" ng-click="scrollBottom()" required />
+        </label>
+        <label ng-if="isRecord" style="width: 100%;padding: 6px; justify-content: center" class="item item-input" ng-class="{'change-color': isRecording}" on-touch="startRecord()" on-release="stopRecord()">
+          <span ng-class="{'change-textcolor': isRecording}">{{isRecording ? "松开结束" : "按住说话"}}</span>
+        </label>
+        <div class="flex-container emoji-send">
+          <img src="data/jianpan.png" style="margin-right: 8px;" ng-if="showEmojiBoard" ng-click="changeText(false)" alt="emoji" />
+          <img src="data/emoji.png" style="margin-right: 8px;" ng-if="!showEmojiBoard" ng-click="changeText(true)" alt="keyboard" />
+          <img src="data/send.png" ng-style="{opacity: comment.content ? 1: 0.4}" alt="send" ng-click="send()"  />
+        </div>
+      </div>
+      
+    </div>
+    <div ng-if="showEmojiBoard " class="emojiKeyBoard">
+        <ion-slide-box show-pager="true" class="post-content">
+          <ion-slide ng-repeat="em in isIOS ? emoji : androidEmoji">
+            <div class="emojiContent">
+              <div ng-class="{true: 'iosBoard', false: 'androidBoard'}[isIOS]" class="emojiBoard" ng-repeat="emoji in em.name" ng-click="chooseEmoji(emoji)">{{emoji}}</div>
+              <div class="emojiBoard">
+                <div background-img src="data/delete.png" width='30px' height='28px' ng-click="deleteEmoji()"></div>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+        <div class="flex-space-container" style="width: 100%; height: 37px; background-color: #fff;">
+          <div style="width: 52px; background-color: #f1f1f1; height: 100%">
+            <div background-img src="data/emoji3x.png" width="22px" height="22px" position="relative" top="7px" margin="0px auto"></div>
+          </div>
+          <div class="flex-space-container" style="width: 52px; height: 37px; text-align: center; background-color: #fff;" ng-click="sendEmoji()">
+            <div background-img src="data/fasong_line.png" width="2px" height="27px"></div>
+            <span style="line-height: 37px; color: #6c6b6e; font-size: 15px; width: 50px;">发送</span>
+          </div>
+        </div>
+      </div>
+  </ion-footer-bar>
+  <div class="record-image" ng-if="messageBoxVisible"><img src="data/record.gif" /></div>
+</ion-view>

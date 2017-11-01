@@ -1,0 +1,41 @@
+<ion-view class="feedback-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container" style="background-image: none;border: none;">
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+    <div class="h1 title">我要出题</div>
+    <button class="button self-bar-button-right" ng-click="addQuestion()">提交</button>
+  </ion-header-bar>
+  <ion-content style="padding: 0 6%;">
+    <div class="list" style="margin:10px 0;">
+      <label class="item item-input item-select" style="border: 1px solid #ccc;">
+        <div class="input-label">
+        类型
+        </div>
+        <select ng-model="drawObj.type">
+          <option ng-repeat="item in type">{{item.name}}</option>
+        </select>
+      </label>
+    </div>
+    <div ng-show="false" class="flex-center-container" style="padding:0;">
+      <span style="flex:1;border: 1px solid #ccc;padding:15px 0;text-align:center;">文字题</span>
+      <span style="flex:1;border: 1px solid #ccc;padding:15px 0;text-align: center;">图片题</span>
+    </div>
+    <div style="border: 1px solid #ccc;margin:10px 0;height: 26%;">
+      <textarea  rows="4" cols="20" style="border: none;width: 100%;padding:4px;resize:none;font-size: 16px;height: 80%;" placeholder="请输入问题描述..." ng-model="drawObj.content" maxlength="50"></textarea>
+      <p style="margin: 5px 10px 5px 0;text-align: right;">{{drawObj.content.length}}/50</p>
+    </div>
+    <div class="list" style="margin: 0;">
+      <label class="item item-input" style="border: 1px solid #ccc;margin:10px 0;">
+        <input type="text" ng-model="drawObj.ans" placeholder="正确答案（最多10个字)" maxlength="10">
+      </label>
+      <label class="item item-input" style="border: 1px solid #ccc;margin:10px 0;" ng-repeat="item in drawObj.correct track by $index">
+        <input type="text" ng-model="drawObj.correct[$index]" placeholder="错误答案（最多10个字)" maxlength="10">
+      </label>
+    </div>
+    <dl>
+      <dt>出题责任声明:</dt>
+      <dd>A.必须遵守中华人名共和国的法律法规；</dd>
+      <dd>B.不得发布与色情有关的问题；</dd>
+      <dd>C.最终解释权归深圳市华问科技有限公司所有。</dd>
+    </dl>
+  </ion-content>
+</ion-view>

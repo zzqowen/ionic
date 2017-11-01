@@ -1,0 +1,110 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <div style="width: 40px; height: 40px;"></div>
+    <div class="h1 bar-title">我的</div>
+    <div style="width: 25px; height: 40px; padding-top: 10px; padding-left: 4px;" nav-direction="forward" ui-sref="settings">
+      <div background-img src="data/f_shezhi@3x.png" width="20px" height="20px"></div>
+    </div>
+  </ion-header-bar>
+  <ion-content class="self-content" style="background-color:#fafafa;">
+    <ul class="list" style="margin-bottom:0;">
+      <div style="padding: 28px 15px 33px;background-color:white;align-items: flex-start;" class="flex-column-center-space-container">
+        <ul class="flex-wrap-container" style="flex-flow: row nowrap;justify-content: space-between;width:100%;overflow: hidden;">
+          <li style="font-size: 14px;width:66%;">
+            <p style="color:#242624; font-size: 29px;padding-bottom:20px;text-align:left;line-height:29px;margin:0;" class="banOnLine">{{user.displayName}}</p>
+            <p style="color:#1AAD19; font-size: 15px;text-align:left;margin:0;width:130px;" class="banOnLine"  ui-sref="creditScore" nav-direction="forward">信用积分{{user.score}} ></p>
+          </li>
+          <li style="height:70px;width:70px;flex:1;justify-content: flex-end;" class="flex-wrap-container" ui-sref="personalDetails" nav-direction="forward">
+            <div background-img src="{{user.avatar}}" round width="70px" height="70px" class="per-img" position="relative">
+              <div style="position:absolute;left:-17px;bottom:0;" class="flex-start-container" ng-if="user.gender">
+                <div background-img ng-src="{{user.gender=='F' ? 'data/girl@3x.png' : 'data/boy@3x.png'}}" round width="17px" height="17px" class="per-img"></div>
+                <div background-img src="data/bianji@3x.png" round width="17px" height="17px" class="per-img" margin="0 0 0 2px"></div>
+              </div>
+              <div style="position:absolute;left:-17px;bottom:0;" class="flex-start-container" ng-if="!user.gender">
+                <div background-img ng-src="data/bianji@3x.png" round width="17px" height="17px" class="per-img"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul style="padding-top:28px;justify-content: flex-start;" class="flex-space-container">
+          <li>
+            <!--<div style="font-size:22px;color:#242624;padding-bottom:8px;">{{friendNumber}}</div>-->
+            <div style="font-size:22px;color:#242624;padding-bottom:8px;">{{payAttentionToTheNumber}}</div>
+            <div style="font-size:12px;color:#242624;">关注</div>
+          </li>
+          <li style="padding:0 45px;">
+            <div style="font-size:22px;color:#242624;padding-bottom:8px;">{{user.summary.answered}}</div>
+            <div style="font-size:12px;color:#242624;">回答</div>
+          </li>
+          <li>
+            <div style="font-size:22px;color:#242624;padding-bottom:8px;">{{user.summary.asked}}</div>
+            <div style="font-size:12px;color:#242624;">提问</div>
+          </li>
+        </ul>
+      </div>
+
+      <div style="padding: 0 15px;background-color:white;">
+        <!--<div class="item flex-space-container" ui-sref="contacts" nav-direction="forward">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">我的好友</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_1@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>-->
+        <!--<div class="item flex-space-container" ui-sref="purchase" nav-direction="forward" ng-if="isPay">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">我的钱包</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_2@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>-->
+        <div class="item flex-space-container" ui-sref="purchase" nav-direction="forward">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">我的钱包</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_2@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>
+        <div class="item flex-space-container" ui-sref="feedback({source: 'account'})" nav-direction="forward">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">意见反馈</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_3@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>
+        <div class="item flex-space-container" ng-click="share(user)">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">邀请好友</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_4@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>
+        <!--<div class="item flex-space-container" ui-sref="contacts" nav-direction="forward">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">账号绑定</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_5@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>-->
+        <div class="item flex-space-container" style="border-bottom: none" ui-sref="aboutDarwin" nav-direction="forward">
+          <div class="item-title">
+            <span style="font-size:17px;color:#242624;">关于答尔文</span>
+          </div>
+          <div class="flex-container">
+            <div background-img src="data/f_6@3x.png" width="27px" height="27px"></div>
+          </div>
+        </div>
+      </div>
+    </ul>
+    <!--<ol class="flex-start-container" style="justify-content: center;height:112px;">
+      <li class="flex-start-container" style="color: #545654;font-size: 13px;"><div background-img src="data/wechat_62@3x.png" round width="31px" height="31px" margin="0 5px 0 0"></div>daerwen</li>
+      <li class="flex-start-container" style="margin-left: 50px;color:#545654;font-size: 13px;"><div background-img src="data/weibo_62@3x.png" round width="31px" height="31px" margin="0 5px 0 0"></div>答尔文跳转</li>
+    </ol>-->
+  </ion-content>
+</ion-view>

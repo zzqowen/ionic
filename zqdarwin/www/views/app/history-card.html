@@ -1,0 +1,43 @@
+<div class="flex-column-space-container history-card" nav-direction="forward" ui-sref="post({postId: list._id})">
+  <div class="userinfo-content" ng-if="slide.value == 1">
+    <div ng-if="post.anonymous" class="avatarAndName userImg-content" ng-hide="slide.value==0">
+      <div class="userAvatar" background-img src="data/anonymous.png" height="20px" width="20px" ng-click="anonymousLookInfo($event)"></div>
+      <div class="userName"><span>niming</span></div>
+    </div>
+    <div ng-if="!post.anonymous" class="avatarAndName userImg-content">
+      <div class="userAvatar" background-img src="{{list.author.avatar}}" height="32px" width="32px" round big border="1px solid #ccc" ng-click="lookInfo($event, post.author)"></div>
+      <div class="userName"><span>{{list.author.displayName}}</span></div>
+      <div style="height:13px; border-left:1px solid rgba(0,0,0,0.1); margin: 0 8px;"></div>
+      <div><span  style="color: #8f8f8f; font-size: 15px; font-weight: normal;">{{list.category | categoryName}}</span></div>
+    </div>
+  </div>
+
+  <div class="history-card-content">
+    <div class="flex-start-container">
+      <h1 class="historyText" style="width:92%;">{{list.content | textOverflow : 1}}</h1>
+      <span class="new-message" ng-if="ifUnread(list._id)"></span>
+    </div>
+    <div style="width: 100%; border: none; margin-bottom: 5px;" class="card-footer self-card-foot" ng-if="list.photoFiles.length > 0 && list.photoFiles.length < 2 && slide.value == 2">
+      <div background-img src="{{photo.src}}" thumbnail width="100%" height="120px" ng-repeat="photo in list.photoFiles track by $index" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')"></div>
+    </div>
+    <div style="width: 220px; border: none; margin-bottom: 5px;" class="card-footer self-card-foot" ng-if="list.photoFiles.length > 1 && slide.value == 2">
+      <div background-img src="{{photo.src}}" thumbnail width="106px" height="106px" ng-repeat="photo in list.photoFiles track by $index" ng-click="showPhotoFiles(post.photoFiles, $index, myScope, $event, 'home')"></div>
+    </div>
+    <div ng-if="slide.value == 2 && list.audioFiles.length" class="voice-button-container self-voice-button historyVoice">
+     <div voice-button class="voice-style-change" file="{{list.audioFiles[0].src}}" seconds="{{list.audioFiles[0].dur}}"></div>
+    </div>
+  </div>
+
+  <div class="hisrory-card-foot">
+    <span class="history-date">{{list.date | date : 'MM-dd HH:mm'}}</span>
+    <span ng-if="slide.value == 2" class="userName">{{list.author.displayName}}</span>
+    <span ng-if="slide.value == 2 || slide.value == 0" class="category">{{list.category | categoryName}}</span>
+    <span class="statusBox" ng-if="slide.value != 2">
+      <span ng-if="list.status == 1">进行中</span>
+      <span ng-if="list.status == 0">等待接单</span>
+      <span ng-if="(slide.value == 0 && list.status > 1) || (slide.value == 1 && list.status == 3)" style="color:#8f8f8f">已完结</span>
+      <span ng-if="slide.value == 1 && list.status ==2 ">待领赏</span>
+    </span>
+    <span ng-show="list.price > 0" style="position: absolute; right: 0px; color: #ff6286; font-size: 12px; margin-right: 15px;"><span style="color: #ff2686;">赏</span>{{list.price}}<span style="color: #ff2686;">金币</span></span>
+  </div>
+</div>

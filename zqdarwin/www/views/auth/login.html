@@ -1,0 +1,15 @@
+<ion-view class="login-view">
+  <ion-content scroll="false">
+      <div class="flex-column-space-container" style="justify-content: flex-end;">
+        <div class="spinner" ng-show="showSpinner">
+          <ion-spinner ng-show="!loaded" class="spinner-on-load"></ion-spinner>
+        </div>
+        <div class="flex-column-center-container" style="height:24%;">
+          <div class="flex-center-container" style="width:100%;">
+            <button class="button button_left" ui-sref="phoneLogin">登录</button><button class="button button_right" ui-sref="register">新用户</button>
+          </div>
+          <p style="text-align: center;color:white;margin-top: 10px;" ng-click="showAbout('service.html')">进入答尔文代表你已同意 《答尔文用户协议》</p>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

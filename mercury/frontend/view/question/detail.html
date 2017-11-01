@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/common/js/jquery-1.11.3.min.js"></script>
+    <script src='/common/js/bootstrap.min.js'></script>
+    <script src="/common/js/angular.js"></script>
+    <script src="/question/view/questiondetail.js"></script>
+    <link rel="stylesheet" href='/common/css/bootstrap.min.css'／>
+</head>
+<body ng-app="detailapp" ng-controller="detailcontroller">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-4">
+                    题目
+                </div>
+                <div class="col-md-8">
+                    {{content}}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-4">
+                    选项个数
+                </div>
+                <div class="col-md-8">
+                    {{feedback}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-4">
+                    是否多选
+                </div>
+                <div class="col-md-8">
+                    {{multi? "是": "否"}}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-4">
+                    创建时间
+                </div>
+                <div class="col-md-8">
+                    {{created_date}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                正确答案
+            </div>
+            <div class="col-md-10">
+                <div ng-repeat="an in ans">
+                {{an}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                错误答案
+            </div>
+            <div class="col-md-10">
+                <div ng-repeat="correc in correct">
+                {{correc}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

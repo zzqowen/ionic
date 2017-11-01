@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "961405905276",
+    "firebase_url": "https://darwin-157720.firebaseio.com",
+    "project_id": "darwin-157720",
+    "storage_bucket": "darwin-157720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961405905276:android:4983d77cedf2030d",
+        "android_client_info": {
+          "package_name": "com.aihuawen.darwin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961405905276-munalpca59ikn43ffks64bpj60idfrqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzRiDueYSAVnqwfkXr76bvgIoQP9JSySU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<ion-view class="home-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor" style="background-size: 100% 0px; border:none;">
+    <div style="width: 40px; height: 40px;"></div>
+    <div class="h1 bar-title">答尔文</div>
+    <div style="width: 40px; height: 40px;"></div>
+  </ion-header-bar>
+  <ion-content scroll="false" class="has-header">
+    <ion-scroll direction="x" class="home-scroll-bar" style="background: #fff;">
+      <div class="flex-space-container home-title">
+      <div class="choose" ng-repeat="slide in slides track by $index" on-double-tap="slideDouble($index)">
+          <div class="bottomLine" ng-if="$index == currentIndex"></div>
+          <span style="width: 50px; font-size:85%; color:#ababab; text-align: center;" ng-click="slideChanged($index)" ng-class="{changeColor: $index == currentIndex}">{{slide.name}}</span>
+      </div>
+      </div>
+    </ion-scroll>
+    
+    <ion-slide-box style="height: 90%;" delegate-handle="homeSlideBox" show-pager="false" class="home-content" on-slide-changed="slideChanged($index)">
+      <ion-slide ng-repeat="slide in slides track by $index" style="height: 100%;">
+        <ion-content class="homeContent" overflow-scroll="false" delegate-handle="home">
+          <div ng-if="slide.isLoading && showWaiting" background-img src="data/isWaiting.gif" width="150px" height="150px" margin="30% auto 85%" opacity="0.3"></div>
+           <ion-slide-box ng-if="$index == 0 && !showBanner" class="home-banner" show-pager="!showPager" on-drag="canSwipe(false)" slide-interval="3000" delegate-handle="slideimgs" does-continue="true" auto-play="true">
+            <ion-slide ng-repeat="list in imglist track by $index">
+              <div background-img ng-src="{{list.img}}" ng-click="goBanner($index)" alt="{{list.name}}" width="100%" height="100%"></div>
+            </ion-slide>
+          </ion-slide-box>
+          <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh(false)" refreshing-icon="ion-load-d" class="ion-refresh"></ion-refresher>
+          <div class="full-height post-card flex-column-center-container" ng-if="!slide.isEmpty" style="top: 10px;">
+            <span ng-if="$index == 0" class="primary-text">暂时没有推荐的提问哟</span>
+            <span ng-if="$index != 0" class="primary-text">暂时没有{{slide.name}}类的提问哟</span>
+          </div>
+          <div class="full-height" on-swipe="onSwipe($event)" auto-height on-drag-left="canSwipe(true)" on-drag-right="canSwipe(true)" on-drag-up="canSwipe(false)" on-drag-down="canSwipe(false)"> 
+            <div post-card ng-repeat="post in slide.posts track by $index"></div>
+          </div> 
+          <div class="has-nomore flex-column-nojust-container" ng-if="slide.isEmpty && !slide.hasMore">
+            <div class="no-more flex-space-container">
+              <span>--</span>
+              <span>THE END</span>
+              <span>--</span>
+            </div>
+          </div>
+          <div ng-if="slide.hasMore" class="flex-space-container load-waiting">
+            <span class="has-more">正在加载中</span>
+            <i class="icon ion-load-c"></i>
+          </div>
+          <ion-infinite-scroll ng-if="slide.hasMore" class="infinite-scroll" on-infinite="loadMore()" immediate-check="false" distance="1%"></ion-infinite-scroll> 
+        </ion-content>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>

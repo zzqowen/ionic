@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+<title>答尔文</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<style>
+  body,div,p,span,ul,li,dl,dt,dd,a,ol,input,img,h1,h2,h3,h4{ padding:0; margin:0; list-style:none; border:0;}
+  body{ font-family:"宋体"; color:#616161; font-size:12px; background-color: white;}
+  a{ color:#fff; text-decoration:none;}
+  a:hover{ text-decoration:underline;}
+  html,body{ height:100%;}
+  .top{
+  	height:90%;
+  	background-image: url(media/redirect.jpg);
+  	background-size: 100% 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  }
+  .top .content{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+    width: 82%;
+  }
+  .top .content img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 13px;
+    border-radius: 50%;
+  }
+  p.todo,.content p.detail_content{
+  	text-align: center;
+  }
+  .top .content h2{
+  	margin-bottom: 15px;
+  }
+  .top .content h3{
+  	margin-bottom: 20px;
+  }
+  .top .content p{
+  	line-height: 20px;
+    width: 100%;
+  }
+  .top .content p.detail_content{
+    word-wrap: break-word;   
+  }
+  .top .isIos{
+  	width: 80%;
+  	border-radius: 6px;
+  	padding: 7px 10px;
+  	color: white;
+  	background-color:rgba(0,0,0,.2);
+  	margin: 0 auto;
+  }
+  .top .content .shareUser{
+  	width:100%;
+  	margin-top: 20px;
+  	display: none;
+  }
+  .top .content .shareUser li{
+  	width: 100%;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-around;
+  	align-items: center;
+  }
+  .top .content .shareUser li div{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	width: 50%;
+  	margin-bottom: 10px;
+  }
+  .top .content .shareUser li div p{
+  	color: black;
+  	font-size: 14px;
+    text-align: center;
+  }
+  .top .content .shareUser li div i{
+  	color: white;
+  	font-size: 20px;
+    margin-right: 6px;
+  }
+  .top .isPhone{
+  	width: 88%;
+    margin-top : 15%;
+  }
+ .isPhone .theLink{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    border-radius: 3px;
+    padding:6px 0px;
+    display: block;
+  }
+ .isPhone .theLink p{
+    text-align: left;
+    margin-left: 10px;
+  }
+ .isPhone .theLink input{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+ .isPhone button{
+    margin: 15px auto 5px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background-color: #6ee67f;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 0;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);  
+    -webkit-focus-ring-color: rgba(0, 0, 0, 0);  
+    -moz-tap-highlight-color: rgba(0,0,0,0);  
+    -moz-focus-ring-color: rgba(0, 0, 0, 0);
+  } 
+  .footer{
+  	height:10%;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding: 0 3%;
+  }
+  .footer .left{
+  	background-image:url(media/darwin.png);
+  	background-size: 34px 34px;
+  	background-position:left top;
+  	background-repeat: no-repeat;
+  	width:120px;
+  	height:34px;
+  }
+  .footer .left p{
+  	margin-left:40px;
+  }
+  .footer button{
+  	font-size: 14px;
+  	padding: 10px 20px;
+  	background-color:#6ee67f;
+  	border-radius: 4px;
+  	color: white;
+  	outline: none;
+  	border: none;
+  }
+  div.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+    z-index:1000;
+  }
+  div.mask p{
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+  }
+  div.guide{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(media/guide.PNG);
+    background-size: 100% 100%;
+  }
+  div.content .theKind{
+    margin-top:20px;
+    width:100%;
+    display: none;
+  }
+  div.content .theKind p{
+    margin-bottom: 10px;
+  }
+  div.content .theKind p .number{
+    color: white;
+    font-weight: bold;
+    margin:0 2px;
+  }
+  div.content .theKind span.passTime{
+    float: right;
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="content">
+      <img src="" class="img"／>
+      <h2 class="title1"></h2>
+      <h3 class="title2"></h3>
+      <p class="detail_content"></p>
+      <div class='theKind'>
+        <p>
+          <span class="passTime"></span>
+          <span class="typeOfProblem"></span>
+        </p>
+        <p>目前有<em class="number"></em>人参与评论</p>
+      </div>
+      <ul class="shareUser">
+        <li>
+           <div>
+	           <p>积分</p>
+	           <p><i class="score"></i>分</p>
+           </div>
+            <div>
+	           <p>等级</p>
+	           <p><i class="level"></i>级</p>
+           </div>
+        </li>
+        <li>
+           <div>
+	           <p>提问</p>
+	           <p><i class="asked"></i>个</p>
+           </div>
+            <div>
+             <p>解答</p>
+             <p><i class="answered"></i>个</p>
+           </div>
+        </li>
+      </ul>
+    </div>
+    <div class="isPhone">
+		    <div class="theLink">
+        	<p class='theLinkContent'>点击复制链接按钮</p>
+        	<input id="url"/>
+      	</div>
+      	<button id="clip_button" onclick='copyLink()'>复制链接</button>
+      	<p class='todo' id='todo'>复制完成后，打开答尔文APP即可阅读全部内容</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="left">
+        <p>答尔文</p>
+        <p>万能的朋友圈</p>
+    </div>
+    <button class="btn">下载答尔文</button>
+  </div>
+  <div class="mask">
+    <p>复制成功</p>
+  </div>
+  <div class="guide">
+  </div>
+  <script>
+    var $=function(type){
+      return document.getElementsByClassName(type)[0];
+    }
+    var u = navigator.userAgent;
+    if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)){//如果是ios
+      $('theLink').style.display = "none";
+      document.getElementById('todo').innerHTML='点击页面右上角，选择浏览器打开，就可以在答尔文看到分享的内容了!';
+      document.getElementById('todo').setAttribute('class','isIos');
+      if ( typeof(window.localStorage.newUser) == 'undefined'){
+        document.getElementById('clip_button').innerHTML = '新手点这里';
+        document.getElementById('clip_button').onclick = function(){
+        $('guide').style.display = 'block';
+        setTimeout(function(){
+        $('guide').style.display = 'none';
+        },2000);
+       }
+        window.localStorage.newUser = false;
+      }
+      else{
+        document.getElementById('clip_button').style.display = 'none';
+      }
+
+    }
+
+    $('btn').onclick = function(){
+      if(!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) window.location.href = "https://itunes.apple.com/us/app/答尔文/id1202605978?1s=1&mt=8";
+      else {
+        if ((u.search('zh-cn'))!='-1' || (u.search('zh-CN'))!='-1'){
+          var zhcn = 'zh-cn';
+          if (u.search('zh-CN')!='-1') zhcn = 'zh-CN';
+          u = u.substring((u.search(zhcn))+6, u.search('Build'));
+        }
+        else{
+          u = u.substring(u.search(';')+1, u.search('Build'));
+          u = u.substring(u.search(';')+1);
+        }
+        if (/vivo/i.test(u)) window.location.href = "http://m.pc6.com/search/?k=%B4%F0%B6%FB%CE%C4";
+        else if(/oppo/i.test(u)) window.location.href = "http://store.oppomobile.com/search/do.html?keyword=答尔文&nav=index";
+        else if(/huawei/i.test(u)) window.location.href = "http://a.vmall.com/search?wd=答尔文";
+        else if(/mi/i.test(u)) window.location.href = "http://app.mi.com/search?keywords=答尔文";
+        else window.location.href = "http://www.aihuawen.com/download.html";
+      }
+    }
+
+    function copyLink(){
+      document.getElementById('url').select();
+      document.execCommand('copy');
+      $('mask').style.display = 'block';
+      setTimeout(function(){
+        $('mask').style.display = 'none';
+      },2000);
+    }
+
+    $('mask').onclick = function(){
+      $('mask').style.display = 'none';
+    }
+
+    function getPostSummary(){
+      var params = window.location.pathname.split("?")[0].split("/");
+      console.log(params);
+      var id = params.pop();
+      var action = params.pop();
+      var url = "https://svc.aihuawen.com/summary/" + action + "/" + id;
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          var data = JSON.parse(xmlHttp.responseText);
+          console.log(data);
+          if ( action == 'post') {
+            $('title1').innerHTML = data.post.author.displayName;
+            $('title2').innerHTML = '分享了一个答尔文的提问';
+            $('detail_content').innerHTML=data.post.content ? data.post.content : '我在答尔文提问题了，谁可以帮忙解答啊！';
+            $('img').src = data.post.author.avatar;
+            document.getElementById('url').value = "darwin://" + action + "/" + id;
+            var oldTime=(new Date(data.post.date)).getTime();
+            window.localStorage.oldTime = oldTime;
+            $('typeOfProblem').innerHTML = '类型／' + data.post.category;
+            $('number').innerHTML = '5';
+            $('passTime').innerHTML = time(oldTime);
+            $('theKind').style.display = 'block';   
+          }
+          else if( action == 'user') { 
+            $('title1').innerHTML = data.user.displayName;
+            $('title2').innerHTML = '答尔文的大牛';
+            $('detail_content').innerHTML = '我在答尔文等你，加入答尔文，领取现金红包!';
+            $('img').src = data.user.avatar;
+            $('shareUser').style.display = 'block';
+            $('score').innerHTML = data.user.score;
+            $('answered').innerHTML = data.user.summary.answered;
+            $('asked').innerHTML = data.user.summary.asked;
+            $('level').innerHTML = Math.ceil(data.user.score/1000);
+            document.getElementById('url').value = "darwin://" + action + "/" + id;
+          }
+          else if( action == 'invite'){
+            $('title1').innerHTML = data.user.displayName;
+            $('title2').innerHTML = '答尔文的大牛';
+            $('detail_content').innerHTML = '我在答尔文等你，加入答尔文，领取现金红包！';
+            $('img').src = data.user.avatar;
+            document.getElementById('url').value = "darwin://" + action + "/" + id;
+          }
+          else {
+            $('title1').innerHTML = data.user.displayName;
+            $('title2').innerHTML = '我在答尔文pk';
+            $('detail_content').innerHTML = '我在答尔文等你，加入答尔文，领取现金红包！';
+            $('img').src = data.user.avatar;
+            document.getElementById('url').value = "darwin://" + action + "/" + id; 
+          }
+          wordNumber();
+        }}          
+      xmlHttp.open("GET", url, true); // true for asynchronous 
+      xmlHttp.send(null);
+    }
+
+    var wordNumber = function(){
+      var font = getComputedStyle ? getComputedStyle(document.body, null).fontSize : document.body.currentStyle.fontSize;
+      var theLength = font.slice(0,2);
+      var data = $('detail_content').innerHTML;
+      var theFontNumber = Math.floor($('detail_content').offsetWidth/theLength);
+      if (data.length > 3*theFontNumber) {
+        $('detail_content').innerHTML = data.substr(0,3*theFontNumber-1) + '...';
+        $('detail_content').style.textAlign = 'justify';
+      }
+    }
+
+    var time = function(oldTime){
+      var myDate = new Date();
+      var mytime = myDate.getTime()-oldTime; 
+      var day = Math.floor(mytime/1000/60/60/24) >0 ? Math.floor(mytime/1000/60/60/24) : 0;
+      mytime = mytime - day*24*60*60*1000;
+      var hours = Math.floor(mytime/1000/60/60) >0 ? Math.floor(mytime/1000/60/60) : 0;
+      mytime = mytime -hours*60*60*1000;
+      var minutes= Math.floor(mytime/1000/60) >0 ? Math.floor(mytime/1000/60)  : 0;
+      mytime = mytime -minutes*1000*60;
+      var seconds = Math.floor(mytime/1000) >0 ? Math.floor(mytime/1000) : 0;
+      var newTime ;
+      if (day > 0){
+        return newTime = day+'天'+hours+'小时'+minutes+'分'+seconds+'秒'+' 前';
+      }
+      else if(hours >0){
+        return newTime = hours+'小时'+minutes+'分'+seconds+'秒'+'前';
+      }
+      else if(minutes >0){
+        return newTime = minutes+'分'+seconds+'秒'+'前';
+      }
+      else{
+        return newTime = seconds+'秒'+'前';
+      }
+    }
+
+    var setHeight = function(){
+      $('top').style.height = document.body.offsetHeight*0.9 + 'px';
+      $('footer').style.height= document.body.offsetHeight*0.1 + 'px';
+    }
+
+    window.onload = function() {
+      getPostSummary();
+      setHeight();
+      if(JSON.parse(window.localStorage.oldTime)> 0 ) setInterval(function(){
+        $('passTime').innerHTML = time(window.localStorage.oldTime);
+      },1000);
+    };
+
+    </script>
+</body>
+</html>

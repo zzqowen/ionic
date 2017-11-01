@@ -1,0 +1,25 @@
+<ion-view class="isMyself-view">
+  <ion-header class="self-account">
+    <ion-header-bar align-title="center" class="bar-light flex-space-container">
+      <button class="ion-chevron-left theFallback" ng-click="goBack()"></button>
+      <button class="button self-bar-button-right" ng-click="shareMyself(user)">
+        <div background-img src="data/share.png" width="20px" height="20px"></div>
+      </button>
+    </ion-header-bar>
+    <div background-img src="{{user.avatar}}" style="filter: blur(3px);" opacity="1" height="90%" width="110%" position="absolute" z-index="-2" top="-5px" left="-5px"></div>
+  </ion-header>
+  <ion-content scroll="false" style="top: 22%;">
+    <div>
+      <div background-img src="{{user.avatar}}" round width="96px" height="96px" class="per-img" border="2px solid rgba(255,255,255,0.8)" margin="0 auto" ng-click="changeAvatarImg()"></div>
+      <div class="name-style">{{user.displayName}}</div>
+    </div>
+    <div class="flex-space-container self-info">
+      <div class="self-info-score"><span>积分：{{user.score}}分</span></div>
+      <div class="self-info-score level"><span>等级：{{user.level}}级</span></div>
+    </div>
+    <div class="flex-space-container self-info" style="border-top: none;">
+      <div class="self-info-score"><span>提问：{{user.summary.asked}}个</span></div>
+      <div class="self-info-score level"><span>回答：{{user.summary.answered}}个</span></div>
+    </div>
+  </ion-content>
+</ion-view>

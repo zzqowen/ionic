@@ -1,0 +1,29 @@
+<ion-view class="bookmarks-view">
+  <ion-header-bar align-title="left" class="bar-light">
+    <div class="buttons">
+      <button class="button button-icon icon ion-navicon self-bar-button" ui-sref="home"></button>
+    </div>
+    <h1 class="bar-title">我的收藏</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="row bookmarks-container">
+      <div ng-if="bookmarks.length == 0" class="col col-center">
+        <div class="empty-results">
+          <i class="icon ion-bookmark"></i>
+          <h3 class="no-bookmarks">收藏箱还是空的</h3>
+        </div>
+      </div>
+      <div ng-if="bookmarks.length > 0" class="col">
+        <ion-list class="bookmarks-list" can-swipe="true">
+          <ion-item class="bookmark-item" ng-repeat="bookmark in bookmarks">
+            <a ui-sref="post({postId : bookmark._id})">
+              <h2 class="post-title" ng-bind-html="bookmark.title | rawHtml"></h2>
+              <p class="post-date">Posted <span class="post-time" am-time-ago="bookmark.date"></span></p>
+            </a>
+            <ion-option-button class="remove-button" ng-click="remove(bookmark._id)">删除</ion-option-button>
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

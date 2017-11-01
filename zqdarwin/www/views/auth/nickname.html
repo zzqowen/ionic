@@ -1,0 +1,44 @@
+<!--<ion-view class="register-view">
+  <ion-header-bar  align-title="center" class="flex-space-container" style="top:20px;">
+    <div  class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></div>
+    <h1 class="bar-title" style="color:black;">设置昵称</h1>
+  </ion-header-bar>
+  <ion-content style="margin-top:30px;">
+    <div class="login-container">
+      <form name="signup_form" novalidate style="width:100%;height:200px;">
+        <div class="login-content">
+          <div class="login-input" style="padding:0;">
+            <input type="text" class="flex-item-expand" name="user_name" ng-model="user.displayName" required placeholder="设置昵称(长度为1到11位)" minlength="1" maxlength="11">
+          </div>
+          <button type="submit" class="recover button button-block" ng-click="sendNickName()" style="color:white;" ng-disabled="!user.displayName">
+            完成
+          </button>
+          <p class="message">{{message}}</p>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>-->
+<ion-view class="phoneLogin-view">
+  <ion-content class="flex-column-center-space-container" style="overflow: hidden;">
+    <div style="height:42px;"><div margin="20px 10px 0px 20px" width="22px" height="22px" background-img src="data/toGoBack.png" ng-click="goBack()"></div></div>
+    <h1 style="color:#242624;font-size:24px;">账号设置</h1>
+    <form name="signup_form" novalidate style="height:276px;">
+      <div class="login-content phoneLogin-container">
+        <div class="login-input phoneLogin-input"> 
+            <input type="{{data.passwordType}}" name="password" ng-model="user.password" ng-click='focus1()' ng-blur="blur1()" required placeholder="请设置密码" minlength="6" maxlength="16" style="width:100%;margin-left:10px;" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;"
+            onkeyup="value=value.replace(/[\u4E00-\u9FA5]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\u4E00-\u9FA5]/g,''))">
+            <div ng-click="toShowPassword()" style="padding:10px 10px 10px 0;">
+              <div background-img ng-src="{{data.eyesWay}}"  width="21px" height="20px"></div>
+            </div>
+          </div>
+          <div class="login-input phoneLogin-input">
+            <input type="text" name="user_name" ng-model="user.displayName" ng-click='focus1()' ng-blur="blur1()" required placeholder="为自己取一个霸气的名字吧" minlength="1" maxlength="6" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" style="width:100%;margin-left:10px;">
+          </div>
+          <p class="message error">{{error}}</p>
+          <div ng-click="sendNickName()" background-img ng-src="{{ user.password&&user.displayName ? 'data/canGo.png' : 'data/notGo.png'}}" width="62px" height="62px" margin="52px auto 0"></div>
+      </div>
+    </form>
+    <p style="text-align: center;color:#ABABAB;font-size:12px;position:fixed;left:0;bottom:25px;width:100%;margin:0;" class="hide-on-keyboard-open toChoose" ng-if="toShow1">注册即代表同意<span style="color:#242624;" ng-click="showAbout('service.html')">《答尔文注册协议及隐私条款》</span></p>
+  </ion-content>
+</ion-view>

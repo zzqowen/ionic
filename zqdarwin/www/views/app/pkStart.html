@@ -1,0 +1,67 @@
+<ion-view class="post-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container">
+    <div class="h1 title">{{pkObj.pkType | typeChange}}</div>
+  </ion-header-bar>
+  <ion-content scroll="false" overflow-scroll="false" class="pk-start-content" style="background-color:#393a4c;">
+    <div class="full-height">
+      <div class="pk-start-info" style="height:100%;display:flex;flex-direction:column;">
+        <div class="pk-person">
+          <div class="flex-start-container" style="justify-content: space-around;">
+            <div class="flex-column-center-space-container" style="width:34%;">
+              <div background-img src="{{user.avatar}}" round height="64px" width="64px" border="2px solid white" position="relative">
+                <div style="color:white;font-size:12px;position:absolute;left: 52px;width: 66px;bottom: 52px;">{{user.pkLevel}}</div>
+              </div>
+              <div class="flex-column-center-container" style="width:100%;">
+                <div class="pk-user-displayName banOnLine" style="color:#f6306b;font-size:16px;width:100%;padding-top:10px;">{{user.displayName}}</div>
+                <div style="color:#f6306b;font-size:12px;">{{pkObj.userScore}}</div>
+              </div>
+            </div>
+            <div class="pk-coutDown" style="color:#f6306b;">
+              {{pkObj.pkStartTime}}
+            </div>
+            <div class="flex-column-center-space-container"  style="width:34%;">
+              <div background-img src="{{pkObj.opponent.avatar}}" round height="64px" width="64px" border="2px solid white" position="relative">
+                <div style="color:white;font-size:12px;position:absolute;right: 52px;width: 66px;bottom: 52px;text-align: right;">{{pkObj.opponent.pkLevel}}</div>
+              </div>
+              <div class="flex-column-center-container" style="width:100%;">
+                <div class="pk-user-displayName banOnLine" style="color:#2dabff;font-size:16px;width:100%;padding-top:10px;">{{pkObj.opponent.displayName}}</div>
+                <div style="color:#2dabff;font-size:12px;">{{pkObj.opponentScore}}</div>
+              </div>
+            </div>
+        </div>
+        <div class="flex-container progress-bar" style="padding:0 7%;">
+          <div class="progress-person" style="width:50%;">
+            <div style="text-align: left;color:white;margin-left:5px;">{{pkStartAllScore - pkObj.opponentScore}}</div>
+            <div class="progress-red">
+              <div ng-style="{width: pkObj.opponentProgressBar}"></div>
+            </div>
+          </div>
+          <div class="progress-pk" background-img src="data/pkStart.png" position="absolute" left="50%" top="-15px"></div>
+          <div class="progress-person">
+            <div style="text-align: right;color:white;margin-right:5px;">{{pkStartAllScore - pkObj.userScore}}</div>
+            <div class="flex-container progress-blue" style="justify-content: flex-end;">
+              <div ng-style="{width: pkObj.userProgressBar}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pkStartFoot" style="flex:1;position:relative;">
+        <div ng-if="pkObj.pkRound" class="flex-container foot-round inTheMiddle" style="color:white;">第{{pkObj.roundIndex | fontChinese : 0}}回合</div>
+        <div ng-if="!pkObj.pkRound" class="full-height foot-pk-content" ng-repeat="message in pkObj.pkQuestion track by $index">
+          <div ng-if="false" style="height: 5%;color:white;margin-bottom:10px;font-size:14px;padding-left:5px;">此题由 小马 贡献</div>
+          <div class="font-question" style="color:white;margin-bottom:10px;padding-left:5px;">{{message.content}}</div>
+          <div class="flex-column-container font-choices">
+            <label class="item item-radio" ng-repeat="item in message.choices track by $index" ng-value="item" ng-click="submitAnswer(item)" style="border-radius:5px;">
+              <input type="radio" name="radio-group" ng-disabled="message.finishAnswer" ng-value="item" ng-model="choice" ng-show="true">
+              <div class="radio-content full-height">
+                <div class="foot-content" ng-class='{true: "right", false: "error"}[message.questionStatus]'>
+                  <div class="choose-content flex-container" style="padding:8px 0;">{{item}}</div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

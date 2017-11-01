@@ -1,0 +1,46 @@
+<div scroll="false" class="pk-waiting-content full-height">
+  <div class="full-height" style="position: relative;">
+    <div class="pkWaiting-user" ng-class="{animationExitTop: pkObj.pkWaitingExitAnimation, animationEnterTop: pkObj.pkWaitingEnterAnimation}">
+      <img src="data/pkWaitingUp.png">
+    </div>
+    <div ng-class="{animationExitTop: pkObj.pkWaitingExitAnimation, animationEnterTop: pkObj.pkWaitingEnterAnimation}" class="pkWaiting-user-info">
+      <div class="flex-container pkWaiting-info">
+        <div class="pkWaiting-font">
+          <div class="font-displayName">{{pkObj.user.displayName}}</div>
+          <div class="font-detail">{{pkObj.user.pkLevel}}</div>
+          <div class="font-detail">来自 {{pkObj.user.province}} {{pkObj.user.city}}</div>
+        </div>
+        <div background-img src="{{pkObj.user.avatar}}" round width="95px" height="95px" border="1px solid #ccc"></div>
+      </div>
+    </div>
+    <div ng-class="{animationExitOpacity: pkObj.pkWaitingExitAnimation, animationEnterOpacity: pkObj.pkWaitingEnterAnimation}" class="pkWaiting-center">
+      <div class="pkWaiting-center-pk" ng-click="aa()">
+        <div background-img src="data/pkWaiting.png" round width="120px" height="120px" position="relative" z-index="2"></div>
+      </div>
+    </div>
+    <div class="pkWaiting-opponent" ng-class="{animationExitBottom: pkObj.pkWaitingExitAnimation, animationEnterBottom: pkObj.pkWaitingEnterAnimation}">
+      <img src="data/pkWaitingDown.png">
+    </div>
+    <div class="pk-look" ng-class="{animationExitBottom: pkObj.pkWaitingExitAnimation, animationEnterBottom: pkObj.pkWaitingEnterAnimation}">
+      <div ng-if="!pkObj.ready" class="flex-container pkWaiting-bottom-font">
+        <div background-img src="{{pkObj.opponent.avatar}}" round width="105px" height="105px" border="1px solid #ccc"></div>
+        <div class="pkWaitin-data">
+          <div class="font-displayName">{{pkObj.opponent.displayName}}</div>
+          <div class="font-detail">{{pkObj.opponent.pkLevel}}</div>
+          <div class="font-detail">来自 {{pkObj.opponent.province}} {{pkObj.opponent.city}}</div>
+        </div>
+      </div>
+
+      <div ng-if="pkObj.ready" class="flex-column-center-container pkWaiting-waiting">
+        <div pk-waiting class="flex-container looking-for-animation">
+          <div ng-repeat="item in img" ng-class="{'scale-center': $index == 2, 'scale-other': $index != 2}" background-img src="{{item}}" round width="90px" height="90px" margin="0 5px"></div>
+        </div>
+        <div class="looking-for">正在寻找对手</div>
+      </div>
+    </div>
+    <div class="pkWaiting-cancel" ng-class="{animationExitOpacity: pkObj.pkWaitingExitAnimation, animationEnterOpacity: pkObj.pkWaitingEnterAnimation}">
+      <div class="pkWaiting-btn" ng-if="!pkObj.invite" ng-click="cancelInvite()">取消邀请</div>
+      <div class="pkWaiting-btn" ng-if="pkObj.invite" ng-click="cancel()">取消匹配</div>
+    </div>
+  </div>
+</div>

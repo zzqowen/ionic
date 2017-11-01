@@ -1,0 +1,14 @@
+<ion-modal-view class="showReminder">
+  <ion-content>
+    <div class="flex-column-container showContent" style="padding:0 15px;border-radius: 4px;">
+      <div style="border-bottom:1px solid #ebebeb;width: 100%; word-spacing:1em;">
+        <h3 style="font-size:20px;font-weight:normal;color:#242624;padding:25px 0 35px;">提示</h3>
+        <div style="width:100%;text-align:center;font-size:15px;color:#242624;padding-bottom:35px;">加油，你离牛人只差“{{(post.price ? post.price : price) | number: 0}}金币”的距离啦！</div>
+      </div>
+      <div style="padding:10px 0; width:100%;" class="flex-center-container">
+        <button class="button buttonLeft" ng-click="closeModal(false)" style="border-right:1px solid #ebebeb;background-color:transparent; height: 30px;min-height: 30px;font-size:16px;line-height:30px;">取消</button>
+        <button class="button buttonRight" ng-click="closeModal(true)" style="background-color:transparent;color:#1AAD19; height: 30px;min-height: 30px;font-size:16px;line-height:30px;">确定</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

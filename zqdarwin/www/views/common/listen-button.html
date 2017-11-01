@@ -1,0 +1,6 @@
+<div ng-click="playFile($event)" class="listen-btn">
+  <div class="voiceProgressBar" style="height:45px;" ng-style="{width:voiceProgressBarLenth + '%'}"></div>
+  <img ng-if="!isPlaying" src="data/voice-play-white.png" class="listen-btn-img"/>
+  <img ng-if="isPlaying" src="data/voice-play-white.gif" ng-show="!recording" class="listen-btn-img"/>
+  <span class="listen-lenth">{{content}}</span>
+</div>

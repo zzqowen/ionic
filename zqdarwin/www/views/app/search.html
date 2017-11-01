@@ -1,0 +1,28 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="bar-bgcolor flex-space-container">
+    <h1 class="bar-title">联系人</h1>
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+  </ion-header-bar>
+  <ion-content scroll="true">
+    <div style="text-align:center;">
+      <div class="friends-search">
+        <form><input type="search" placeholder="请输入好友ID" ng-model="myValue" maxLength="7" ng-change="friendsSearchChange()" ng-keyup="friendsSearchKeyup($event, myValue)" id="id-search" /></form>
+        <i class="friends-icon icon ion-search" style="left: 30%;top:24%;" id="friends-search-icon"></i>
+      </div>
+    </div>
+    <div class="contact-card contact-id">
+      <span ng-hide="accountError">我的答尔号：{{user.id}}</span>
+      <span ng-show="accountError">该用户不存在</span>
+    </div>
+    <div class="contact-card flex-space-container" >
+      <div class="flex-space-container" style="padding-left: 5px;">
+        <img class="account-img" src="data/account.png" alt="account" />
+        <div class="flex-column-space-container" ui-sref="contacts" style="padding-left: 10px;">
+          <span>好友</span>
+          <span>已有的朋友</span>
+        </div>
+      </div>
+      <button class="button icon ion-chevron-right self-bar-button"></button>
+    </div>
+  </ion-content>
+</ion-view>

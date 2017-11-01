@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.aihuawen.darwin",
+    "sha256_cert_fingerprints":
+    ["0B:51:42:A9:73:08:1A:9A:69:4A:9D:A4:43:17:9E:38:57:68:A2:FB:17:CD:E4:59:B4:79:86:20:5C:48:65:1C"]
+  }
+}]
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+clear
+mongo < /data/mercury/scripts/remove-questions.js
+mongoimport -d mercury -c question --type json --file /data/mercury/data/english46.json 
+mongoimport -d mercury -c question --type json --file /data/mercury/data/entertainment.json
+mongoimport -d mercury -c question --type json --file /data/mercury/data/music.json
+sudo service mercury restart
+sudo service mercury status
+

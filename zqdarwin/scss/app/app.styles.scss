@@ -1,0 +1,57 @@
+.home-view,
+.category-view,
+.post-view
+{
+  @import "scss/app/posts.styles";
+
+  .posts
+  {
+    display:block;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .post-card
+  {
+    position:relative;
+    z-index:2;
+    overflow: hidden;
+  }
+
+  .card-button.more
+  {
+    float: right;
+    padding: 0px;
+
+    i
+    {
+      padding:4px;
+    }
+
+    font-size: 24px;
+  }
+
+  .card-button.bookmark
+  {
+    float: right;
+    padding: 0px;
+
+    i
+    {
+      padding:4px;
+    }
+
+    font-size: 34px;
+    margin-top: -6px;
+  }
+
+  .card-button.comments
+  {
+    padding: 0px;
+    color: $content-color;
+    i
+    {
+      padding:4px;
+    }
+  }
+}

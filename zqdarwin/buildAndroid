@@ -1,0 +1,65 @@
+#!/bin/bash
+function ensureAppName {
+  echo change app name if necessary
+  sed -i.bak 's/@string\/activity_name/答尔文/g' ./platforms/android/AndroidManifest.xml
+  rm ./platforms/android/AndroidManifest.xml.bak
+}
+
+function showResult {
+  echo
+  echo done
+  ls -l ./platforms/android/build/outputs/apk/
+  echo
+}
+
+function usage {
+  echo "Usage: $0 [-d|-r] [-u]"
+  echo -d build debug version
+  echo -r build release version
+  echo -u upload release version to website
+}
+
+if [ -z $1 ]
+then
+  usage
+  exit
+fi
+
+while getopts :dru opt
+do case "$opt" in
+  u) echo
+    echo uploading "$targetName" to website
+    ls -l ./platforms/android/build/outputs/apk/$targetName
+    curl -T ./platforms/android/build/outputs/apk/$targetName ftp://hz219004.ftp.aliapp.com/htdocs/download/ --user hz219004
+    echo 
+    echo uploaded to ftp://hz219004.ftp.aliapp.com/htdocs/download/
+    echo;;
+
+  r) echo building release version
+    targetName="答尔文.apk"
+    gulp
+    ensureAppName
+    ionic build android --release
+    echo signing release
+    jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore ./certs/android/android.keystore ./platforms/android/build/outputs/apk/android-release-unsigned.apk android.keystore -storepass Daerwen1234 -signedjar ./platforms/android/build/outputs/apk/$targetName
+    rm ./platforms/android/build/outputs/apk/android-release-unsigned.apk
+    showResult;;
+
+  d) echo building debug version
+    targetName="答尔文d.apk"
+    flavor="debug"
+    gulp
+    ensureAppName
+    ionic build android
+    echo removing debug cert
+    zip -d ./platforms/android/build/outputs/apk/android-debug.apk META-INF/\*
+    echo signing debug
+    jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore ./certs/android/android.keystore ./platforms/android/build/outputs/apk/android-debug.apk android.keystore -storepass Daerwen1234 -signedjar ./platforms/android/build/outputs/apk/$targetName
+    rm ./platforms/android/build/outputs/apk/android-debug.apk
+    targetName="darwin-debug.apk"
+    showResult;;
+
+  *) usage
+    exit 1;;
+  esac
+done

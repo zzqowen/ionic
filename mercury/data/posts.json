@@ -1,0 +1,27 @@
+[
+    {
+        "_id":"5869f2ce02593e2d2dd02fe2",
+        "title":"",
+        "content":"欢迎使用答尔文",
+        "price":0,
+        "expire":129600,
+        "comment_count":0,
+        "comments":[],
+        "isQuestion":true,
+        "status":1,
+        "expert":{},
+        "audioFiles":[
+            {"src":"s_1483338430174_7da07fe0-d0b4-11e6-9c9c-e132f9caf2a8.m4a","dur":7}
+            ],
+        "photoFiles":[
+            {"src":"s_1483338430187_7da27bb0-d0b4-11e6-9c9c-e132f9caf2a8.jpg"},
+            {"src":"s_1483338430180_7da16a40-d0b4-11e6-9c9c-e132f9caf2a8.jpg"},
+            {"src":"s_1483338430186_7da254a0-d0b4-11e6-9c9c-e132f9caf2a8.jpg"}
+            ],
+        "category":"/game/yxlm",
+        "author":{"_id":"58696612fe080c0a994eaa38","name":"Gary","avatar":"data/user1.png"},
+        "date":"2017-01-02T06:27:09.850Z",
+        "funded":true,
+        "lastUpdated":"2017-01-02T06:27:26.154Z"
+    }
+]

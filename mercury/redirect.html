@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>答尔文-相信知识的力量</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <style>
+      body,
+      div,
+      p,
+      span,
+      ul,
+      li,
+      dl,
+      dt,
+      dd,
+      a,
+      ol,
+      input,
+      img,
+      h1,
+      h2,
+      h3,
+      h4 {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        border: 0;
+      }
+      body {
+        font-family: "宋体";
+        color: #616161;
+        font-size: 12px;
+        background-color: white;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h2,
+      h3 {
+        font-weight: normal;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      html {
+        overflow: hidden;
+      }
+      body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+      img {
+          -webkit-user-drag: none;
+      }
+      .flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+      }
+      .flex-around-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .flex-start-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .flex-wrap-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .flex-space-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .flex-space-warp-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .flex-space-end-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+      }
+      .flex-center-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .flex-right-bottom-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+      .flex-right-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .flex-column-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .flex-column-space-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        // height: 100%;
+      }
+      .flex-column-center-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .flex-column-nojust-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .flex-column-center-space-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .flex-column-center-end-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .flex-column-center-around-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .quesion-content{
+        padding: 0 1vw;
+        font-size: 16px;
+          color: #242624;
+          line-height: 26px;
+          overflow: hidden;
+          position: relative;
+      }
+      .top::-webkit-scrollbar {
+            display: none;
+        }
+      .top {
+        height: 88%;
+        background: #f3f3f5;
+        visibility: hidden;
+        overflow: scroll;
+      }
+      .top .content {
+        background: #FFFFFF;
+        padding: 0 4vw 40px 4vw;
+      }
+      .top .header {
+        height: 84px;
+      }
+      
+       .img-box {
+        position: relative;
+        padding: 1vw;
+        margin-top: 15px;
+      }
+      .photo {
+        
+      } 
+      .post-photo {
+        background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          border-radius: 0px;
+          width: 92vw;
+          height: 56vw;
+          border: 0px;
+          margin: 0px;
+          opacity: 1;
+          z-index: 0;
+          position: static;
+          top: 0px;
+          left: 0px;
+      }
+      
+      .post-photos {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 0px;
+        width: 29vw;
+        height: 29vw;
+        border: 0px;
+        margin: 0.5vw;
+        opacity: 1;
+        z-index: 0;
+        position: static;
+        top: 0px;
+        left: 0px;
+      }
+      .top .content .userInfo img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+      }
+      .displayName{
+        margin-left: 12px;
+          font-size: 24px;
+          color: #242624;
+      }
+      .priceInfo img{
+          height: 25px;
+          width: 25px;
+          vertical-align: top;
+      }
+      .priceInfo span{
+        font-size: 18px;
+          color: #1aad19;
+          margin-left: 4px;
+          font-weight: bold;
+          top: 1px;
+      }
+      p.todo,
+      .content p.detail_content {
+        text-align: center;
+      }
+      .top .content h2 {
+        margin-bottom: 15px;
+      }
+      .top .content h3 {
+        margin-bottom: 20px;
+      }
+      .top .content p {
+        line-height: 20px;
+        width: 100%;
+      }
+      .top .content p.detail_content {
+        word-wrap: break-word;
+      }
+      .top .isIos {
+        width: 80%;
+        border-radius: 6px;
+        padding: 7px 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, .2);
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .top .content .shareUser {
+        width: 100%;
+        margin-top: 20px;
+        display: none;
+      }
+      .top .content .shareUser li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .top .content .shareUser li div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin-bottom: 10px;
+        position: relative;
+      }
+      .top .content .shareUser li div:after {
+        content: '';
+        width: 2px;
+        height: 20px;
+        background-color: #e1e8eb;
+        position: absolute;
+        top: 10px;
+        right: 0;
+      }
+      .top .content .shareUser li div:last-child:after {
+        background-color: transparent;
+      }
+      .top .content .shareUser li div p {
+        color: white;
+        text-align: center;
+        margin-bottom: 6px;
+      }
+      .top .isPhone {
+        width: 88%;
+        margin-top: 15%;
+      }
+      .isPhone .theLink {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        border-radius: 3px;
+        padding: 6px 0px;
+        display: block;
+      }
+      .isPhone .theLink p {
+        text-align: left;
+        margin-left: 10px;
+      }
+      /*.isPhone .theLink input*/
+      
+      .isPhone .theLink #url {
+        border: none;
+        width: 96%;
+        background-color: transparent;
+        resize: none;
+        outline: none;
+        color: white;
+        margin-left: 10px;
+        height: 15px;
+        overflow: hidden;
+      }
+      .isPhone button {
+        margin: 15px auto 5px;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        background-color: #6ee67f;
+        font-weight: bold;
+        color: white;
+        padding: 6px 0;
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+        -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+        -moz-focus-ring-color: rgba(0, 0, 0, 0);
+      }
+      .invite {
+        height: 88%;
+        display: none;
+        position: relative;
+      }
+      .inviteContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 94%;
+        height: 81%;
+        background-image: url(../common/media/inviteBackground.jpg);
+        background-size: 100% 100%;
+        text-align: center;
+        border-radius: 4px;
+      }
+      .invite h2 {
+        color: white;
+        font-size: 16px;
+        margin-top: 12%;
+      }
+      .invite h3 {
+        color: #ffe1ad;
+        font-size: 14px;
+        margin: 4% 0;
+      }
+      .invite p {
+        color: #ffe1ad;
+        font-size: 14px;
+      }
+      .buttonToOpen {
+        position: absolute;
+        top: 70.5%;
+        left: 50%;
+        font-size: 42px;
+        background-color: #ffe1ad;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        color: #c8a973;
+        border: none;
+        border-color: transparent;
+        outline: none;
+        text-align: center;
+        line-height: 100px;
+      }
+      .background1 {
+        background-image: url(../common/media/shareGetCash.jpg);
+        background-size: 100% 100%;
+      }
+      .footer {
+        background: rgba(36,38,36,0.9);
+        height: 12%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4.8%;
+      }
+      /*.footer .left {
+        background-image: url(../common/media/darwin.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }*/
+      .footer .left img{
+        height: 39px;
+        width: 149px;
+      }
+      .footer button {
+        font-size: 15px;
+        display: block;
+        background-color: #1aad19;
+        border-radius: 6px;
+        color: white;
+        outline: none;
+        border: none;
+        height: 32px;
+        width: 68px;
+        padding: 0 8px;
+      }
+      div.mask {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+        display: none;
+        z-index: 1000;
+      }
+      div.mask p {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 50%;
+      }
+      div.guide {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../common/media/guide.PNG);
+        background-size: 100% 100%;
+      }
+      div.content .theKind {
+        margin-top: 10px;
+        width: 100%;
+        display: none;
+      }
+      div.content .theKind p {
+        margin-bottom: 10px;
+      }
+      div.content .theKind p .number {
+        color: white;
+        font-weight: bold;
+        margin: 0 2px;
+      }
+      div.content .theKind span.passTime {
+        float: right;
+      }
+      body,
+      #ul {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <div class="content flex-column-container">
+        <div class="header flex-space-container">
+          <div class="userInfo flex-column-container">
+            <div class="flex-start-container">
+              <img src="" class="img" ／>
+              <span class="displayName title1"></span>
+            </div>
+          </div>
+          <div class="priceInfo flex-start-container">
+            <img src="../common/media/icon_shang@3x.png" />
+            <span class="price title2"></span>
+          </div>
+        </div>
+        <div class="quesion-content detail_content"></div>
+        <div class="img-box flex-space-warp-container"></div>
+        <!--<img src="" class="img" ／>
+        <h2 class="title1"></h2>
+        <h3 class="title2"></h3>
+        <p class="detail_content"></p>
+        <div class='theKind'>
+          <p>
+            <span class="passTime"></span>
+            <span class="typeOfProblem"></span>
+          </p>
+          <p>目前有<em class="number"></em>人参与评论</p>
+        </div>-->
+        <!--<ul class="shareUser">
+          <li>
+            <div>
+              <p>等级</p>
+              <p class="level">级</p>
+            </div>
+            <div>
+              <p>积分</p>
+              <p class="score">分</p>
+            </div>
+            <div>
+              <p>提问</p>
+              <p class="asked"></p>
+            </div>
+            <div>
+              <p>回答</p>
+              <p class="answered"></p>
+            </div>
+          </li>
+        </ul>-->
+      </div>
+      <!--<div class="isPhone">
+        <div class="theLink">
+          <p class='theLinkContent'>点击复制链接按钮</p>
+          <input id="url" readonly/>
+        </div>
+        <button id="clip_button" class="copyBtn" data-clipboard-action="copy" data-clipboard-target="#url" onClick="copyLink()">复制链接</button>
+        <p class='todo' id='todo'>复制完成后，打开答尔文APP即可阅读全部内容</p>
+      </div>-->
+    </div>
+    <div class="invite">
+      <div class="inviteContent">
+        <h2>答尔文新手礼包</h2>
+        <h3>小伙伴帮你抢到了新人大礼包</h3>
+        <p>立即领取，开启你的精彩人生吧！</p>
+        <div class="buttonToOpen">开</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="left">
+        <img src="../common/media/d_logo@3x.png"/>
+      </div>
+      <button class="btn">打开</button>
+    </div>
+    <div class="mask">
+      <p>复制成功</p>
+    </div>
+    `
+    <div class="guide"></div>
+
+    <script>
+      var $ = function(type) {
+        return document.getElementsByClassName(type)[0];
+      }
+      var u = navigator.userAgent;
+             $('buttonToOpen').onclick = function() {
+               $('btn').onclick();
+             }
+//      $('btn').onclick = function() {
+//        if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) window.location.href = "https://itunes.apple.com/cn/app/qq/id1202605978";
+//        else {
+//          window.location.href = "http://www.aihuawen.com";
+//          //window.open("market://details?id=com.aihuawen.darwin", "_system", "locations=yes");
+//        }
+//      }
+      $('btn').onclick = function() {
+        window.location.href = "http://a.app.qq.com/o/simple.jsp?pkgname=com.aihuawen.darwin";
+      }
+
+      function copyLink() {
+          var clipboard = new Clipboard('#clip_button');
+          clipboard.on('success', function(e) {
+            $('mask').style.display = 'block';
+            setTimeout(function() {
+              $('mask').style.display = 'none';
+            }, 2000);
+          });
+          clipboard.on('error', function(e) {
+            alert("复制失败");
+          });
+        }
+              $('mask').onclick = function() {
+                $('mask').style.display = 'none';
+              }
+
+      function getPostSummary() {
+        console.log(window.location)
+        console.log(window.location.pathname.split("?"));
+        var params = window.location.pathname.split("?")[0].split("/");
+        console.log(params);
+        var id = params.pop();
+        console.log(id);
+        var action = params.pop();
+        console.log(action);
+        var type = window.location.search;
+        var url = "https://svc.aihuawen.com/summary/" + action + "/" + id;
+        //var url = "http://192.168.0.111:9080/summary/" + action + "/" + id;
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+          console.log(xmlHttp);
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var data = JSON.parse(xmlHttp.responseText);
+            console.log(data);
+            if (action == 'post') {
+              console.log(data.post);
+              $('top').style.visibility = "visible";
+              if(data.post.author.displayName.length >5){
+                $('title1').innerHTML = data.post.author.displayName.substr(0, 5) + '...';
+              }else{
+                $('title1').innerHTML = data.post.author.displayName;
+              }
+              console.log(data.post.price);
+              $('title2').innerHTML = data.post.price*10 + '币';
+              console.log(data.post.content);
+              $('detail_content').innerHTML = data.post.content;
+              if (data.post.photoFiles) addPhoto(data.post.photoFiles);
+              if (data.post.author.avatar.indexOf('http') == -1){
+                $('img').src = "../common/media/" + data.post.author.avatar.split('/')[1];
+              } else {
+                $('img').src = data.post.author.avatar;
+              }
+//              document.getElementById('url').value = "darwin://" + action + "/" + id;
+              // document.getElementById('url').innerHTML = "darwin://" + action + "/" + id;
+//              var oldTime = (new Date(data.post.date)).getTime();
+//              window.localStorage.oldTime = oldTime;
+//              $('typeOfProblem').innerHTML = '类型／' + data.post.category;
+//              $('number').innerHTML = '*';
+//              $('passTime').innerHTML = time(oldTime);
+//              $('theKind').style.display = 'block';
+            } else if (action == 'user') {
+              $('top').style.visibility = "visible";
+              $('title1').innerHTML = data.user.displayName;
+              $('title2').innerHTML = '答尔文的大牛';
+              $('detail_content').innerHTML = '我在答尔文等你，加入答尔文，领取现金红包!';
+              $('img').src = data.user.avatar;
+              $('shareUser').style.display = 'block';
+              $('score').innerHTML = data.user.score + '分';
+              $('answered').innerHTML = data.user.summary.answered + '个';
+              $('asked').innerHTML = data.user.summary.asked + '个';
+              $('level').innerHTML = Math.ceil(data.user.score / 1000) + '级';
+              document.getElementById('url').value = "darwin://" + action + "/" + id;
+              // document.getElementById('url').innerHTML = "darwin://" + action + "/" + id;
+            } else if (action == 'invite') {
+              document.getElementsByTagName("body")[0].setAttribute('class', 'background1');
+              $('top').style.display = 'none';
+              $('invite').style.display = 'block';
+              document.getElementById('url').value = "darwin://" + action + "/" + id;
+              // document.getElementById('url').innerHTML = "darwin://" + action + "/" + id;
+            } else {
+              $('top').style.visibility = "visible";
+              $('title1').innerHTML = data.user.displayName;
+              $('title2').innerHTML = '我在答尔文pk';
+              $('detail_content').innerHTML = '我在答尔文等你，加入答尔文，领取现金红包';
+              $('img').src = data.user.avatar;
+              var val = "darwin://" + action + "/" + id + type;
+              document.getElementById('url').value = val.slice(0, val.indexOf('type') + 6);
+              // document.getElementById('url').innerHTML = val.slice(0, val.indexOf('type') + 6);
+            }
+            //wordNumber();
+          }
+        }
+        xmlHttp.open("GET", url, true);
+        xmlHttp.send(null);
+      }
+//      var init = function() {
+//        $('top').style.visibility = "visible";
+//        $('title1').innerHTML = '呵呵哈哈么么大';
+//        $('detail_content').innerHTML = '答尔文是华问科技出品的知识付费平台。国内独创的一对一知识付费社交，通过答尔文，您可以快速发布生活中遇到的困难和问题。找到专业人士为你指点迷津，或直接获取经验和知识，减少你的困惑。同时，也可以让你的知识变现。共享你的知识，收获你的财富 答尔文是华问科技出品的知识付费平台。国内独创的一对一知识付费社交，通过答尔文，您可以快速发布生活中遇到的困难和问题。找到专业人士为你指点迷津，或直接获取经验和知识，减少你的困惑。同时，也可以让你的知识变现。共享你的知识，收获你的财富答尔文是华问科技出品的知识付费平台。国内独创的一对一知识付费社交，通过答尔文，您可以快速发布生活中遇到的困难和问题。找到专业人士为你指点迷津，或直接获取经验和知识，减少你的困惑。同时，也可以让你的知识变现。共享你的知识，收获你的财富';
+//        $('img').src = "https://svc.aihuawen.com/file/s_1504092912044_48d20ec0-8d77-11e7-9aee-d9ec648bb387.jpg";
+//      }
+//      init();
+//      var photoFiles = [{
+//        src: "upload_acb6675df9b42f56f09d0e8e3f4db940.png"
+//      }, {
+//        src: "upload_bd5866e681dd7d4da0861944faaadff5.png"
+//      }, {
+//        src: "upload_6e344f4293e551a949091cabfb401d41.png"
+//      },{
+//        src: "upload_acb6675df9b42f56f09d0e8e3f4db940.png"
+//      }, {
+//        src: "upload_bd5866e681dd7d4da0861944faaadff5.png"
+//      }, {
+//        src: "upload_6e344f4293e551a949091cabfb401d41.png"
+//      },{
+//        src: "upload_acb6675df9b42f56f09d0e8e3f4db940.png"
+//      }];
+//      var photoFiles2 = [{
+//        src: "upload_acb6675df9b42f56f09d0e8e3f4db940.png"
+//      }];
+      var addPhoto = function(photoFiles) {
+        if(photoFiles.length == 1) {
+          var elem = document.createElement("div");
+          elem.className = 'post-photo';
+          elem.style = 'background-image: url(https://svc.aihuawen.com/file/thumb_' + photoFiles[0].src + ')';
+          //elem.style = 'background-image: url(http://192.168.0.111:9080/file/thumb_' + photoFiles[0].src + ')';
+          $('img-box').appendChild(elem);
+        }else{
+          for (var i = 0; i < photoFiles.length; i++) {
+            var elem = document.createElement("div");
+            elem.className = 'post-photos';
+            elem.style = 'background-image: url(https://svc.aihuawen.com/file/thumb_' + photoFiles[i].src + ')';
+            //elem.style = 'background-image: url(http://192.168.0.111:9080/file/thumb_' + photoFiles[i].src + ')';
+            $('img-box').appendChild(elem);
+          }
+        }
+      }
+      var wordNumber = function() {
+        var font = getComputedStyle ? getComputedStyle(document.body, null).fontSize : document.body.currentStyle.fontSize;
+        var theLength = font.slice(0, 2);
+        var data = $('detail_content').innerHTML;
+        var theFontNumber = Math.floor($('detail_content').offsetWidth / theLength);
+        if (data.length > 3 * theFontNumber) {
+          $('detail_content').innerHTML = data.substr(0, 3 * theFontNumber - 1) + '...';
+          $('detail_content').style.textAlign = 'justify';
+        }
+      }
+      var time = function(oldTime) {
+        var myDate = new Date();
+        var mytime = myDate.getTime() - oldTime;
+        var day = Math.floor(mytime / 1000 / 60 / 60 / 24) > 0 ? Math.floor(mytime / 1000 / 60 / 60 / 24) : 0;
+        mytime = mytime - day * 24 * 60 * 60 * 1000;
+        var hours = Math.floor(mytime / 1000 / 60 / 60) > 0 ? Math.floor(mytime / 1000 / 60 / 60) : 0;
+        mytime = mytime - hours * 60 * 60 * 1000;
+        var minutes = Math.floor(mytime / 1000 / 60) > 0 ? Math.floor(mytime / 1000 / 60) : 0;
+        mytime = mytime - minutes * 1000 * 60;
+        var seconds = Math.floor(mytime / 1000) > 0 ? Math.floor(mytime / 1000) : 0;
+        var newTime;
+        if (day > 0) {
+          return newTime = day + '天' + hours + '小时' + minutes + '分' + seconds + '秒' + ' 前';
+        } else if (hours > 0) {
+          return newTime = hours + '小时' + minutes + '分' + seconds + '秒' + '前';
+        } else if (minutes > 0) {
+          return newTime = minutes + '分' + seconds + '秒' + '前';
+        } else {
+          return newTime = seconds + '秒' + '前';
+        }
+      }
+      var setHeight = function() {
+//        $('top').style.height = document.body.offsetHeight * 0.9 + 'px';
+//        $('footer').style.height = document.body.offsetHeight * 0.1 + 'px';
+        $('top').style.height = (document.body.offsetHeight-60) + 'px';
+        $('footer').style.height = 60 + 'px';
+//        $('left').style.backgroundSize = document.body.offsetHeight * 0.1 * 0.6 + 'px';
+//        $('left').style.paddingLeft = document.body.offsetHeight * 0.1 * 0.7 + 'px';
+      }
+      window.onload = function() {
+        getPostSummary();
+        setHeight();
+        //            if(JSON.parse(window.localStorage.oldTime)> 0 ) setInterval(function(){
+        //              $('passTime').innerHTML = time(window.localStorage.oldTime);
+        //            },1000);
+      };
+    </script>
+  </body>
+
+</html>

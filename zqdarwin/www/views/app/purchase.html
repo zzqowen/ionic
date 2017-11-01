@@ -1,0 +1,49 @@
+<ion-view class="settings-view">
+  <div class="self-account" style="height: 30%;">
+    <!--<ion-header-bar align-title="center" class="bar-light flex-space-container">
+      <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+    </ion-header-bar>-->
+    <ion-header-bar align-title="center" class="flex-space-container" style="background-color:transparent;border-color:transparent;background-image:none;">
+      <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border-color:transparent;">
+        <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+      </button>
+    </ion-header-bar>
+    <div class="per-style">
+      <div background-img src="{{user.avatar}}" round width="64px" height="64px" border="2px solid rgba(255,255,255,0.5)" class="per-img" margin="0 auto" ng-click="changeAvatarImg()"></div>
+      <div class="per-font">{{user.displayName}}</div>
+      <div class="per-font" style="font-size: 15px;">答尔号:{{user.id}}</div>
+    </div>
+    <div background-img src="{{user.avatar}}" class="img-blur" opacity="0.8" height="110%" position="absolute" width="110%" z-index="-2" top="-5px" left="-5px"></div>
+  </div>
+  <ion-content class="self-content purchase-self-content" scroll="false" style="top:30%;background-color:white;font-size:16px;">
+    <div class="purchase-total" style="display:flex;flex-direction: column;">
+      <div class="flex-space-container purchase-cash-text">
+        <div class="flex-container">
+          <span>可用金币:</span>
+          <span class="secondary-text userCredit">{{user.credit*10}}</span>
+        </div>
+      </div>
+      <div class="purchase-choose-money">
+        <div style="padding:30px 0 24px; font-size: 15px; text-align: center;">
+          <span>请选择充值金币</span>
+        </div>
+        <div class="item flex-wrap-container recharge-total" style="margin: 0px 4.8%;">
+            <label class="item item-radio recharge-money" ng-repeat="item in purchaseOptions" ng-click="payMoney(item)" ng-value="item">
+              <input type="radio" name="radio-group" ng-value="item" ng-model="choice" ng-show="false">
+              <div class="radio-content">
+                <div>
+                  <span>{{item*10}}金币</span>
+                </div>
+              </div>
+            </label>
+        </div>
+      </div>
+      <div class="recharge-item flex-column-center-container" style="flex:1;margin: 0px 4.8%;">
+        <button class="button" ng-click="addCredit(moneyValue, 'ios')" ng-disabled="enablePay" ng-if="isIOS && isIOSPay">充值</button>
+        <!--<button class="button button-wx" ng-click="addCredit(moneyValue, 'wx')" ng-disabled="enablePay" ng-if="!isIOS || isWxPay">微信充值</button>-->
+        <button class="button button-wx" ng-click="addCredit(moneyValue, 'wx')" ng-disabled="enablePay" ng-if="!isIOS">微信充值</button>
+        <div style="display:flex; justify-content: center;"><a ng-click="showAbout('pay.html')" style="text-decoration:none;">充值说明</a></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

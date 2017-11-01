@@ -1,0 +1,51 @@
+<ion-view class="post-view">
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container">
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="pkResultState()"></button>
+    <div class="h1 title">{{pkObj.pkType | typeChange}}</div>
+  </ion-header-bar>
+  <ion-content class="pk-ready-content">
+      <div class="flex-column-container" style="padding:24px 0 40px;background-color:#393a4c;">
+        <div class="flex-container" style="justify-content: center;font-size: 20px;">
+          <div style="color:white;z-index:100;">{{pkObj.pkResultStatus ? "你赢了" : "你输了"}}</div>
+        </div>
+        <div class="flex-start-container" style="justify-content:center;">
+          <div class="flex-column-center-container">
+            <div background-img src="{{pkObj.user.avatar}}" round width="64px" height="64px" border="2px solid white"></div>
+            <div class="flex-column-center-container">
+              <div style="color:#f6306b;font-size:16px;width:100px;padding:10px 0 8px;" class="banOnLine">{{pkObj.user.displayName}}</div>
+              <div style="color:white;font-size:12px;">{{pkObj.user.pkLevel}}</div>
+              <div style="color:white;">{{pkObj.pkResultStatus ? pkObj.user.pkScore+10 : pkObj.user.pkScore-10}}</div>
+              <div style="color:#f6306b;font-size:16px;padding:10px 0 20px;">{{ pkObj.pkResultStatus ? "+10" : "-10"}}</div>
+            </div>
+          </div>
+          <div style="margin-top:-20px;width:120px;">
+            <div background-img src="data/pkStar.gif" round width="120px" height="120px" background-size="100%"></div>
+          </div>
+          <div class="flex-column-center-container">
+            <div background-img src="{{pkObj.opponent.avatar}}" round width="64px" height="64px" border="2px solid white"></div>
+            <div class="flex-column-center-container">
+              <div style="color:#2dabff;font-size:16px;width:100px;padding:10px 0 8px;" class="banOnLine">{{pkObj.opponent.displayName}}</div>
+              <div style="color:white;font-size:12px;">{{pkObj.opponent.pkLevel}}</div>
+              <div style="color:white;">{{pkObj.pkResultStatus ? pkObj.opponent.pkScore-10 : pkObj.opponent.pkScore+10}}</div>
+              <div style="color:#2dabff;font-size:16px;padding:10px 0 20px;">{{ pkObj.pkResultStatus ? "-10" : "+10"}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-column-space-container" style="align-items: center;padding:0 50px;" ng-if="pkMatchShow">
+          <div style="background-color:#66d99e;border-radius: 5px;font-size:16px;color:white;height:40px;line-height:40px;width:100%;text-align:center;" ui-sref="tab.pk">回到主页</div>
+        </div>
+      </div>
+      <div style="background-color:#393a4c;padding:20px 12px;">
+        <h2 style="font-size:18px; text-align:center;color:white;margin-bottom:20px;">回看问题</h2>
+       <div style="width: 100%;border: 1px solid black;background-color:white;">
+          <ion-slide-box active-slide="myActiveSlide" does-continue="true" auto-play="false" slide-interval="1000" show-pager="true" pager-click="page(index)">
+            <ion-slide ng-repeat="item in allQuestion track by $index" style="padding:0 15px 50px;">
+              <div style="margin:30px 0;font-size: 16px;line-height:16px;height:64px;" class="flex-column-center-container">{{item.content}}</div>
+              <div style='font-size:13px;padding:10px 0;border-radius:5px;margin-bottom:14px;background-color: #dadada;' class="banOnLine" ng-class="{theSelected:(item.selfChoice == answer),isTrue:item.questionStatus}" ng-repeat="answer in item.choices track by $index">{{answer}}</div>
+            </ion-slide>
+          </ion-slide-box>
+          <div ng-click="submitPkQuestion()" style="text-align: center;font-size: 16px;padding:10px 0;width: 100%;background-color:#efefef;">提问该问题</div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

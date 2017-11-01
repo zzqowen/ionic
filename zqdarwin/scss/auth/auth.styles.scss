@@ -1,0 +1,408 @@
+.register-view,
+.login-view,
+.forgot-password-view,
+.phoneLogin-view
+{
+  .view-navigation
+  {
+    .bar
+    {
+      background: transparent;
+      border: none;
+    }
+
+    .back-button
+    {
+      *
+      {
+        color: $walkthrough-color;
+      }
+    }
+  }
+
+  ion-content
+  {
+    .scroll
+    {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .form-heading
+  {
+    height: 20%;
+  }
+
+  .form-wrapper
+  {
+    height: 80%;
+    margin: 0px;
+  }
+
+  .login-container
+  {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    input {
+      width: 40%;
+      line-height: normal;
+      text-align: left;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+  
+  ::-webkit-input-placeholder{
+    font-size: 15px;
+    color: #ABABAB;
+  }
+
+  ::wibkit-input-placeholder {
+    font-size: 15px;
+    color: #ABABAB;
+  }
+
+  .login-content
+  {
+    width: 100%;
+    padding: 48px;
+  }
+
+  .login-banner
+  {
+    padding: 0px 48px 72px 48px;
+  }
+
+  .login-input
+  {
+    color: $walkthrough-color;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid $theme-color-13 !important;
+    span, a 
+    {
+      min-width: 64px;
+      text-align: center;
+    }
+  }
+
+  .form-title
+  {
+    color: $walkthrough-color;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .input-fields
+  {
+
+    .item
+    {
+      margin: 10px 0px;
+      border: 1px solid $theme-color-1;
+      background-color: darken($walkthrough-bg, 3);
+
+      *
+      {
+        color: $walkthrough-color;
+      }
+
+      .input-label
+      {
+        font-weight: 500;
+      }
+    }
+
+    .item.item-input
+    {
+      input
+      {
+        flex: inherit;
+        padding-right: 0px;
+      }
+    }
+  }
+
+  .message
+  {
+    text-align: center;
+    color: $error-color;
+    margin-top: 10px;
+  }
+
+  .message.error:before
+  {
+    color: $error-color;
+    text-shadow: 1px 1px 0px rgba(darken($error-color, 20), .3);
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .alternative-actions
+  {
+    margin: 0px;
+
+    .button
+    {
+      padding: 0px;
+      font-size: 14px;
+      color: rgba($walkthrough-color, .8);
+    }
+  }
+
+  // Show/Hide password
+  .show-hide-input
+  {
+    display: inherit;
+    width: 100%;
+  }
+  .toggle-view-anchor
+  {
+    $anchor-size: 14;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    height: $line-height-computed + $font-size-base;
+    line-height: $line-height-computed + $font-size-base;
+    padding-right: 8px;
+
+    *
+    {
+      color: darken($walkthrough-bg, 20) !important;
+      display: block;
+      font-size: 14px;
+      width: 45px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+}
+
+div.phoneLogin-container {
+  padding: 0 48px !important;
+}
+div.phoneLogin-input {
+  border-radius: 0px !important;
+  color: white;
+  font-size: 15px;
+  input{
+    font-size: 15px;
+    text-align: left !important;
+    height: 60px;
+    line-height: normal;
+  }
+}
+.phoneColor {
+  div{
+    font-size: 12px;
+    padding: 15px 9px 25px 0;
+    color: #242624;
+    line-height: 12px;
+  }
+}
+
+.forgot-password-view,.register-view{
+  .login-content {
+      padding: 0 32px;
+      .form-errors{
+        height: 15px;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: center;
+      }
+      .getCode{
+        padding: 5px 0;
+        input {
+          background-color: transparent;
+          padding-left: 10px;
+          border-bottom: 1px solid $theme-color-5;
+        }
+        .button {
+          float: right;
+          outline: none;
+          border: none;
+          font-size: 12px;
+          line-height: 12px;
+          border-radius: 4px;
+          padding: 8px 12px;
+          margin-top: 2.5px;
+        }
+      }
+    }
+}
+
+.register-view,.forgot-password-view,.phoneLogin-view {
+  background-color: white;
+  .bar{
+    background-image: none;
+  }
+  .bar-header{
+    border: none; 
+  }
+  .bar-title{
+    font-size: 16px !important;
+    font-weight: normal !important;
+  }
+  .button{
+    min-height: 0px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #ABABAB;
+    text-align: right;
+    padding: 0;
+    width: 45%;
+    padding-right: 10px;
+  }
+  .icon{
+    color: $theme-color-11;
+  }
+  .toChoose{
+    p{
+      text-align: center;
+      width: 100%;
+      font-size: 13px;
+      margin-bottom: 18px;
+      a{
+        text-decoration: none;
+        color: $theme-color-12;
+        padding: 10px;
+      }
+    }
+  }
+}
+.register-view,.login-view,.forgot-password-view,.invite-view,.phoneLogin-view {
+  button{
+    background-color: transparent;
+  }
+  button.activated{
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+}
+.invite-view {
+  .item{
+    padding: 16px 10px;
+    border:1px solid $theme-color-7;
+    box-shadow: 3px 3px 10px $theme-color-7;
+    border-radius: 6px;
+  }
+  p.explain{
+    font-size: 80%;
+  }
+  input{
+    height: 14px !important;
+    font-size: 14px !important;
+    padding: 18px 0 !important;
+    border: 1px solid $theme-color-9;
+    border-radius: 6px;
+  }
+}
+.phoneLogin-view {
+  ion-spinner.spinner-on-load{
+    stroke: #7ed1bd;
+    width: 40px;
+    height: 40px;
+    margin-left: -10%;
+    z-index: 2000;
+  }
+  .spinner svg{
+    width: 40px;
+    height: 40px;
+  }
+  .bar-title{
+    font-weight: normal !important;
+    color: black;
+  }
+  h1{
+    margin: 40px 0 20px;
+    text-align: center;
+    color: #17ae15;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .otherWay{
+    text-align: center;
+    color: #242624;
+    font-size: 12px;
+    margin: 0;
+  }
+  // .otherWay:before{
+  //     content: "";
+  //     display: block;
+  //     width: 20%;
+  //     height: 1px;
+  //     background-color: $theme-color-11;
+  //     position: absolute;;
+  //     top: 50%;
+  //     left: 0;
+  //     margin-top: -1px;
+  //   }
+  //   .otherWay:after{
+  //     content: "";
+  //     display: block;
+  //     width: 20%;
+  //     height: 1px;
+  //     background-color: $theme-color-11;
+  //     position: absolute;;
+  //     top: 50%;
+  //     right: 0;
+  //     margin-top: -1px;
+  //   }
+    #know{
+      height: 20px;
+      width: 20px;
+      -webkit-appearance: none;
+      background-size: 100% 100%;
+      background-color: white;
+    }
+    .theSelected{
+      background-image:url('../data/theSelected.png');
+      border: none;
+    }
+    .uncheck{
+     background-image:url('../data/uncheck.png');
+     border: 1px solid $theme-color-13;
+     border-radius: 4px;
+    }
+}
+
+.walkthrough-view{
+  background-color: white;
+
+  .slide-image
+  {
+    width:100%;
+    height: 100%;
+    display: block;
+  }
+
+  .bottom-content
+  {
+    position: absolute;
+    bottom: 32px;
+    padding: 32px;
+    background: transparent;
+    width: 100%;
+    z-index: 3;
+
+    a
+    {
+      font-size: 120%;
+      color: $theme-color-1;
+    }
+  }
+}

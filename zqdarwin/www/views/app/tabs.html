@@ -1,0 +1,17 @@
+<ion-tabs class="tabs-icon-top tabs-color-active-positive self-tab">
+  <ion-tab title="主页" icon-off="tab-home" icon-on="tab-home-outline" ui-sref="tab.home" tab-dblclick num="0">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="嘿嘿" icon-off="tab-friendsCircle" icon-on="tab-friendsCircle-outline" ng-click="goOthers('tab.friends')" tab-dblclick num="1">
+    <ion-nav-view name="tab-friends"></ion-nav-view>
+  </ion-tab>
+  <ion-tab icon="pk-tab" ng-click="goOthers('tab.pk')" tab-dblclick num="2">
+    <ion-nav-view name="tab-pk"></ion-nav-view>
+  </ion-tab>
+  <ion-tab class="tab-has-red-point" title="问答" icon-off="question-answer" icon-on="question-answer-outline" tab-dblclick num="3" ng-click="goOthers('tab.history')" badge="unreadMessages.history.question.length + unreadMessages.history.answer.length" badge-style="badge-assertive">
+    <ion-nav-view name="tab-history"></ion-nav-view>
+  </ion-tab>
+  <ion-tab title="个人" icon-off="tab-account" icon-on="tab-account-outline" ng-click="goOthers('tab.account')" tab-dblclick num="4">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>

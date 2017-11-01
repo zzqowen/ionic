@@ -1,0 +1,31 @@
+$ openssl genrsa -out key.pem 2048
+Generating RSA private key, 2048 bit long modulus
+............+++
+......+++
+e is 65537 (0x10001)
+$ openssl req -new -key key.pem -out csr.pem
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CN
+State or Province Name (full name) [Some-State]:Guangdong
+Locality Name (eg, city) []:Shenzhen
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:Shenzhen Huawen Technology Co., Ltd
+Organizational Unit Name (eg, section) []:Software
+Common Name (e.g. server FQDN or YOUR name) []:Gary D
+Email Address []:dev@aihuawen.com
+
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password []:Daerwen1234
+An optional company name []:Huawen
+$ openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+Signature ok
+subject=/C=CN/ST=Guangdong/L=Shenzhen/O=Shenzhen Huawen Technology Co., Ltd/OU=Software/CN=Gary D/emailAddress=dev@aihuawen.com
+Getting Private key
+$ rm csr.pem 
+$ 

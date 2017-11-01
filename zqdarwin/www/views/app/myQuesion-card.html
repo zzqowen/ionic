@@ -1,0 +1,44 @@
+<div class="flex-column-space-container" ui-sref="post({postId: post._id})">
+  <div class="flex-space-container">
+    <div ng-if="post.anonymous">
+      <div background-img src="data/anonymous.png" round big border="1px solid #ccc" margin="20px 10px 20px 20px" ng-click="anonymousLookInfo($event)"></div>
+    </div>
+    <div class="userImg-content" ng-if="!post.anonymous">
+        <div background-img src="{{avatar(post)}}" round big border="1px solid #ccc" margin="20px 10px 20px 20px" ng-click="lookInfo($event, post.author)"></div>
+    </div>
+    <div class="history-card-content flex-space-container">
+      <div class="flex-container history-content" ng-if="post.content != ''" style="height: 40%;">
+          <div class="one-line history-date">{{post.date | date:'yy-MM-dd'}}</div>
+          <div class="one-line history-introduce">{{post.content | textOverflow : 2}}</div>
+      </div>
+      <div class="flex-container history-content" ng-if="post.content == ''">
+          <div class="one-line history-date">{{post.date | date:'yy-MM-dd'}}</div>
+          <div class="one-line history-introduce audio-photo" ng-if="post.audioFiles.length == 0 && post.photoFiles.length == 0">
+            没有消息哦
+          </div>
+          <div class="one-line history-introduce audio-photo" ng-if="post.audioFiles.length != 0 && post.photoFiles.length == 0">
+            {{post.audioFiles.length | fontChinese}}条语音
+          </div>
+          <div class="one-line history-introduce audio-photo" ng-if="post.audioFiles.length == 0 && post.photoFiles.length != 0">
+            {{post.photoFiles.length | fontChinese}}张图片
+          </div>
+          <div class="one-line history-introduce audio-photo" ng-if="post.audioFiles.length != 0 && post.photoFiles.length != 0">
+            {{post.audioFiles.length | fontChinese}}条语音</br>
+            {{post.photoFiles.length | fontChinese}}张图片 <br>
+          </div>
+      </div>
+    </div>
+    <div class="flex-container" style="padding-right: 16px;height:100%;width:15%">
+      <div ng-if="!active && isSelfPosted(post)" style="margin: 0px 8px">
+        <button ng-if="post.complain" ng-click="fileComplain($event, post)" style="width: 50px" ng-show="false">举报</button>
+        <span ng-if="isInvestigating(post)">正在处理...</span>
+        <span ng-if="isResolved(post)" ng-click="toggleComplainResult($event)">举报结果</span>
+      </div>
+      <span ng-show="post.price > 0" class="primary-text post-price">{{post.price*10}}金币</span>
+    </div>
+  </div>
+
+  <div class="card-footer" ng-if="showComplainResult">
+    <span class="primary-text">{{post.complain.result}}</span>
+  </div>
+</div>

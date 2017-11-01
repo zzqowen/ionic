@@ -1,0 +1,7362 @@
+{ 
+    "_id" : ObjectId("594a36abcfcb8d18399d0792"), 
+    "type" : "四六级", 
+    "content" : "野哥帅不帅", 
+    "correct" : [
+        "帅", 
+        "很帅", 
+        "帅的不能再帅了"
+    ], 
+    "ans" : [
+        "他就是帅"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:04:43.956+0000")
+}
+{ 
+    "_id" : ObjectId("594a3706cfcb8d18399d0793"), 
+    "type" : "四六级", 
+    "content" : "你好请输入密码", 
+    "correct" : [
+        "666666", 
+        "555555", 
+        "44444"
+    ], 
+    "ans" : [
+        "dfasfa;dfLJDLJF%&^(@!()JIB$@I$@*^&#(*!U#HBI"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:06:14.692+0000")
+}
+{ 
+    "_id" : ObjectId("594a374acfcb8d18399d0795"), 
+    "type" : "四六级", 
+    "content" : "紫青姓什么？", 
+    "correct" : [
+        "青", 
+        "黄", 
+        "红", 
+        "黑"
+    ], 
+    "ans" : [
+        "紫"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:07:22.803+0000")
+}
+{ 
+    "_id" : ObjectId("594a376fcfcb8d18399d0796"), 
+    "type" : "四六级", 
+    "content" : "author", 
+    "correct" : [
+        "zi", 
+        "se", 
+        "hei", 
+        "black"
+    ], 
+    "ans" : [
+        "huang"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:07:59.643+0000")
+}
+{ 
+    "_id" : ObjectId("594a3794cfcb8d18399d0798"), 
+    "type" : "四六级", 
+    "content" : "oh", 
+    "correct" : [
+        "no", 
+        "nimei", 
+        "fuck"
+    ], 
+    "ans" : [
+        "yeah"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:08:36.558+0000")
+}
+{ 
+    "_id" : ObjectId("594a37b4cfcb8d18399d0799"), 
+    "type" : "四六级", 
+    "content" : "图片中紫青怎么了", 
+    "correct" : [
+        "没错我也是图", 
+        "我也是", 
+        "我就是"
+    ], 
+    "ans" : [
+        "假装我是图"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:09:08.384+0000")
+}
+{ 
+    "_id" : ObjectId("594a37d6cfcb8d18399d079b"), 
+    "type" : "四六级", 
+    "content" : "Hello", 
+    "correct" : [
+        "不认识", 
+        "呵呵", 
+        "5555"
+    ], 
+    "ans" : [
+        "假装打招呼"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:09:42.019+0000")
+}
+{ 
+    "_id" : ObjectId("594a37fecfcb8d18399d079c"), 
+    "type" : "四六级", 
+    "content" : "PK完成了么", 
+    "correct" : [
+        "没有", 
+        "有", 
+        "呵呵"
+    ], 
+    "ans" : [
+        "当然"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:10:22.247+0000")
+}
+{ 
+    "_id" : ObjectId("594a380fcfcb8d18399d079d"), 
+    "type" : "四六级", 
+    "content" : "66666", 
+    "correct" : [
+        "node1", 
+        "node2", 
+        "弄的3"
+    ], 
+    "ans" : [
+        "node"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:10:39.739+0000")
+}
+{ 
+    "_id" : ObjectId("594a3f8d66853619c8725c7c"), 
+    "type" : "四六级", 
+    "content" : "我们是谁！", 
+    "correct" : [
+        "我们是super star", 
+        "我们是三短一长选最长，三长一短选最短", 
+        "你的腿真TMD短，丑拒"
+    ], 
+    "ans" : [
+        "你们能不能像野哥一样，正常点？尤其是紫青"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-21T09:42:37.055+0000")
+}
+{ 
+    "_id" : ObjectId("594b8c9011803017716368ef"), 
+    "type" : "四六级", 
+    "content" : "Are you a doubt", 
+    "correct" : [
+        "no ,but I am", 
+        "no ", 
+        "nonono"
+    ], 
+    "ans" : [
+        "yes I am"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-22T09:23:28.281+0000")
+}
+{ 
+    "_id" : ObjectId("594cb55ceec1f412fa95ed1a"), 
+    "type" : "四六级", 
+    "content" : "男：你先睡，我和朋友开黑打盘游戏。\r\n女：几点了，还打？\r\n男：乖，你先睡嘛。\r\n女：算了，反正游戏币我重要，朋友也比我重要，你就去玩吧\r\n男： 好咧！\r\n请问接下来这个女生回馈干嘛", 
+    "correct" : [
+        "和男朋友说晚安", 
+        "继续和男朋友聊下去，让男朋友陪他", 
+        "去男朋友家吃香蕉喝豆浆", 
+        "和男朋友的朋友们一起吃香蕉喝豆浆", 
+        "和男朋友一起开黑", 
+        "别说了点个赞"
+    ], 
+    "ans" : [
+        "砍了男友，分尸丢进大海"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-23T06:29:48.458+0000")
+}
+{ 
+    "_id" : ObjectId("594cb5caeec1f412fa95ed1b"), 
+    "type" : "四六级", 
+    "content" : "女友和你吵架了，一气之下，说让你滚，此刻你应该怎么办", 
+    "correct" : [
+        "先离开，让女朋友冷静一下，过后再哄", 
+        "立刻低头和女朋友道歉", 
+        "抱住她，说：“我滚了，你怎么办”", 
+        "和他讲道理"
+    ], 
+    "ans" : [
+        "“滚！”"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-23T06:31:38.137+0000")
+}
+{ 
+    "_id" : ObjectId("594cb675eec1f412fa95ed1c"), 
+    "type" : "四六级", 
+    "content" : "送命题：女友忽然问你，他和你前99个女友谁更美，但是你感觉它最丑，你应该怎么回答？", 
+    "correct" : [
+        "干嘛问这个？让我想想", 
+        "哦，你说他们啊，那些都在一起美多久，还真不知道怎么比较", 
+        "噢～baby，你在我心中是最美噢。", 
+        "什么？你怎么知道的，我的女友不就你一个么"
+    ], 
+    "ans" : [
+        "赶紧跑路，有多远跑多远，要不就送first blood了"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-23T06:34:29.770+0000")
+}
+{ 
+    "_id" : ObjectId("5950a90e2ab30115939b04dc"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一个皮肤不是2888点券的的？", 
+    "correct" : [
+        "鲁班七号 电玩小子", 
+        "项羽 苍穹之光", 
+        "墨子 龙骑士"
+    ], 
+    "ans" : [
+        "武则天 海洋之心"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:26:22.345+0000")
+}
+{ 
+    "_id" : ObjectId("5950aa2d2ab30115939b04dd"), 
+    "type" : "娱乐", 
+    "content" : "以下哪句是露娜的台词", 
+    "correct" : [
+        "花会枯萎 爱永不凋零", 
+        "恋爱和战斗都要勇往直前", 
+        "花有在开的那天，人有重逢的时候吗"
+    ], 
+    "ans" : [
+        "见过我家那只可爱的宠物吗 它的名字叫大白"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:31:09.599+0000")
+}
+{ 
+    "_id" : ObjectId("5950aa922ab30115939b04de"), 
+    "type" : "娱乐", 
+    "content" : "以下哪句不是貂蝉的台词？", 
+    "correct" : [
+        "这么直白的盯着妾身，好羞涩哦", 
+        "不要爱上妾身哦", 
+        "想欣赏妾身的舞姿吗"
+    ], 
+    "ans" : [
+        "魔法，为我而存在"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:32:50.834+0000")
+}
+{ 
+    "_id" : ObjectId("5950ab172ab30115939b04df"), 
+    "type" : "娱乐", 
+    "content" : "以下哪句是甄姬的台词？", 
+    "correct" : [
+        "令人好期待吗", 
+        "优雅的一箭", 
+        "遵从心的轨迹"
+    ], 
+    "ans" : [
+        "明明说好的，要永远在一起"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:35:03.956+0000")
+}
+{ 
+    "_id" : ObjectId("5950ac0d2ab30115939b04e0"), 
+    "type" : "娱乐", 
+    "content" : "“如果世上还有我不懂的学问，那就是女孩子”这句台词是谁说的？", 
+    "correct" : [
+        "嬴政", 
+        "后羿", 
+        "吕布"
+    ], 
+    "ans" : [
+        "张良"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:39:09.447+0000")
+}
+{ 
+    "_id" : ObjectId("5950af532ab30115939b04e2"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个选项不是露娜 紫霞仙子的台词？", 
+    "correct" : [
+        "姻缘呢，上天安排的最大嘛", 
+        "给大家立刻开始这段感情吧，至尊宝", 
+        "我在你心里留下了一样东西"
+    ], 
+    "ans" : [
+        "今天是对面的坏日子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:53:07.600+0000")
+}
+{ 
+    "_id" : ObjectId("5950afcb2ab30115939b04e5"), 
+    "type" : "娱乐", 
+    "content" : "“沧海桑田，唯混沌与破烂，源源不断”这句是哪位英雄的台词？", 
+    "correct" : [
+        "刘禅", 
+        "亚瑟", 
+        "项羽"
+    ], 
+    "ans" : [
+        "钟馗"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:55:07.747+0000")
+}
+{ 
+    "_id" : ObjectId("5950b0572ab30115939b04e7"), 
+    "type" : "娱乐", 
+    "content" : "“子龙哥哥，纵使天各一方，小蝉依然～～”中的子龙哥哥指的是(）", 
+    "correct" : [
+        "刘备", 
+        "孙权", 
+        "吕布"
+    ], 
+    "ans" : [
+        "赵云"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T06:57:27.986+0000")
+}
+{ 
+    "_id" : ObjectId("5950b3042ab30115939b04e8"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个英雄的武器最有分量？", 
+    "correct" : [
+        "吕布 方天画戟", 
+        "典韦 大双戟", 
+        "关羽 青龙偃月刀"
+    ], 
+    "ans" : [
+        "孙悟空 如意金箍棒"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T07:08:52.949+0000")
+}
+{ 
+    "_id" : ObjectId("5950bc29ea716b01cd8cdb80"), 
+    "type" : "娱乐", 
+    "content" : "反伤刺甲可以由哪几件装备合成", 
+    "correct" : [
+        "铁剑、铁剑、红玛瑙", 
+        "风暴巨剑、铁剑、抗魔披风", 
+        "雷铭刀、布甲、红玛瑙"
+    ], 
+    "ans" : [
+        "雷鸣刀、布甲、布甲"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T07:47:53.043+0000")
+}
+{ 
+    "_id" : ObjectId("5950bd91ea716b01cd8cdb81"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个SNK英雄还没上线？", 
+    "correct" : [
+        "娜可露露", 
+        "不知火舞", 
+        "橘右京"
+    ], 
+    "ans" : [
+        "八神庵"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T07:53:53.813+0000")
+}
+{ 
+    "_id" : ObjectId("5950be57ea716b01cd8cdb82"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一个不是老夫子的技能？", 
+    "correct" : [
+        "圣人训诫", 
+        "举一反三", 
+        "圣人之威"
+    ], 
+    "ans" : [
+        "太古雷霆"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T07:57:11.131+0000")
+}
+{ 
+    "_id" : ObjectId("5950c130ea716b01cd8cdb83"), 
+    "type" : "娱乐", 
+    "content" : "老夫子使用3技能圣人之威后会将目标捆在明灯上多少秒?", 
+    "correct" : [
+        "3s", 
+        "4s", 
+        "6s"
+    ], 
+    "ans" : [
+        "5s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:09:20.647+0000")
+}
+{ 
+    "_id" : ObjectId("5950c1daea716b01cd8cdb84"), 
+    "type" : "娱乐", 
+    "content" : "S8赛季皮肤是什么?", 
+    "correct" : [
+        "孙膑-妖精王", 
+        "庄周-蜃楼王", 
+        "扁鹊-炼金王"
+    ], 
+    "ans" : [
+        "白起-无畏之灵·狰"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:12:10.549+0000")
+}
+{ 
+    "_id" : ObjectId("5950c1f9ea716b01cd8cdb85"), 
+    "type" : "娱乐", 
+    "content" : "S7赛季的皮肤是什么", 
+    "correct" : [
+        "孙膑-妖精王", 
+        "庄周-蜃楼王", 
+        "扁鹊-炼金王"
+    ], 
+    "ans" : [
+        "虞姬-凯尔特女王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:12:41.146+0000")
+}
+{ 
+    "_id" : ObjectId("5950c226ea716b01cd8cdb86"), 
+    "type" : "娱乐", 
+    "content" : "S6赛季皮肤是什么", 
+    "correct" : [
+        "孙膑-妖精王", 
+        "庄周-蜃楼王", 
+        "亚瑟-狮心王"
+    ], 
+    "ans" : [
+        "扁鹊-炼金王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:13:26.938+0000")
+}
+{ 
+    "_id" : ObjectId("5950c251ea716b01cd8cdb87"), 
+    "type" : "娱乐", 
+    "content" : "S5赛季皮肤是什么？", 
+    "correct" : [
+        "亚瑟-狮心王", 
+        "庄周-蜃楼王", 
+        "扁鹊-炼金王"
+    ], 
+    "ans" : [
+        "孙膑-妖精王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:14:09.520+0000")
+}
+{ 
+    "_id" : ObjectId("5950c2e1ea716b01cd8cdb88"), 
+    "type" : "娱乐", 
+    "content" : "芈月的被动是什么？", 
+    "correct" : [
+        "痛苦冲击", 
+        "暗影之月", 
+        "幻翼仆从"
+    ], 
+    "ans" : [
+        "永生之血"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:16:33.339+0000")
+}
+{ 
+    "_id" : ObjectId("5950c501ea716b01cd8cdb89"), 
+    "type" : "娱乐", 
+    "content" : "《东皇太一》是战国时期哪位诗人的作品？", 
+    "correct" : [
+        "宋玉", 
+        "景差", 
+        "唐勒"
+    ], 
+    "ans" : [
+        "屈原"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:25:37.170+0000")
+}
+{ 
+    "_id" : ObjectId("5950c59bea716b01cd8cdb8a"), 
+    "type" : "娱乐", 
+    "content" : "虞姬的被动技能是什么?", 
+    "correct" : [
+        "树神庇佑", 
+        "树神保佑", 
+        "花神护佑"
+    ], 
+    "ans" : [
+        "树神护佑"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:28:11.672+0000")
+}
+{ 
+    "_id" : ObjectId("5950c5fcea716b01cd8cdb8b"), 
+    "type" : "娱乐", 
+    "content" : "东皇太一的皮肤叫什么？", 
+    "correct" : [
+        "西海龙王", 
+        "南海龙王", 
+        "北海龙王"
+    ], 
+    "ans" : [
+        "东海龙王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:29:48.646+0000")
+}
+{ 
+    "_id" : ObjectId("5950c620ea716b01cd8cdb8c"), 
+    "type" : "娱乐", 
+    "content" : "张良的3技能言灵·操纵持续时间是多少秒?", 
+    "correct" : [
+        "3s", 
+        "4s", 
+        "5s"
+    ], 
+    "ans" : [
+        "2s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:30:24.281+0000")
+}
+{ 
+    "_id" : ObjectId("5950c64cea716b01cd8cdb8d"), 
+    "type" : "娱乐", 
+    "content" : "除了李白之外，还有哪位英雄拥有鸡年限定皮肤呢?", 
+    "correct" : [
+        "孙尚香", 
+        "小乔", 
+        "貂蝉"
+    ], 
+    "ans" : [
+        "王昭君"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:31:08.520+0000")
+}
+{ 
+    "_id" : ObjectId("5950c6cbea716b01cd8cdb8e"), 
+    "type" : "娱乐", 
+    "content" : "关羽的新春专属皮肤叫什么?", 
+    "correct" : [
+        "万事如意", 
+        "万象初新", 
+        "五福同心"
+    ], 
+    "ans" : [
+        "龙腾万里"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:33:15.387+0000")
+}
+{ 
+    "_id" : ObjectId("5950c773ea716b01cd8cdb8f"), 
+    "type" : "娱乐", 
+    "content" : "貂蝉的KPL限定皮肤叫什么名字?", 
+    "correct" : [
+        "逐梦之影", 
+        "逐梦之旅", 
+        "逐梦之神"
+    ], 
+    "ans" : [
+        "逐梦之音"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:36:03.241+0000")
+}
+{ 
+    "_id" : ObjectId("5950c79fea716b01cd8cdb90"), 
+    "type" : "娱乐", 
+    "content" : "宫本武藏两把刀中的一把是蓝色的，而另外一把是什么颜色?", 
+    "correct" : [
+        "绿色", 
+        "橙色", 
+        "红色"
+    ], 
+    "ans" : [
+        "黄色"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:36:47.454+0000")
+}
+{ 
+    "_id" : ObjectId("5950c7c7ea716b01cd8cdb91"), 
+    "type" : "娱乐", 
+    "content" : "游戏中每天最多可赠送金币给几名好友?", 
+    "correct" : [
+        "8", 
+        "12", 
+        "5"
+    ], 
+    "ans" : [
+        "10"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:37:27.595+0000")
+}
+{ 
+    "_id" : ObjectId("5950c7f2ea716b01cd8cdb92"), 
+    "type" : "娱乐", 
+    "content" : "“春风吹又生，斩草要除根。”是哪位英雄的台词?", 
+    "correct" : [
+        "刘备", 
+        "项羽", 
+        "后羿"
+    ], 
+    "ans" : [
+        "刘邦"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:38:10.909+0000")
+}
+{ 
+    "_id" : ObjectId("5950c82cea716b01cd8cdb93"), 
+    "type" : "娱乐", 
+    "content" : "马可波罗激情绿荫的皮肤中，身穿几号的球服?", 
+    "correct" : [
+        "10", 
+        "12", 
+        "13"
+    ], 
+    "ans" : [
+        "11"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:39:08.869+0000")
+}
+{ 
+    "_id" : ObjectId("5950c84fea716b01cd8cdb94"), 
+    "type" : "娱乐", 
+    "content" : "项羽的皮肤苍穹之光需要多少点券购买?", 
+    "correct" : [
+        "288", 
+        "788", 
+        "1688"
+    ], 
+    "ans" : [
+        "2888"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:39:43.887+0000")
+}
+{ 
+    "_id" : ObjectId("5950c86bea716b01cd8cdb95"), 
+    "type" : "娱乐", 
+    "content" : "蔡文姬释放第一技能思无邪持续多长时间?", 
+    "correct" : [
+        "2s", 
+        "4s", 
+        "6s"
+    ], 
+    "ans" : [
+        "3s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:40:11.328+0000")
+}
+{ 
+    "_id" : ObjectId("5950c95dea716b01cd8cdb96"), 
+    "type" : "娱乐", 
+    "content" : "花木兰的称号是什么?", 
+    "correct" : [
+        "绯红之刃", 
+        "信念之刃", 
+        "暗影刀锋"
+    ], 
+    "ans" : [
+        "传说之刃"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:44:13.816+0000")
+}
+{ 
+    "_id" : ObjectId("5950c98c2a1689066b5dde70"), 
+    "type" : "娱乐", 
+    "content" : "【大小姐驾到，通通闪开】是哪位英雄的台词?", 
+    "correct" : [
+        "貂蝉", 
+        "小乔", 
+        "大乔"
+    ], 
+    "ans" : [
+        "孙尚香"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:45:00.896+0000")
+}
+{ 
+    "_id" : ObjectId("5950ca0c2a1689066b5dde71"), 
+    "type" : "娱乐", 
+    "content" : "称号为“王都密探”的英雄定位是什么?", 
+    "correct" : [
+        "辅助", 
+        "刺客", 
+        "法师"
+    ], 
+    "ans" : [
+        "射手"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:47:08.684+0000")
+}
+{ 
+    "_id" : ObjectId("5950cc960270c107839cde2e"), 
+    "type" : "娱乐", 
+    "content" : "李元芳 特种部队衣服上的编号是多少", 
+    "correct" : [
+        "01", 
+        "03", 
+        "05"
+    ], 
+    "ans" : [
+        "02"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:57:58.459+0000")
+}
+{ 
+    "_id" : ObjectId("5950ccfb2bc14e07912e796a"), 
+    "type" : "娱乐", 
+    "content" : "KPL皮肤中编号为00的是哪一个皮肤？", 
+    "correct" : [
+        "超时空战士", 
+        "逐梦之影", 
+        "逐梦之音"
+    ], 
+    "ans" : [
+        "星际陆战队"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T08:59:39.114+0000")
+}
+{ 
+    "_id" : ObjectId("5950cd322bc14e07912e796b"), 
+    "type" : "娱乐", 
+    "content" : "KPL皮肤中编号为04的是哪一个皮肤", 
+    "correct" : [
+        "逐梦之音", 
+        "超时空战士", 
+        "星际陆战队"
+    ], 
+    "ans" : [
+        "逐梦之影"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:00:34.914+0000")
+}
+{ 
+    "_id" : ObjectId("5950cd712bc14e07912e796c"), 
+    "type" : "娱乐", 
+    "content" : "KPL皮肤中编号为03的是哪一个皮肤", 
+    "correct" : [
+        "星际陆战队", 
+        "超时空战士", 
+        "逐梦之影"
+    ], 
+    "ans" : [
+        "逐梦之音"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:01:37.038+0000")
+}
+{ 
+    "_id" : ObjectId("5950ce482bc14e07912e796d"), 
+    "type" : "娱乐", 
+    "content" : "干扰这一技能可以沉默机关几秒?", 
+    "correct" : [
+        "3", 
+        "4", 
+        "6"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:05:12.994+0000")
+}
+{ 
+    "_id" : ObjectId("5950ce882bc14e07912e796e"), 
+    "type" : "娱乐", 
+    "content" : "武道大会的阵容由几位英雄组成?", 
+    "correct" : [
+        "4", 
+        "5", 
+        "6"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:06:16.578+0000")
+}
+{ 
+    "_id" : ObjectId("5950cea42bc14e07912e796f"), 
+    "type" : "娱乐", 
+    "content" : "宫本武藏的第几个技能会斩出一道龙卷风?", 
+    "correct" : [
+        "2", 
+        "3", 
+        "被动"
+    ], 
+    "ans" : [
+        "1"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:06:44.867+0000")
+}
+{ 
+    "_id" : ObjectId("5950cec82bc14e07912e7970"), 
+    "type" : "娱乐", 
+    "content" : "符文分了几个等级?", 
+    "correct" : [
+        "3", 
+        "4", 
+        "6", 
+        ""
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:07:20.888+0000")
+}
+{ 
+    "_id" : ObjectId("5950cee02bc14e07912e7971"), 
+    "type" : "娱乐", 
+    "content" : "符文页中蓝色符文的个子有多少个?", 
+    "correct" : [
+        "12", 
+        "15", 
+        "20"
+    ], 
+    "ans" : [
+        "10"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:07:44.905+0000")
+}
+{ 
+    "_id" : ObjectId("5950cf042bc14e07912e7972"), 
+    "type" : "娱乐", 
+    "content" : "李白要多少金币获得?", 
+    "correct" : [
+        "5888", 
+        "8888", 
+        "13888"
+    ], 
+    "ans" : [
+        "18888"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:08:20.719+0000")
+}
+{ 
+    "_id" : ObjectId("5950cf262bc14e07912e7973"), 
+    "type" : "娱乐", 
+    "content" : "露娜的第几次普攻会造成范围伤害并标记敌人?", 
+    "correct" : [
+        "2", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:08:54.687+0000")
+}
+{ 
+    "_id" : ObjectId("5950cf772bc14e07912e7976"), 
+    "type" : "娱乐", 
+    "content" : "嬴政的史诗级皮肤叫什么?", 
+    "correct" : [
+        "暗夜贵公子", 
+        "摇滚巨星", 
+        "王者独尊"
+    ], 
+    "ans" : [
+        "优雅恋人"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:10:15.395+0000")
+}
+{ 
+    "_id" : ObjectId("5950cfbd2bc14e07912e7978"), 
+    "type" : "娱乐", 
+    "content" : "贤者之书被动增加多少点生命?", 
+    "correct" : [
+        "1200", 
+        "1300", 
+        "1500"
+    ], 
+    "ans" : [
+        "1400"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:11:25.013+0000")
+}
+{ 
+    "_id" : ObjectId("5950cfdc2bc14e07912e7979"), 
+    "type" : "娱乐", 
+    "content" : "关羽被动技能要移动多少距离速度会提升2%?", 
+    "correct" : [
+        "80", 
+        "120", 
+        "150"
+    ], 
+    "ans" : [
+        "100"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:11:56.723+0000")
+}
+{ 
+    "_id" : ObjectId("5950cff62bc14e07912e797a"), 
+    "type" : "娱乐", 
+    "content" : "法师使用皮肤可以增加法术攻击多少?", 
+    "correct" : [
+        "8", 
+        "12", 
+        "15"
+    ], 
+    "ans" : [
+        "10"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:12:22.992+0000")
+}
+{ 
+    "_id" : ObjectId("5950d0432bc14e07912e797b"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个英雄能够隐身?", 
+    "correct" : [
+        "不知火舞"
+    ], 
+    "ans" : [
+        "兰陵王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-26T09:13:39.357+0000")
+}
+{ 
+    "_id" : ObjectId("5950d0802bc14e07912e797c"), 
+    "type" : "娱乐", 
+    "content" : "局内装备复活甲的全称是什么?", 
+    "correct" : [
+        "贤者的庇佑", 
+        "贤者的保佑", 
+        "贤者的保护"
+    ], 
+    "ans" : [
+        "贤者的庇护"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:14:40.901+0000")
+}
+{ 
+    "_id" : ObjectId("5950d11c2bc14e07912e797d"), 
+    "type" : "娱乐", 
+    "content" : "兔女郎皮肤中，花木兰的武器是哪种食物?", 
+    "correct" : [
+        "白萝卜", 
+        "大白菜", 
+        "辣椒"
+    ], 
+    "ans" : [
+        "胡萝卜"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:17:16.966+0000")
+}
+{ 
+    "_id" : ObjectId("5950d13b2bc14e07912e797e"), 
+    "type" : "娱乐", 
+    "content" : "排位系统中，到达哪个段位会加入英雄禁用机制?", 
+    "correct" : [
+        "青铜", 
+        "白银", 
+        "黄金"
+    ], 
+    "ans" : [
+        "钻石"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:17:47.280+0000")
+}
+{ 
+    "_id" : ObjectId("5950d2562bc14e07912e797f"), 
+    "type" : "娱乐", 
+    "content" : "周庄大招天人合一，幻化梦域保护附近友军，是否可以解除他们所受到的控制效果?", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-26T09:22:30.486+0000")
+}
+{ 
+    "_id" : ObjectId("5950d3e12bc14e07912e7980"), 
+    "type" : "娱乐", 
+    "content" : "杨戬使用1技能时，会召唤哪样东西向前冲锋?", 
+    "correct" : [
+        "哈士奇", 
+        "萨摩耶", 
+        "泰迪"
+    ], 
+    "ans" : [
+        "哮天犬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:29:05.586+0000")
+}
+{ 
+    "_id" : ObjectId("5950d4102bc14e07912e7981"), 
+    "type" : "娱乐", 
+    "content" : "敬畏圣盾是哪位英雄的技能?", 
+    "correct" : [
+        "亚瑟", 
+        "项羽", 
+        "程咬金"
+    ], 
+    "ans" : [
+        "雅典娜"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:29:52.053+0000")
+}
+{ 
+    "_id" : ObjectId("5950d4602bc14e07912e7982"), 
+    "type" : "娱乐", 
+    "content" : "逐梦之音太空舱上的图案是那种动物?", 
+    "correct" : [
+        "狐狸", 
+        "猫咪", 
+        "小狗"
+    ], 
+    "ans" : [
+        "兔子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:31:12.027+0000")
+}
+{ 
+    "_id" : ObjectId("5950d4932bc14e07912e7983"), 
+    "type" : "娱乐", 
+    "content" : "貂蝉的被动技能语·花印对敌方叠加多少层印记后，会触发一次爆炸?", 
+    "correct" : [
+        "2", 
+        "3", 
+        "5"
+    ], 
+    "ans" : [
+        "4"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:32:03.950+0000")
+}
+{ 
+    "_id" : ObjectId("5950d4bc2bc14e07912e7984"), 
+    "type" : "娱乐", 
+    "content" : "东皇太一最多能让多少个黑暗能量体围绕自身旋转", 
+    "correct" : [
+        "2", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:32:44.393+0000")
+}
+{ 
+    "_id" : ObjectId("5950d50a2bc14e07912e7985"), 
+    "type" : "娱乐", 
+    "content" : "墨子的被动技能是什么?", 
+    "correct" : [
+        "和平漫步", 
+        "机关重炮", 
+        "墨守成规"
+    ], 
+    "ans" : [
+        "兼爱非攻"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:34:02.831+0000")
+}
+{ 
+    "_id" : ObjectId("5950d5a5c8814c09e799bfd4"), 
+    "type" : "娱乐", 
+    "content" : "后羿的3技能惩戒射击最多造成多少秒的晕眩?", 
+    "correct" : [
+        "2.5", 
+        "4.5", 
+        "5.5"
+    ], 
+    "ans" : [
+        "3.5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:36:37.014+0000")
+}
+{ 
+    "_id" : ObjectId("5950d6cbe2fb3909f7c4f494"), 
+    "type" : "娱乐", 
+    "content" : "新版芈月的暗影仆从同一时间最多能存在几个?", 
+    "correct" : [
+        "4", 
+        "5", 
+        "7"
+    ], 
+    "ans" : [
+        "6"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:41:31.474+0000")
+}
+{ 
+    "_id" : ObjectId("5950d70ce2fb3909f7c4f495"), 
+    "type" : "娱乐", 
+    "content" : "无限召唤模式中，每隔多少分钟会刷新不同的地图BUFF?", 
+    "correct" : [
+        "3", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "2"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:42:36.646+0000")
+}
+{ 
+    "_id" : ObjectId("5950d745e2fb3909f7c4f497"), 
+    "type" : "娱乐", 
+    "content" : "韩信的新皮肤与哪名英雄的皮肤属于同一系列?", 
+    "correct" : [
+        "小乔", 
+        "孙尚香", 
+        "王昭君"
+    ], 
+    "ans" : [
+        "貂蝉"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:43:33.996+0000")
+}
+{ 
+    "_id" : ObjectId("5950d7d740e1b80a364b2f05"), 
+    "type" : "娱乐", 
+    "content" : "干将莫邪4技能命中敌方英雄后，会减少哪个技能的冷却CD?", 
+    "correct" : [
+        "护主邪冢", 
+        ""
+    ], 
+    "ans" : [
+        "雌雄双剑"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-26T09:45:59.850+0000")
+}
+{ 
+    "_id" : ObjectId("5950d85540e1b80a364b2f06"), 
+    "type" : "娱乐", 
+    "content" : "刘备的2技能是什么?", 
+    "correct" : [
+        "强化霰弹", 
+        "双重射击", 
+        "疯狂弹幕"
+    ], 
+    "ans" : [
+        "震荡射击"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:48:05.679+0000")
+}
+{ 
+    "_id" : ObjectId("5950d87f40e1b80a364b2f07"), 
+    "type" : "娱乐", 
+    "content" : "新版本爆料中，同一路的2塔和高地塔在几秒内被连续推掉时，水晶会增加一个一定血量的护盾?", 
+    "correct" : [
+        "10", 
+        "20", 
+        "40"
+    ], 
+    "ans" : [
+        "30"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:48:47.249+0000")
+}
+{ 
+    "_id" : ObjectId("5950d95f2720db0ab238786b"), 
+    "type" : "娱乐", 
+    "content" : "韩信-逐梦之影的头发是什么颜色?", 
+    "correct" : [
+        "红色"
+    ], 
+    "ans" : [
+        "白色"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-26T09:52:31.621+0000")
+}
+{ 
+    "_id" : ObjectId("5950da921673e40af94b252d"), 
+    "type" : "娱乐", 
+    "content" : "楚汉之地背景故事中，东皇太一的老师是谁?", 
+    "correct" : [
+        "屈原", 
+        "伏羲", 
+        "战神"
+    ], 
+    "ans" : [
+        "鬼谷子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-26T09:57:38.009+0000")
+}
+{ 
+    "_id" : ObjectId("5951c0906ead9d04e60745bc"), 
+    "type" : "娱乐", 
+    "content" : "惩击的CD是多少秒？", 
+    "correct" : [
+        "10s", 
+        "20s", 
+        "40s"
+    ], 
+    "ans" : [
+        "30s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:18:56.889+0000")
+}
+{ 
+    "_id" : ObjectId("5951c0af6ead9d04e60745bd"), 
+    "type" : "娱乐", 
+    "content" : "终结的CD是多少秒？", 
+    "correct" : [
+        "80", 
+        "100", 
+        "110", 
+        ""
+    ], 
+    "ans" : [
+        "90"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:19:27.593+0000")
+}
+{ 
+    "_id" : ObjectId("5951c0cb6ead9d04e60745be"), 
+    "type" : "娱乐", 
+    "content" : "狂暴的CD是多少秒？", 
+    "correct" : [
+        "50", 
+        "70", 
+        "80"
+    ], 
+    "ans" : [
+        "60"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:19:55.565+0000")
+}
+{ 
+    "_id" : ObjectId("5951c0e86ead9d04e60745bf"), 
+    "type" : "娱乐", 
+    "content" : "疾跑的CD是多少秒？", 
+    "correct" : [
+        "80", 
+        "120", 
+        "140"
+    ], 
+    "ans" : [
+        "100"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:20:24.440+0000")
+}
+{ 
+    "_id" : ObjectId("5951c1156ead9d04e60745c0"), 
+    "type" : "娱乐", 
+    "content" : "治疗术的CD是多少秒？", 
+    "correct" : [
+        "100", 
+        "140", 
+        "150"
+    ], 
+    "ans" : [
+        "120"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:21:09.695+0000")
+}
+{ 
+    "_id" : ObjectId("5951c15e6ead9d04e60745c1"), 
+    "type" : "娱乐", 
+    "content" : "治疗术能够回复自己及队友（）生命值", 
+    "correct" : [
+        "10%", 
+        "12%", 
+        "16%"
+    ], 
+    "ans" : [
+        "15%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:22:22.716+0000")
+}
+{ 
+    "_id" : ObjectId("5951c1856ead9d04e60745c2"), 
+    "type" : "娱乐", 
+    "content" : "干扰的CD是多少秒？", 
+    "correct" : [
+        "50", 
+        "80", 
+        "100"
+    ], 
+    "ans" : [
+        "60"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:23:01.935+0000")
+}
+{ 
+    "_id" : ObjectId("5951c1a36ead9d04e60745c3"), 
+    "type" : "娱乐", 
+    "content" : "晕眩的CD是多少秒？", 
+    "correct" : [
+        "50", 
+        "80", 
+        "100"
+    ], 
+    "ans" : [
+        "90"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:23:31.628+0000")
+}
+{ 
+    "_id" : ObjectId("5951c1bf6ead9d04e60745c4"), 
+    "type" : "娱乐", 
+    "content" : "净化的CD是多少秒？", 
+    "correct" : [
+        "80", 
+        "100", 
+        "140"
+    ], 
+    "ans" : [
+        "120"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:23:59.087+0000")
+}
+{ 
+    "_id" : ObjectId("5951c1d36ead9d04e60745c5"), 
+    "type" : "娱乐", 
+    "content" : "弱化的CD是多少秒？", 
+    "correct" : [
+        "70", 
+        "80", 
+        "100"
+    ], 
+    "ans" : [
+        "90"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:24:19.551+0000")
+}
+{ 
+    "_id" : ObjectId("5951c46d6ead9d04e60745c6"), 
+    "type" : "娱乐", 
+    "content" : "新版孙悟空的哪个技能会给敌人打上印记?", 
+    "correct" : [
+        "斗战冲锋", 
+        "护身咒法", 
+        "大圣神威"
+    ], 
+    "ans" : [
+        "如意金箍"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:35:25.669+0000")
+}
+{ 
+    "_id" : ObjectId("5951c5816ead9d04e60745c8"), 
+    "type" : "娱乐", 
+    "content" : "大乔的被动技能是什么?", 
+    "correct" : [
+        "鲤跃之潮", 
+        "宿命之海", 
+        "涡旋之门"
+    ], 
+    "ans" : [
+        "川流不息"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:40:01.879+0000")
+}
+{ 
+    "_id" : ObjectId("5951c7e36ead9d04e60745c9"), 
+    "type" : "娱乐", 
+    "content" : "狄仁杰的被动技能是什么?", 
+    "correct" : [
+        "六令追凶", 
+        "逃脱", 
+        "王朝密令"
+    ], 
+    "ans" : [
+        "迅捷"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:50:11.246+0000")
+}
+{ 
+    "_id" : ObjectId("5951c99d6ead9d04e60745ca"), 
+    "type" : "娱乐", 
+    "content" : "-杨戬的1技能是什么?", 
+    "correct" : [
+        "神智侵蚀", 
+        "虚妄破灭", 
+        "根源之目"
+    ], 
+    "ans" : [
+        "逆转乾坤"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:57:33.119+0000")
+}
+{ 
+    "_id" : ObjectId("5951c9d26ead9d04e60745cb"), 
+    "type" : "娱乐", 
+    "content" : "孙膑的被动技能是什么？", 
+    "correct" : [
+        "时空爆弹", 
+        "时之被动", 
+        "时光流逝"
+    ], 
+    "ans" : [
+        "时间沙漏"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T02:58:26.605+0000")
+}
+{ 
+    "_id" : ObjectId("5951ca406ead9d04e60745cc"), 
+    "type" : "娱乐", 
+    "content" : "大乔使用2技能后，在圈圈内处于什么状态的英雄会被传送回己方泉水?", 
+    "correct" : [
+        "血量最高", 
+        "距离最近", 
+        "最危险时"
+    ], 
+    "ans" : [
+        "血量最低"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:00:16.270+0000")
+}
+{ 
+    "_id" : ObjectId("5951cafd6ead9d04e60745cd"), 
+    "type" : "娱乐", 
+    "content" : "马可波罗的被动技能叫什么?", 
+    "correct" : [
+        "华丽左轮", 
+        "漫游之枪", 
+        "狂热弹幕"
+    ], 
+    "ans" : [
+        "连锁反应"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:03:25.574+0000")
+}
+{ 
+    "_id" : ObjectId("5951cc8f6ead9d04e60745ce"), 
+    "type" : "娱乐", 
+    "content" : "成就等级达到30级时能获得狄仁杰的哪款皮肤?", 
+    "correct" : [
+        "超时空战士", 
+        "锦衣卫", 
+        "魔术师"
+    ], 
+    "ans" : [
+        "阴阳师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:10:07.856+0000")
+}
+{ 
+    "_id" : ObjectId("5951ccc06ead9d04e60745cf"), 
+    "type" : "娱乐", 
+    "content" : "“魔音贯耳”是哪名英雄的技能?", 
+    "correct" : [
+        "杨玉环", 
+        "蔡文姬", 
+        "貂蝉", 
+        ""
+    ], 
+    "ans" : [
+        "高渐离"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:10:56.734+0000")
+}
+{ 
+    "_id" : ObjectId("5951cd406ead9d04e60745d0"), 
+    "type" : "娱乐", 
+    "content" : "成吉思汗的坐骑是什么?", 
+    "correct" : [
+        "狗"
+    ], 
+    "ans" : [
+        "狼"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:13:04.760+0000")
+}
+{ 
+    "_id" : ObjectId("5951cd666ead9d04e60745d1"), 
+    "type" : "娱乐", 
+    "content" : "小乔在释放3技能“星华缭乱”时，同一个敌人最多受到多少次打击?", 
+    "correct" : [
+        "2", 
+        "3", 
+        "5"
+    ], 
+    "ans" : [
+        "4"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:13:42.649+0000")
+}
+{ 
+    "_id" : ObjectId("5951cd956ead9d04e60745d2"), 
+    "type" : "娱乐", 
+    "content" : "姜子牙在大招释放途中能不能使用闪现?", 
+    "correct" : [
+        "不能"
+    ], 
+    "ans" : [
+        "能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:14:29.081+0000")
+}
+{ 
+    "_id" : ObjectId("5951ce066ead9d04e60745d3"), 
+    "type" : "娱乐", 
+    "content" : "据非官方统计，王者峡谷腿最短英雄是?", 
+    "correct" : [
+        "刘禅", 
+        "鲁班七号", 
+        "李元芳"
+    ], 
+    "ans" : [
+        "蔡文姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:16:22.286+0000")
+}
+{ 
+    "_id" : ObjectId("5951ce2aa46844072be562ae"), 
+    "type" : "娱乐", 
+    "content" : "橘右京的英雄定位是战士和什么?", 
+    "correct" : [
+        "法师", 
+        "辅助", 
+        "射手"
+    ], 
+    "ans" : [
+        "刺客"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:16:58.364+0000")
+}
+{ 
+    "_id" : ObjectId("5951ce48a46844072be562af"), 
+    "type" : "娱乐", 
+    "content" : "刘邦一技能损人利己发动几秒后可手动结束护盾?", 
+    "correct" : [
+        "2", 
+        "3", 
+        "3.5"
+    ], 
+    "ans" : [
+        "2.5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:17:28.185+0000")
+}
+{ 
+    "_id" : ObjectId("5951ce99a46844072be562b0"), 
+    "type" : "娱乐", 
+    "content" : "-雅典娜死亡后在当前位置觉醒真身，真身形态是否对双方可视?", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:18:49.679+0000")
+}
+{ 
+    "_id" : ObjectId("5951cf3ca46844072be562b1"), 
+    "type" : "娱乐", 
+    "content" : "“男神是孟德大人，喜欢宠物是阿典，梦想是养只羊驼~”是哪位英雄的台词?", 
+    "correct" : [
+        "大乔", 
+        "小乔", 
+        "孙尚香"
+    ], 
+    "ans" : [
+        "蔡文姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:21:32.658+0000")
+}
+{ 
+    "_id" : ObjectId("5951cf77a46844072be562b2"), 
+    "type" : "娱乐", 
+    "content" : "吕布的大招是否有减速效果?", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:22:31.474+0000")
+}
+{ 
+    "_id" : ObjectId("5951cf8ca46844072be562b3"), 
+    "type" : "娱乐", 
+    "content" : "高渐离要几次普攻或释放技能才能发出被动效果?", 
+    "correct" : [
+        "2", 
+        "3", 
+        "5"
+    ], 
+    "ans" : [
+        "4"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:22:52.823+0000")
+}
+{ 
+    "_id" : ObjectId("5951cfb1a46844072be562b4"), 
+    "type" : "娱乐", 
+    "content" : "张飞的1技能冷却时间是多少秒?", 
+    "correct" : [
+        "5", 
+        "5.5", 
+        "7"
+    ], 
+    "ans" : [
+        "6"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:23:29.699+0000")
+}
+{ 
+    "_id" : ObjectId("5951d32e8f68330822190464"), 
+    "type" : "娱乐", 
+    "content" : "墨子是坦克还是射手?", 
+    "correct" : [
+        "射手"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:38:22.720+0000")
+}
+{ 
+    "_id" : ObjectId("5951d3478f68330822190465"), 
+    "type" : "娱乐", 
+    "content" : "姜子牙是坦克还是法师?", 
+    "correct" : [
+        "坦克"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:38:47.304+0000")
+}
+{ 
+    "_id" : ObjectId("5951d35f8f68330822190466"), 
+    "type" : "娱乐", 
+    "content" : "甄姬是刺客还是法师?", 
+    "correct" : [
+        "刺客"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:39:11.134+0000")
+}
+{ 
+    "_id" : ObjectId("5951d3718f68330822190467"), 
+    "type" : "娱乐", 
+    "content" : "安琪拉是法师还是刺客?", 
+    "correct" : [
+        "刺客"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:39:29.038+0000")
+}
+{ 
+    "_id" : ObjectId("5951d4ca8f68330822190468"), 
+    "type" : "娱乐", 
+    "content" : "魅力维加斯是谁的皮肤?", 
+    "correct" : [
+        "貂蝉", 
+        "小乔", 
+        "虞姬"
+    ], 
+    "ans" : [
+        "妲己"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:45:14.267+0000")
+}
+{ 
+    "_id" : ObjectId("5951d5d38f68330822190469"), 
+    "type" : "娱乐", 
+    "content" : "兰陵王被动技能提升移动速度是百分之多少?", 
+    "correct" : [
+        "10", 
+        "30", 
+        "40"
+    ], 
+    "ans" : [
+        "20"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:49:39.641+0000")
+}
+{ 
+    "_id" : ObjectId("5951d6f78f6833082219046a"), 
+    "type" : "娱乐", 
+    "content" : "游戏内铁剑购买需要多少经济?", 
+    "correct" : [
+        "350", 
+        "500", 
+        "800"
+    ], 
+    "ans" : [
+        "250"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:54:31.977+0000")
+}
+{ 
+    "_id" : ObjectId("5951d7df8f6833082219046b"), 
+    "type" : "娱乐", 
+    "content" : "战队中，队员能不能自主报名参加战队比赛?", 
+    "correct" : [
+        "能"
+    ], 
+    "ans" : [
+        "不能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T03:58:23.101+0000")
+}
+{ 
+    "_id" : ObjectId("5951d8348f6833082219046c"), 
+    "type" : "娱乐", 
+    "content" : "赠送金币给好友可以增加几点亲密度?", 
+    "correct" : [
+        "10", 
+        "15", 
+        "30"
+    ], 
+    "ans" : [
+        "20"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T03:59:48.738+0000")
+}
+{ 
+    "_id" : ObjectId("5951d8498f6833082219046d"), 
+    "type" : "娱乐", 
+    "content" : "与好友开黑一局可以增加几点亲密度?", 
+    "correct" : [
+        "10", 
+        "20", 
+        "25"
+    ], 
+    "ans" : [
+        "30"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T04:00:09.706+0000")
+}
+{ 
+    "_id" : ObjectId("5951d8638f6833082219046e"), 
+    "type" : "娱乐", 
+    "content" : "我方阵营一共有几座防御塔(不算水晶)?", 
+    "correct" : [
+        "8", 
+        "10", 
+        "11"
+    ], 
+    "ans" : [
+        "9"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T04:00:35.033+0000")
+}
+{ 
+    "_id" : ObjectId("5951dafa8f6833082219046f"), 
+    "type" : "娱乐", 
+    "content" : "哪吒的1技能叫什么名字?", 
+    "correct" : [
+        "混天绫.束", 
+        "乾坤.天降", 
+        "炙炼火种"
+    ], 
+    "ans" : [
+        "火焰三尖枪"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T04:11:38.444+0000")
+}
+{ 
+    "_id" : ObjectId("5951db238f68330822190470"), 
+    "type" : "娱乐", 
+    "content" : "哪吒的1技能每命中一个单位都会为风火轮提供什么效果?", 
+    "correct" : [
+        "减速", 
+        "无效果"
+    ], 
+    "ans" : [
+        "加速"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(3), 
+    "created_date" : ISODate("2017-06-27T04:12:19.147+0000")
+}
+{ 
+    "_id" : ObjectId("5951db9a8f68330822190471"), 
+    "type" : "娱乐", 
+    "content" : "雅典娜护盾持续期间能不能免疫控制?-", 
+    "correct" : [
+        "不能"
+    ], 
+    "ans" : [
+        "能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T04:14:18.907+0000")
+}
+{ 
+    "_id" : ObjectId("5951df0c8f68330822190477"), 
+    "type" : "娱乐", 
+    "content" : "巨人之握的唯一被动献祭能不能与红莲斗篷的被动共存?", 
+    "correct" : [
+        "能"
+    ], 
+    "ans" : [
+        "不能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T04:29:00.005+0000")
+}
+{ 
+    "_id" : ObjectId("5951df428f68330822190478"), 
+    "type" : "娱乐", 
+    "content" : "蔡文姬释放第一技能思无邪持续多长时间?", 
+    "correct" : [
+        "2", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-06-27T04:29:54.153+0000")
+}
+{ 
+    "_id" : ObjectId("5951f188c24dbe0deb9d627a"), 
+    "type" : "娱乐", 
+    "content" : "夏侯惇二技能是不是范围性攻击?", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-06-27T05:47:52.775+0000")
+}
+{ 
+    "_id" : ObjectId("595b50bfcc8eb1a5a330e555"), 
+    "type" : "娱乐", 
+    "content" : "“健康系统”将在7月几日进行更新升级", 
+    "correct" : [
+        "2", 
+        "3", 
+        "5"
+    ], 
+    "ans" : [
+        "4"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T08:24:31.827+0000")
+}
+{ 
+    "_id" : ObjectId("595b51f7cc8eb1a5a330e556"), 
+    "type" : "娱乐", 
+    "content" : "马可波罗1技能每一发子弹命中后会回复多少能量?", 
+    "correct" : [
+        "5", 
+        "8", 
+        "12"
+    ], 
+    "ans" : [
+        "10"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T08:29:43.621+0000")
+}
+{ 
+    "_id" : ObjectId("595b52f0cc8eb1a5a330e557"), 
+    "type" : "娱乐", 
+    "content" : "百里守约的2技能最多能储存多少个视野装置?", 
+    "correct" : [
+        "2", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T08:33:52.010+0000")
+}
+{ 
+    "_id" : ObjectId("595b5871cc8eb1a5a330e55b"), 
+    "type" : "娱乐", 
+    "content" : "\"魅惑之狐\"是哪位英雄", 
+    "correct" : [
+        "貂蝉", 
+        "孙尚香", 
+        "小乔"
+    ], 
+    "ans" : [
+        "妲己"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T08:57:21.031+0000")
+}
+{ 
+    "_id" : ObjectId("595b63229919fcaacde53abd"), 
+    "type" : "娱乐", 
+    "content" : "”万物有灵”是哪位英雄的称号", 
+    "correct" : [
+        "白起", 
+        "曹操", 
+        "亚瑟"
+    ], 
+    "ans" : [
+        "鬼谷子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T09:42:58.244+0000")
+}
+{ 
+    "_id" : ObjectId("595b63b39919fcaacde53abe"), 
+    "type" : "娱乐", 
+    "content" : "“鬼谷子命令玄微子包裹自身和1500距离内的队友，使自己和队友提高移速并在1秒延迟后进入伪装状态，同时探查到距离鬼谷子最近的一名敌方英雄视野。这些效果在开启技能后最多持续4秒，伪装者若使用普攻、技能或敌方造成负面效果会立即解除伪装状态”描述的是哪一个技能？", 
+    "correct" : [
+        "纵横兵法", 
+        "先知·神隐", 
+        "万物有灵"
+    ], 
+    "ans" : [
+        "先知·雾隐"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T09:45:23.960+0000")
+}
+{ 
+    "_id" : ObjectId("595b64cb9919fcaacde53abf"), 
+    "type" : "娱乐", 
+    "content" : "干将莫邪的定位是什么", 
+    "correct" : [
+        "战士", 
+        "坦克", 
+        "射手"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T09:50:03.618+0000")
+}
+{ 
+    "_id" : ObjectId("595b64f49919fcaacde53ac0"), 
+    "type" : "娱乐", 
+    "content" : "干将莫邪有多少个技能（含被动）", 
+    "correct" : [
+        "3", 
+        "4", 
+        "6"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T09:50:44.256+0000")
+}
+{ 
+    "_id" : ObjectId("595b66179919fcaacde53ac1"), 
+    "type" : "娱乐", 
+    "content" : "“请接受卑微男子送上的赞美：若轻云之蔽月，若流风之回雪。” 是哪位英雄的台词", 
+    "correct" : [
+        "虞姬", 
+        "王昭君", 
+        "貂蝉"
+    ], 
+    "ans" : [
+        "甄姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T09:55:35.506+0000")
+}
+{ 
+    "_id" : ObjectId("595b67589919fcaacde53ac2"), 
+    "type" : "娱乐", 
+    "content" : "甄姬的二技能是哪一个", 
+    "correct" : [
+        "凝泪成冰", 
+        "泪如泉涌", 
+        "洛神降临"
+    ], 
+    "ans" : [
+        "叹息水流"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T10:00:56.128+0000")
+}
+{ 
+    "_id" : ObjectId("595b6b179919fcaacde53ac8"), 
+    "type" : "娱乐", 
+    "content" : "“狂热弹幕”是哪一位英雄的技能", 
+    "correct" : [
+        "马克·菠萝", 
+        "马克·萝卜", 
+        "马克·菠萝派"
+    ], 
+    "ans" : [
+        "马克·波罗"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-04T10:16:55.533+0000")
+}
+{ 
+    "_id" : ObjectId("595ca6f164ae65be4563ace1"), 
+    "type" : "娱乐", 
+    "content" : "在王者荣耀中，被称为'诗仙'的是以下哪位英雄", 
+    "correct" : [
+        "赵云", 
+        "兰陵王", 
+        "韩信"
+    ], 
+    "ans" : [
+        "李白"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-05T08:44:33.420+0000")
+}
+{ 
+    "_id" : ObjectId("595db75dfa7d74cdc8a73ea9"), 
+    "type" : "娱乐", 
+    "content" : "\"契约期间双方受到的伤害都会对彼此造成同等伤害且自身无法进行任何操作，强大的堕神契约无法被净化\"是东皇太一的哪一个技能\r\n", 
+    "correct" : [
+        "㬬龙烛兆", 
+        "日蚀祭典", 
+        "暗冕之噬"
+    ], 
+    "ans" : [
+        "堕神契约"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:06:53.648+0000")
+}
+{ 
+    "_id" : ObjectId("595db7f5fa7d74cdc8a73eaa"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一个是东皇太一的被动技能？", 
+    "correct" : [
+        "释放力量对周围造成300/360/420/480/540/600（+40%法术加成）点法术伤害并创造出黑暗能量体在身边环绕，黑暗能量体存在的状态下再次释放祭典会增强黑暗能量体的数量，命中单位归还一半CD。黑暗能量体的数量决定了曜龙烛兆的威力，最大三颗", 
+        "消耗黑暗能量体，召唤曜龙对一个范围进行冲击，释放后东皇获得短暂加速。冲击造成500/600/700/800/900/1000（+60%法术加成）点法术伤害。黑暗能量体的数量决定了冲击的次数和冲击的威力，第一次造成1秒50%的减速，第二次造成1秒90%的减速，第三次冲击造成范围击晕1秒。", 
+        "东皇太一压制敌方英雄并创造一个维持2.5秒的契约链接，强大的能量溢出直接获得3颗黑暗能量体。契约期间双方受到的伤害都会对彼此造成同等伤害且自身无法进行任何操作，强大的堕神契约无法被净化"
+    ], 
+    "ans" : [
+        "祭典创造出来的黑暗能量体，极不稳定，被黑暗能量体触碰到都会造成100（+敌方3%最大生命值）（50%法术加成）点法术伤害，并回复东皇太一100（自身最大生命3%）（+40%法术加成）点血量，非英雄单位回复少额最大生命百分比的血量"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:09:25.415+0000")
+}
+{ 
+    "_id" : ObjectId("595db821fa7d74cdc8a73eab"), 
+    "type" : "娱乐", 
+    "content" : "“噬灭日蚀”是哪一位英雄的称号", 
+    "correct" : [
+        "程咬金", 
+        "亚瑟", 
+        "曹操"
+    ], 
+    "ans" : [
+        "东皇太一"
+    ], 
+    "multi" : true, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:10:09.299+0000")
+}
+{ 
+    "_id" : ObjectId("595db83bfa7d74cdc8a73eac"), 
+    "type" : "娱乐", 
+    "content" : "东皇太一的定位是什么", 
+    "correct" : [
+        "法师", 
+        "射手", 
+        "刺客"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : true, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:10:35.198+0000")
+}
+{ 
+    "_id" : ObjectId("595db94cfa7d74cdc8a73ead"), 
+    "type" : "娱乐", 
+    "content" : "“我能送你回家吗 可能外面要下雨了”说的是大乔以下哪一个技能？", 
+    "correct" : [
+        "川流不息", 
+        "鲤跃之潮", 
+        "绝断之桥"
+    ], 
+    "ans" : [
+        "宿命之海"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:15:08.697+0000")
+}
+{ 
+    "_id" : ObjectId("595db998fa7d74cdc8a73eae"), 
+    "type" : "娱乐", 
+    "content" : "大乔，又称“大桥”，是庐江桥公的女儿。陈寿《三国志》记载两姐妹都是国色天香的美人。孙策和周瑜攻打庐江时候得到了桥公的两个女儿，那么请问是谁娶了大乔", 
+    "correct" : [
+        "周瑜", 
+        "孙权", 
+        "刘备"
+    ], 
+    "ans" : [
+        "孙策"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:16:24.452+0000")
+}
+{ 
+    "_id" : ObjectId("595dbbabfa7d74cdc8a73eaf"), 
+    "type" : "娱乐", 
+    "content" : "大乔一共有多少个技能？（含被动）", 
+    "correct" : [
+        "3", 
+        "4", 
+        "6"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T04:25:15.569+0000")
+}
+{ 
+    "_id" : ObjectId("595dd215fa7d74cdc8a73eb0"), 
+    "type" : "娱乐", 
+    "content" : "芝加哥教父是哪位英雄的皮肤", 
+    "correct" : [
+        "刘备", 
+        "张良", 
+        "周瑜"
+    ], 
+    "ans" : [
+        "黄忠"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T06:00:53.259+0000")
+}
+{ 
+    "_id" : ObjectId("595dd5f8fa7d74cdc8a73eb1"), 
+    "type" : "娱乐", 
+    "content" : "“黄忠进入架起状态，持续15秒，期间普攻射程得到提升（5秒后扩大到最远距离），对敌人造成范围60/88/116（+80%物理加成）点物理伤害（伤害随时间增加，每秒增长20%，最高100%），目标距离越近伤害越低，最低衰减至70%。物理和法术护甲额外增加60/120/180点，自身不能移动，再次施法后架起状态取消”这是黄忠的哪个技能", 
+    "correct" : [
+        "警戒地雷", 
+        "追击潜能", 
+        "炮手燃魂"
+    ], 
+    "ans" : [
+        "重装炮台", 
+        ""
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T06:17:28.510+0000")
+}
+{ 
+    "_id" : ObjectId("595dd639fa7d74cdc8a73eb2"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一个是黄忠的被动技能？", 
+    "correct" : [
+        "追击潜能", 
+        "警戒地雷", 
+        "重装炮台"
+    ], 
+    "ans" : [
+        "炮手燃魂"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T06:18:33.427+0000")
+}
+{ 
+    "_id" : ObjectId("595ddc00fa7d74cdc8a73eb9"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中的英雄诸葛亮，原型是哪个时期的人物", 
+    "correct" : [
+        "战国时期", 
+        "东汉", 
+        "西汉"
+    ], 
+    "ans" : [
+        "三国时期"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T06:43:12.117+0000")
+}
+{ 
+    "_id" : ObjectId("595ddd94fa7d74cdc8a73eba"), 
+    "type" : "娱乐", 
+    "content" : "诸葛亮的被动技能是哪一个", 
+    "correct" : [
+        "东风破袭", 
+        "时空穿梭", 
+        "元气弹"
+    ], 
+    "ans" : [
+        "策谋之刻"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T06:49:56.505+0000")
+}
+{ 
+    "_id" : ObjectId("595de1cafbd48cd5359783d8"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，大家经常说的“千里送人头”说的是以下哪位英雄", 
+    "correct" : [
+        "敖丙", 
+        "东皇太一", 
+        "嬴政"
+    ], 
+    "ans" : [
+        "哪吒"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:07:54.081+0000")
+}
+{ 
+    "_id" : ObjectId("595de2f0fbd48cd5359783dc"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中哪吒的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "法师", 
+        "射手"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:12:48.505+0000")
+}
+{ 
+    "_id" : ObjectId("595de4dbfbd48cd5359783de"), 
+    "type" : "娱乐", 
+    "content" : "哪吒的1技能是哪个？", 
+    "correct" : [
+        "炙炼火种", 
+        "混天绫·束", 
+        "乾坤·天降"
+    ], 
+    "ans" : [
+        "火焰三尖枪"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:20:59.620+0000")
+}
+{ 
+    "_id" : ObjectId("595de769fbd48cd5359783e0"), 
+    "type" : "娱乐", 
+    "content" : "“练金大师”是哪位英雄的称号", 
+    "correct" : [
+        "张良", 
+        "马可波罗", 
+        "成吉思汗"
+    ], 
+    "ans" : [
+        "太乙真人"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:31:53.553+0000")
+}
+{ 
+    "_id" : ObjectId("595de795fbd48cd5359783e1"), 
+    "type" : "娱乐", 
+    "content" : "“第三只手”是太乙真人的哪个技能", 
+    "correct" : [
+        "1", 
+        "3", 
+        "被动"
+    ], 
+    "ans" : [
+        "2"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:32:37.173+0000")
+}
+{ 
+    "_id" : ObjectId("595de885fbd48cd5359783e2"), 
+    "type" : "娱乐", 
+    "content" : "太乙真人的定位是什么", 
+    "correct" : [
+        "法师", 
+        "射手", 
+        "刺客"
+    ], 
+    "ans" : [
+        "辅助"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:36:37.002+0000")
+}
+{ 
+    "_id" : ObjectId("595dea50fbd48cd5359783e3"), 
+    "type" : "娱乐", 
+    "content" : "杨戬的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "法师", 
+        "辅助"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:44:16.582+0000")
+}
+{ 
+    "_id" : ObjectId("595dea89fbd48cd5359783e4"), 
+    "type" : "娱乐", 
+    "content" : "神话故事中被称为二郎神的是王者荣耀中的哪位英雄人物", 
+    "correct" : [
+        "姜子牙", 
+        "哪吒", 
+        "太乙真人"
+    ], 
+    "ans" : [
+        "杨戬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:45:13.285+0000")
+}
+{ 
+    "_id" : ObjectId("595deb261ea63fd94759527b"), 
+    "type" : "娱乐", 
+    "content" : "“根源之目”是哪位英雄的称号", 
+    "correct" : [
+        "亚瑟", 
+        "后羿", 
+        "项羽"
+    ], 
+    "ans" : [
+        "杨戬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:47:50.711+0000")
+}
+{ 
+    "_id" : ObjectId("595deda01ea63fd94759527c"), 
+    "type" : "娱乐", 
+    "content" : "成吉思汗的定位是什么", 
+    "correct" : [
+        "法师", 
+        "刺客", 
+        "坦克"
+    ], 
+    "ans" : [
+        "射手"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T07:58:24.472+0000")
+}
+{ 
+    "_id" : ObjectId("595df0bc1ea63fd94759527e"), 
+    "type" : "娱乐", 
+    "content" : "成吉思汗的被动技能是什么", 
+    "correct" : [
+        "鹰眼", 
+        "百兽陷阱", 
+        "可汗狂猎"
+    ], 
+    "ans" : [
+        "追猎"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T08:11:40.759+0000")
+}
+{ 
+    "_id" : ObjectId("595df3361ea63fd947595280"), 
+    "type" : "娱乐", 
+    "content" : "“神梦一刀”是哪位英雄的称号", 
+    "correct" : [
+        "兰陵王", 
+        "赵云", 
+        "韩信"
+    ], 
+    "ans" : [
+        "橘右京"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T08:22:14.832+0000")
+}
+{ 
+    "_id" : ObjectId("595dfc301ea63fd94759528a"), 
+    "type" : "娱乐", 
+    "content" : "“战争女神”是哪位英雄的称号", 
+    "correct" : [
+        "虞姬", 
+        "钟无艳", 
+        "荆轲"
+    ], 
+    "ans" : [
+        "雅典娜"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T09:00:32.436+0000")
+}
+{ 
+    "_id" : ObjectId("595dfdb91ea63fd94759528e"), 
+    "type" : "娱乐", 
+    "content" : "夏侯惇的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "坦克", 
+        "射手"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T09:07:05.864+0000")
+}
+{ 
+    "_id" : ObjectId("595e00c84da5cedc5ea2cd72"), 
+    "type" : "娱乐", 
+    "content" : "“战争骑士”是哪位英雄的皮肤？", 
+    "correct" : [
+        "亚瑟", 
+        "项羽", 
+        "关羽"
+    ], 
+    "ans" : [
+        "夏侯惇"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T09:20:08.935+0000")
+}
+{ 
+    "_id" : ObjectId("595e01a64da5cedc5ea2cd74"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是夏侯惇的二技能", 
+    "correct" : [
+        "豪气斩", 
+        "不羁之刃", 
+        "噬目"
+    ], 
+    "ans" : [
+        "龙卷闪"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-06T09:23:50.946+0000")
+}
+{ 
+    "_id" : ObjectId("595ef993f7e1bfe26977de00"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是蔡文姬的二技能", 
+    "correct" : [
+        "忘忧曲", 
+        "长歌行", 
+        "思无邪"
+    ], 
+    "ans" : [
+        "胡笳乐"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:01:39.001+0000")
+}
+{ 
+    "_id" : ObjectId("595efa05f7e1bfe26977de04"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中英雄蔡文姬原型人物是哪个时期的？", 
+    "correct" : [
+        "战国", 
+        "西汉", 
+        "三国"
+    ], 
+    "ans" : [
+        "东汉"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:03:33.995+0000")
+}
+{ 
+    "_id" : ObjectId("595efa4ef7e1bfe26977de05"), 
+    "type" : "娱乐", 
+    "content" : "被称为“移动泉水”的是哪个英雄", 
+    "correct" : [
+        "太乙真人", 
+        "鬼谷子", 
+        "大乔"
+    ], 
+    "ans" : [
+        "蔡文姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:04:46.806+0000")
+}
+{ 
+    "_id" : ObjectId("595efc7e7ae63ce9568729c4"), 
+    "type" : "娱乐", 
+    "content" : "“青龙偃月刀”是哪位英雄的武器？", 
+    "correct" : [
+        "张飞", 
+        "赵云", 
+        "韩信"
+    ], 
+    "ans" : [
+        "关羽"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:14:06.951+0000")
+}
+{ 
+    "_id" : ObjectId("595f04577ae63ce9568729db"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个不是关羽的皮肤？", 
+    "correct" : [
+        "龙腾万里", 
+        "冰锋战神", 
+        "天启骑士"
+    ], 
+    "ans" : [
+        "埃及法老"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:47:35.874+0000")
+}
+{ 
+    "_id" : ObjectId("595f06047ae63ce9568729dd"), 
+    "type" : "娱乐", 
+    "content" : "加勒比小姐是哪个英雄的皮肤", 
+    "correct" : [
+        "花木兰", 
+        "王昭君", 
+        "甄姬"
+    ], 
+    "ans" : [
+        "虞姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:54:44.217+0000")
+}
+{ 
+    "_id" : ObjectId("595f06477ae63ce9568729df"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个技能是虞姬的被动技能？", 
+    "correct" : [
+        "楚歌起", 
+        "大风来", 
+        "阵前舞"
+    ], 
+    "ans" : [
+        "树神守护"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T03:55:51.806+0000")
+}
+{ 
+    "_id" : ObjectId("595f08ef82bdc0ef9e270e62"), 
+    "type" : "娱乐", 
+    "content" : "“力拔山兮气盖世，时不利兮骓不逝。骓不逝兮可奈何，虞兮虞兮奈若何。”描述的是王者荣耀中的哪对CP？", 
+    "correct" : [
+        "周瑜和小乔", 
+        "孙悟空和露娜", 
+        "刘备和孙尚香"
+    ], 
+    "ans" : [
+        "项羽和虞姬"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T04:07:11.246+0000")
+}
+{ 
+    "_id" : ObjectId("595f27aa51759df0509c4d58"), 
+    "type" : "娱乐", 
+    "content" : "关羽的定位是什么？", 
+    "correct" : [
+        "坦克", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T06:18:18.532+0000")
+}
+{ 
+    "_id" : ObjectId("595f28ce51759df0509c4d5b"), 
+    "type" : "娱乐", 
+    "content" : "“此技能在触碰到敌人或者散播到最远处时可以造成晕眩效果，之后缓慢飞行对周围敌人造成灼伤和减速效果。玩家只有提高此技能的命中率，才能保证自己可以打出稳定的输出伤害。玩家在团战中需要注意的是，此技能除了可以先手开团外，我们还可以用来防止敌方刺客的切入。”这段话描述的是安琪拉的哪个技能", 
+    "correct" : [
+        "被动：咒术火焰", 
+        "1技能：火球术", 
+        "3技能：炽热光辉"
+    ], 
+    "ans" : [
+        "2技能：混沌火种"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T06:23:10.480+0000")
+}
+{ 
+    "_id" : ObjectId("595f542c51759df0509c4db0"), 
+    "type" : "娱乐", 
+    "content" : "破釜沉舟是项羽的哪个技能？（配合红莲斗篷唯一被动-献祭使用可以达到快速清理兵线的目的。该技能命中敌方英雄，还可以对其造成减速效果并且减少他们的输出伤害。此技能还有一个被动效果，升级一次就会提高固定格挡伤害。由于此技能前期用处不大，这里推荐副加此技能。）", 
+    "correct" : [
+        "1", 
+        "3", 
+        "被动"
+    ], 
+    "ans" : [
+        "2"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T09:28:12.329+0000")
+}
+{ 
+    "_id" : ObjectId("595f596a3c68cdfce7f87225"), 
+    "type" : "娱乐", 
+    "content" : "项羽的苍穹之光需要多少点券", 
+    "correct" : [
+        "288", 
+        "588", 
+        "788"
+    ], 
+    "ans" : [
+        "2888"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T09:50:34.720+0000")
+}
+{ 
+    "_id" : ObjectId("595f5ce63c68cdfce7f87227"), 
+    "type" : "娱乐", 
+    "content" : "项羽的定位是什么", 
+    "correct" : [
+        "战士", 
+        "刺客", 
+        "辅助"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-07T10:05:26.130+0000")
+}
+{ 
+    "_id" : ObjectId("596439fafdd2c90f06ba60d9"), 
+    "type" : "娱乐", 
+    "content" : "后羿的哪一个技能会造成减速效果？", 
+    "correct" : [
+        "迟缓之箭", 
+        "炙热之风", 
+        "惩戒射击"
+    ], 
+    "ans" : [
+        "燎原箭雨"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:37:46.058+0000")
+}
+{ 
+    "_id" : ObjectId("59643a2cfdd2c90f06ba60da"), 
+    "type" : "娱乐", 
+    "content" : "“半神之弓”是哪位英雄的称号", 
+    "correct" : [
+        "成吉思汗", 
+        "刘备", 
+        "虞姬"
+    ], 
+    "ans" : [
+        "后羿"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:38:36.540+0000")
+}
+{ 
+    "_id" : ObjectId("59643ac0fdd2c90f06ba60db"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中的英雄刘禅原型是谁的儿子？", 
+    "correct" : [
+        "刘封", 
+        "刘永", 
+        "刘湛"
+    ], 
+    "ans" : [
+        "刘备", 
+        ""
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:41:04.564+0000")
+}
+{ 
+    "_id" : ObjectId("59643ae0fdd2c90f06ba60dc"), 
+    "type" : "娱乐", 
+    "content" : "刘禅的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助", 
+        "射手"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:41:36.035+0000")
+}
+{ 
+    "_id" : ObjectId("59643b3efdd2c90f06ba60dd"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是刘禅的3技能？", 
+    "correct" : [
+        "磁力屏障", 
+        "小霸王护盾", 
+        "机关魔爪"
+    ], 
+    "ans" : [
+        "暴走熊猫"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:43:10.260+0000")
+}
+{ 
+    "_id" : ObjectId("59643b70fdd2c90f06ba60de"), 
+    "type" : "娱乐", 
+    "content" : "“冰雪之华”之称的是以下哪位英雄", 
+    "correct" : [
+        "甄姬", 
+        "虞姬", 
+        "芈月"
+    ], 
+    "ans" : [
+        "王昭君"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:44:00.229+0000")
+}
+{ 
+    "_id" : ObjectId("59643c16fdd2c90f06ba60df"), 
+    "type" : "娱乐", 
+    "content" : "“王昭君立即刷新寒冰护盾，在身边降下暴风雪对范围内敌人造成持续性伤害，在技能释放期间获得护甲加成。该技能是王昭君的核心技能，想要击杀目标必须配合三技能。该技能在释放时候获得的护甲加成，让刺客想要击杀王昭君变得尤为困难。”这段话描述的是王昭君的哪个技能？", 
+    "correct" : [
+        "冰封之心", 
+        "凋零冰晶", 
+        "禁锢寒霜"
+    ], 
+    "ans" : [
+        "凛冬已至"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:46:46.738+0000")
+}
+{ 
+    "_id" : ObjectId("59643c75fdd2c90f06ba60e0"), 
+    "type" : "娱乐", 
+    "content" : "“向指定范围操控碎裂冰晶绽开，对范围内的敌军造成伤害并减速，并获得他们的视野2秒。该技能是王昭君的主要消耗技能，前期在没有三技能的时候主要是依靠这个技能来打伤害的。”描述的是王昭君的哪个技能", 
+    "correct" : [
+        "冰封之心", 
+        "禁锢寒霜", 
+        "凛冬已至"
+    ], 
+    "ans" : [
+        "凋零冰晶"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:48:21.159+0000")
+}
+{ 
+    "_id" : ObjectId("59643cc2fdd2c90f06ba60e1"), 
+    "type" : "娱乐", 
+    "content" : "赵云的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "射手", 
+        "坦克"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:49:38.876+0000")
+}
+{ 
+    "_id" : ObjectId("59643d1afdd2c90f06ba60e2"), 
+    "type" : "娱乐", 
+    "content" : "“裴松之注引《三国志》的《赵云别传》中记载，当刘备亲临赵云作战之处，发出了著名的“子龙一身是胆也”的赞叹。\r\n”中子龙指的是以下哪个英雄", 
+    "correct" : [
+        "曹操", 
+        "诸葛亮", 
+        "刘禅"
+    ], 
+    "ans" : [
+        "赵云"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:51:06.533+0000")
+}
+{ 
+    "_id" : ObjectId("59643dc3fdd2c90f06ba60e4"), 
+    "type" : "娱乐", 
+    "content" : "“破云之龙”是赵云的的第几个技能？", 
+    "correct" : [
+        "被动", 
+        "1", 
+        "3"
+    ], 
+    "ans" : [
+        "2"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:53:55.906+0000")
+}
+{ 
+    "_id" : ObjectId("59643e59fdd2c90f06ba60e6"), 
+    "type" : "娱乐", 
+    "content" : "（）赵云的突进手段之一，不仅可以对直线路径上的敌人造成伤害，还能强化下次普攻，让其可以打出减速效果。玩家可以通过一些减CD的装备来提高一技能的释放频率，方便让他在后期频繁突进。", 
+    "correct" : [
+        "破云之龙", 
+        "龙鸣", 
+        "天翔之龙"
+    ], 
+    "ans" : [
+        "惊雷之龙"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T02:56:25.413+0000")
+}
+{ 
+    "_id" : ObjectId("59644152fdd2c90f06ba60e7"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是花木兰的2技能？", 
+    "correct" : [
+        "长城巡守者", 
+        "空裂斩", 
+        "绽放刀锋"
+    ], 
+    "ans" : [
+        "旋舞之华"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T03:09:06.775+0000")
+}
+{ 
+    "_id" : ObjectId("596441b5fdd2c90f06ba60e8"), 
+    "type" : "娱乐", 
+    "content" : "“空裂斩”是花木兰的什么技能", 
+    "correct" : [
+        "被动", 
+        "2", 
+        "3"
+    ], 
+    "ans" : [
+        "1"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T03:10:45.693+0000")
+}
+{ 
+    "_id" : ObjectId("59644243fdd2c90f06ba60e9"), 
+    "type" : "娱乐", 
+    "content" : "狄仁杰的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "法师", 
+        "战士"
+    ], 
+    "ans" : [
+        "射手"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T03:13:07.213+0000")
+}
+{ 
+    "_id" : ObjectId("59644563fdd2c90f06ba60ec"), 
+    "type" : "娱乐", 
+    "content" : "“六令追星”是狄仁杰的哪个技能", 
+    "correct" : [
+        "2", 
+        "3", 
+        "被动"
+    ], 
+    "ans" : [
+        "1"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T03:26:27.895+0000")
+}
+{ 
+    "_id" : ObjectId("596445cefdd2c90f06ba60ed"), 
+    "type" : "娱乐", 
+    "content" : "狄仁杰的哪一个技能是丢出六个令牌", 
+    "correct" : [
+        "2技能", 
+        "3技能"
+    ], 
+    "ans" : [
+        "1技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(3), 
+    "created_date" : ISODate("2017-07-11T03:28:14.805+0000")
+}
+{ 
+    "_id" : ObjectId("59644a0cfdd2c90f06ba60f2"), 
+    "type" : "娱乐", 
+    "content" : "韩信的哪一个技能是没有控制的", 
+    "correct" : [
+        "杀意之枪", 
+        "无情冲锋", 
+        "国士无双"
+    ], 
+    "ans" : [
+        "背水一战"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T03:46:20.370+0000")
+}
+{ 
+    "_id" : ObjectId("59644d68fdd2c90f06ba60fe"), 
+    "type" : "娱乐", 
+    "content" : "韩信的定位是什么？", 
+    "correct" : [
+        "战士", 
+        "坦克", 
+        "射手"
+    ], 
+    "ans" : [
+        "刺客"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T04:00:40.246+0000")
+}
+{ 
+    "_id" : ObjectId("59644deefdd2c90f06ba60ff"), 
+    "type" : "娱乐", 
+    "content" : "韩信的哪一个技能是横扫的", 
+    "correct" : [
+        "杀意之枪", 
+        "无情冲锋", 
+        "国士无双"
+    ], 
+    "ans" : [
+        "背水一战"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T04:02:54.492+0000")
+}
+{ 
+    "_id" : ObjectId("59644ef0fdd2c90f06ba6101"), 
+    "type" : "娱乐", 
+    "content" : "墨子的定位是什么", 
+    "correct" : [
+        "法师", 
+        "射手", 
+        "战士"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T04:07:12.852+0000")
+}
+{ 
+    "_id" : ObjectId("59646b7247cf3f266713feff"), 
+    "type" : "娱乐", 
+    "content" : "金属风暴是哪位英雄的皮肤？", 
+    "correct" : [
+        "后羿", 
+        "黄忠", 
+        "老夫子"
+    ], 
+    "ans" : [
+        "墨子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:08:50.236+0000")
+}
+{ 
+    "_id" : ObjectId("59646b9f47cf3f266713ff00"), 
+    "type" : "娱乐", 
+    "content" : "兼爱非攻是哪位英雄的被动技能", 
+    "correct" : [
+        "庄周", 
+        "后羿", 
+        "黄忠"
+    ], 
+    "ans" : [
+        "墨子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:09:35.396+0000")
+}
+{ 
+    "_id" : ObjectId("59646d6747cf3f266713ff07"), 
+    "type" : "娱乐", 
+    "content" : "无敌鲨鱼炮是鲁班的哪个技能", 
+    "correct" : [
+        "被动", 
+        "1", 
+        "3"
+    ], 
+    "ans" : [
+        "2"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:17:11.803+0000")
+}
+{ 
+    "_id" : ObjectId("59646d9c47cf3f266713ff08"), 
+    "type" : "娱乐", 
+    "content" : "有“机关造物”之称的英雄是哪个", 
+    "correct" : [
+        "墨子", 
+        "太乙真人", 
+        "李元芳"
+    ], 
+    "ans" : [
+        "鲁班七号"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:18:04.025+0000")
+}
+{ 
+    "_id" : ObjectId("59646fbf47cf3f266713ff15"), 
+    "type" : "娱乐", 
+    "content" : "'鲁班七号的支援神技，这个技能是可以跨越全地图释放的，可以用于对线伤害也可以用于边路支援或者是伤害补足追击残血。在一开始首先释放该技能，然后配合被动就可以打出极高的伤害，技能衔接普通攻击是鲁班七号打出输出的最佳方式。\"这段话描述的是鲁班七号的哪个技能？", 
+    "correct" : [
+        "火力压制", 
+        "空中支援", 
+        "河豚手雷"
+    ], 
+    "ans" : [
+        "无敌鲨鱼炮"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:27:11.272+0000")
+}
+{ 
+    "_id" : ObjectId("5964706247cf3f266713ff16"), 
+    "type" : "娱乐", 
+    "content" : "宫本武藏的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "辅助", 
+        "法师"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:29:54.543+0000")
+}
+{ 
+    "_id" : ObjectId("5964718f47cf3f266713ff19"), 
+    "type" : "娱乐", 
+    "content" : "鲁班七号“电玩小子”的皮肤售价多少", 
+    "correct" : [
+        "288", 
+        "588", 
+        "788"
+    ], 
+    "ans" : [
+        "2888"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:34:55.450+0000")
+}
+{ 
+    "_id" : ObjectId("5964774e47cf3f266713ff1e"), 
+    "type" : "娱乐", 
+    "content" : "“宫本武藏跳起短暂延迟后拔出鸣雷斩落，对目标范围内造成伤害并且击飞，之后会进入二刀流状态。移动速度提升，伤害也提高。该技能是宫本武藏击杀目标主要的技能，二刀流的状态伤害非常高，并且在这个状态下神速的距离会增加。”这段话中描述的是宫本武藏的哪个技能？", 
+    "correct" : [
+        "狩魔", 
+        "空明斩", 
+        "神速"
+    ], 
+    "ans" : [
+        "二天一流"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T06:59:26.669+0000")
+}
+{ 
+    "_id" : ObjectId("5964778447cf3f266713ff20"), 
+    "type" : "娱乐", 
+    "content" : "牛魔的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:00:20.017+0000")
+}
+{ 
+    "_id" : ObjectId("596478e347cf3f266713ff22"), 
+    "type" : "娱乐", 
+    "content" : "'牛魔核心的开团技能，大范围的击飞效果能够让队友获取进团的优势，而持续五秒的减速效果也能够方便牛魔留住敌人。由于牛魔大招释放有一秒的延迟，所以要选好技能释放的位置。’这段话描述的是牛魔的哪个技能", 
+    "correct" : [
+        "强力援护", 
+        "咆哮之斧", 
+        "横行霸道"
+    ], 
+    "ans" : [
+        "山崩地裂"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:06:11.873+0000")
+}
+{ 
+    "_id" : ObjectId("59647d5a47cf3f266713ff29"), 
+    "type" : "娱乐", 
+    "content" : "“这个技能是貂蝉的主要输出技能，貂蝉前目标方向丢出法球，可以给敌人造成技能来回两段伤害。技能释放后第二段会与貂蝉成直线返回，在丢出一技能后可以进行走位调整来确保一技能可以将二段伤害打出来。一技能CD非常短，是貂蝉前期对线消耗和清理兵线的重要保证。”这段话描述的是貂蝉的哪个技能", 
+    "correct" : [
+        "2技能", 
+        "3技能", 
+        "被动"
+    ], 
+    "ans" : [
+        "1技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:25:14.290+0000")
+}
+{ 
+    "_id" : ObjectId("59647e3747cf3f266713ff2a"), 
+    "type" : "娱乐", 
+    "content" : "有“绝世舞姬”之称的英雄人物是", 
+    "correct" : [
+        "虞姬", 
+        "武则天", 
+        "小乔"
+    ], 
+    "ans" : [
+        "貂蝉"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:28:55.564+0000")
+}
+{ 
+    "_id" : ObjectId("596480af47cf3f266713ff30"), 
+    "type" : "娱乐", 
+    "content" : "典韦的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "辅助", 
+        "射手"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:39:27.078+0000")
+}
+{ 
+    "_id" : ObjectId("596482fd47cf3f266713ff33"), 
+    "type" : "娱乐", 
+    "content" : "典韦的哪个技能所造成的伤害是真实伤害", 
+    "correct" : [
+        "激怒", 
+        "红眼", 
+        "狂暴"
+    ], 
+    "ans" : [
+        "嗜血"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:49:17.734+0000")
+}
+{ 
+    "_id" : ObjectId("5964839a47cf3f266713ff34"), 
+    "type" : "娱乐", 
+    "content" : "有“恋之微风”之称的是哪位英雄", 
+    "correct" : [
+        "大乔", 
+        "貂蝉", 
+        "虞姬"
+    ], 
+    "ans" : [
+        "小乔"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T07:51:54.632+0000")
+}
+{ 
+    "_id" : ObjectId("5964978978feb004df05c1af"), 
+    "type" : "娱乐", 
+    "content" : "妲己的哪个技能会造成眩晕", 
+    "correct" : [
+        "被动", 
+        "1技能", 
+        "3技能"
+    ], 
+    "ans" : [
+        "2技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T09:16:57.831+0000")
+}
+{ 
+    "_id" : ObjectId("5964a16678feb004df05c1dc"), 
+    "type" : "娱乐", 
+    "content" : ".王者荣耀最令人心烦数字是（）", 
+    "correct" : [
+        "666", 
+        "588", 
+        "18888"
+    ], 
+    "ans" : [
+        "460"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-11T09:59:02.051+0000")
+}
+{ 
+    "_id" : ObjectId("596590260a973c1508025cc4"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中多长时间可以发起投降？", 
+    "correct" : [
+        "4分钟", 
+        "5分钟", 
+        "10分钟"
+    ], 
+    "ans" : [
+        "6分钟"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T02:57:42.344+0000")
+}
+{ 
+    "_id" : ObjectId("5965a29509aa9e23e09ad175"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中红BUFF多久刷新一次？", 
+    "correct" : [
+        "60s", 
+        "90s", 
+        "100s"
+    ], 
+    "ans" : [
+        "120s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T04:16:21.667+0000")
+}
+{ 
+    "_id" : ObjectId("5965a2c109aa9e23e09ad176"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀里面的最大的野怪，俗称大龙的野怪全名叫什么?", 
+    "correct" : [
+        "巨龙", 
+        "飞龙", 
+        "暴君"
+    ], 
+    "ans" : [
+        "暗影主宰"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T04:17:05.287+0000")
+}
+{ 
+    "_id" : ObjectId("5965a36d09aa9e23e09ad177"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀里面俗称大龙的野怪在游戏开始多长时间首次刷新？", 
+    "correct" : [
+        "5分钟", 
+        "10分钟", 
+        "15分钟"
+    ], 
+    "ans" : [
+        "8分钟"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T04:19:57.563+0000")
+}
+{ 
+    "_id" : ObjectId("5965bdc5be239a2a4eaea263"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀里面俗称大龙的野怪在游戏开始多长时间首次刷新？", 
+    "correct" : [
+        "7分钟", 
+        "10分钟", 
+        "15分钟"
+    ], 
+    "ans" : [
+        "8分钟"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:12:21.103+0000")
+}
+{ 
+    "_id" : ObjectId("5965bfd6be239a2a4eaea267"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中gank是什么意思？", 
+    "correct" : [
+        "线上敌人不见", 
+        "后撤", 
+        "干得漂亮（一般指夸赞队友的操作）"
+    ], 
+    "ans" : [
+        "打野去其他路抓人"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:21:10.008+0000")
+}
+{ 
+    "_id" : ObjectId("5965c07abe239a2a4eaea26f"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中关于ADC的主要介绍哪一项符合？", 
+    "correct" : [
+        "肉盾，护甲高，血量多，能够承受大量伤害", 
+        "主要走魔法伤害dps路线", 
+        "需要大量金钱去堆积装备的法伤输出"
+    ], 
+    "ans" : [
+        "需要大量金钱去堆积装备的物理输出"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:23:54.567+0000")
+}
+{ 
+    "_id" : ObjectId("5965c130be239a2a4eaea276"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀多少级为满级？", 
+    "correct" : [
+        "25级", 
+        "35级", 
+        "45级"
+    ], 
+    "ans" : [
+        "30级"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:26:56.538+0000")
+}
+{ 
+    "_id" : ObjectId("5965c175be239a2a4eaea277"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀排位赛段位最高段位叫什么名字？", 
+    "correct" : [
+        "永恒钻石", 
+        "荣耀黄金", 
+        "至尊黑曜"
+    ], 
+    "ans" : [
+        "最强王者"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:28:05.249+0000")
+}
+{ 
+    "_id" : ObjectId("5965c2febe239a2a4eaea27c"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀召唤师峡谷总共有几条路？", 
+    "correct" : [
+        "1", 
+        "2", 
+        "4"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:34:38.373+0000")
+}
+{ 
+    "_id" : ObjectId("5965c4d8be239a2a4eaea289"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中召唤师峡谷地图起始经济是多少？", 
+    "correct" : [
+        "350", 
+        "400", 
+        "450"
+    ], 
+    "ans" : [
+        "300"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:42:32.499+0000")
+}
+{ 
+    "_id" : ObjectId("5965c51c6a44d82e4aed8286"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中装备制裁之刀需要多少经济买到？", 
+    "correct" : [
+        "1600", 
+        "2000", 
+        "2400"
+    ], 
+    "ans" : [
+        "1800"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T06:43:40.183+0000")
+}
+{ 
+    "_id" : ObjectId("5965cf5a98d750356a482e38"), 
+    "type" : "娱乐", 
+    "content" : "孙膑的定位是什么？", 
+    "correct" : [
+        "射手", 
+        "坦克", 
+        "法师"
+    ], 
+    "ans" : [
+        "辅助"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T07:27:22.103+0000")
+}
+{ 
+    "_id" : ObjectId("5965d53d3aebab36fd913753"), 
+    "type" : "娱乐", 
+    "content" : "孙膑的哪个技能可以提高友军移动速度", 
+    "correct" : [
+        "被动技能", 
+        "一技能", 
+        "三技能"
+    ], 
+    "ans" : [
+        "二技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T07:52:29.886+0000")
+}
+{ 
+    "_id" : ObjectId("5965d9bb3aebab36fd913767"), 
+    "type" : "娱乐", 
+    "content" : "武则天海洋之心皮肤售价多少？", 
+    "correct" : [
+        "788点券", 
+        "588点券", 
+        "2888点券"
+    ], 
+    "ans" : [
+        "1688点券"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T08:11:39.549+0000")
+}
+{ 
+    "_id" : ObjectId("5965dbce3aebab36fd91376e"), 
+    "type" : "美食", 
+    "content" : "下面是什么食物？", 
+    "correct" : [
+        "饼干", 
+        "豆干", 
+        "猪肉脯"
+    ], 
+    "ans" : [
+        "辣条"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-12T08:20:30.202+0000")
+}
+{ 
+    "_id" : ObjectId("5966d5a2ddb6414e89df98bd"), 
+    "type" : "娱乐", 
+    "content" : "吕布的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T02:06:26.859+0000")
+}
+{ 
+    "_id" : ObjectId("5966d5f2ddb6414e89df98c0"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一个是吕布的被动技能？", 
+    "correct" : [
+        "方天画斩", 
+        "贪狼之握", 
+        "魔神降世"
+    ], 
+    "ans" : [
+        "饕餮血统"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T02:07:46.141+0000")
+}
+{ 
+    "_id" : ObjectId("5966d8221502e04fbea9913c"), 
+    "type" : "娱乐", 
+    "content" : "孙悟空的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "坦克", 
+        "辅助"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T02:17:06.077+0000")
+}
+{ 
+    "_id" : ObjectId("5966d9421502e04fbea9913d"), 
+    "type" : "娱乐", 
+    "content" : "在王者荣耀中，吕布的cp是谁？", 
+    "correct" : [
+        "孙尚香", 
+        "虞姬", 
+        "小乔"
+    ], 
+    "ans" : [
+        "貂蝉"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T02:21:54.032+0000")
+}
+{ 
+    "_id" : ObjectId("5966d9a41502e04fbea99141"), 
+    "type" : "娱乐", 
+    "content" : "方天画戟是哪位英雄的武器？", 
+    "correct" : [
+        "杨戬", 
+        "关羽", 
+        "赵云"
+    ], 
+    "ans" : [
+        "吕布"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T02:23:32.336+0000")
+}
+{ 
+    "_id" : ObjectId("5966e2581502e04fbea9915f"), 
+    "type" : "娱乐", 
+    "content" : "“孙尚香的核心技能，孙尚香翻滚一段距离（相当于闪现的距离），下次变为穿透攻击，并且施放后下次普攻增加距离，这使得孙尚香可以利用翻滚灵活输出敌方英雄，避开对其有威胁的伤害。值得一提的是，此位移技能可以翻越大部分的地形，且位移后若存在敌方英雄可提高移速，使得孙尚香可以更快的支援友方，面对敌方的突进或逃跑，利用翻滚后的加速也能迅速拉开距离或乘胜追击，可攻可守。”这段话描述的是孙尚香的哪个技能？", 
+    "correct" : [
+        "二技能", 
+        "三技能", 
+        "被动技能"
+    ], 
+    "ans" : [
+        "一技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:00:40.311+0000")
+}
+{ 
+    "_id" : ObjectId("5966e35c1502e04fbea99160"), 
+    "type" : "娱乐", 
+    "content" : "孙尚香的被动普通攻击减少翻滚突袭（）秒冷却时间", 
+    "correct" : [
+        "0.3", 
+        "0.4", 
+        "0.6"
+    ], 
+    "ans" : [
+        "0.5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:05:00.817+0000")
+}
+{ 
+    "_id" : ObjectId("5966e39c1502e04fbea99161"), 
+    "type" : "娱乐", 
+    "content" : "达摩的被动技能每次释放技能提升自身护甲（），至多可以叠加（）层", 
+    "correct" : [
+        "70   3", 
+        "80   2", 
+        "70   2"
+    ], 
+    "ans" : [
+        "80   3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:06:04.819+0000")
+}
+{ 
+    "_id" : ObjectId("5966e4501502e04fbea99162"), 
+    "type" : "娱乐", 
+    "content" : "被称之为大小姐的是哪位英雄", 
+    "correct" : [
+        "大乔", 
+        "虞姬", 
+        "芈月"
+    ], 
+    "ans" : [
+        "孙尚香"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:09:04.129+0000")
+}
+{ 
+    "_id" : ObjectId("5966e4721502e04fbea99163"), 
+    "type" : "娱乐", 
+    "content" : "“大小姐驾到！统统闪开”这是哪位英雄的台词", 
+    "correct" : [
+        "大乔", 
+        "虞姬", 
+        "芈月"
+    ], 
+    "ans" : [
+        "孙尚香"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:09:38.819+0000")
+}
+{ 
+    "_id" : ObjectId("5966e5f01502e04fbea9916a"), 
+    "type" : "娱乐", 
+    "content" : "武则天的定位是什么？", 
+    "correct" : [
+        "射手", 
+        "刺客", 
+        "辅助"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:16:00.493+0000")
+}
+{ 
+    "_id" : ObjectId("5966e6261502e04fbea99170"), 
+    "type" : "娱乐", 
+    "content" : "武则天的被动天命之女脱离战斗后会获得（）点移动速度", 
+    "correct" : [
+        "30", 
+        "40", 
+        "60"
+    ], 
+    "ans" : [
+        "50"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:16:54.703+0000")
+}
+{ 
+    "_id" : ObjectId("5966e6861502e04fbea99173"), 
+    "type" : "娱乐", 
+    "content" : "程咬金的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助", 
+        "法师"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:18:30.411+0000")
+}
+{ 
+    "_id" : ObjectId("5966e6e41502e04fbea99174"), 
+    "type" : "娱乐", 
+    "content" : "程咬金的大招正义潜能5秒内每秒回复（）最大生命，并增加移动速度（）", 
+    "correct" : [
+        "8%   25", 
+        "7%   30", 
+        "7%   25"
+    ], 
+    "ans" : [
+        "8%   30"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:20:04.726+0000")
+}
+{ 
+    "_id" : ObjectId("5966e70a1502e04fbea99178"), 
+    "type" : "娱乐", 
+    "content" : "“一个字：干！”这是哪位英雄的台词", 
+    "correct" : [
+        "亚瑟", 
+        "曹操", 
+        "牛魔王"
+    ], 
+    "ans" : [
+        "程咬金"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:20:42.923+0000")
+}
+{ 
+    "_id" : ObjectId("5966e7591502e04fbea9917c"), 
+    "type" : "娱乐", 
+    "content" : "“爱与正义”是哪位英雄的皮肤", 
+    "correct" : [
+        "亚瑟", 
+        "牛魔王", 
+        "关羽"
+    ], 
+    "ans" : [
+        "程咬金"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:22:01.568+0000")
+}
+{ 
+    "_id" : ObjectId("5966e7821502e04fbea9917d"), 
+    "type" : "娱乐", 
+    "content" : "“生存还是死亡，这是个问题。想要操纵它？愚不可及！”这是哪位英雄的台词", 
+    "correct" : [
+        "墨子", 
+        "诸葛亮", 
+        "周瑜"
+    ], 
+    "ans" : [
+        "扁鹊"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:22:42.424+0000")
+}
+{ 
+    "_id" : ObjectId("5966e7c11502e04fbea99180"), 
+    "type" : "娱乐", 
+    "content" : "扁鹊的被动技能恶德医疗，毒药印记最高可以叠（）层", 
+    "correct" : [
+        "3", 
+        "4", 
+        "6"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:23:45.913+0000")
+}
+{ 
+    "_id" : ObjectId("5966e7ea1502e04fbea99184"), 
+    "type" : "娱乐", 
+    "content" : "扁鹊的定位是什么", 
+    "correct" : [
+        "辅助", 
+        "坦克", 
+        "射手"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:24:26.264+0000")
+}
+{ 
+    "_id" : ObjectId("5966e80b1502e04fbea99185"), 
+    "type" : "娱乐", 
+    "content" : "亚瑟的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:24:59.643+0000")
+}
+{ 
+    "_id" : ObjectId("5966e85e1502e04fbea99186"), 
+    "type" : "娱乐", 
+    "content" : "“因剑而生，因剑而亡！”是哪位英雄的台词", 
+    "correct" : [
+        "李白", 
+        "兰陵王", 
+        "狄仁杰"
+    ], 
+    "ans" : [
+        "亚瑟"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:26:22.692+0000")
+}
+{ 
+    "_id" : ObjectId("5966e9021502e04fbea99187"), 
+    "type" : "娱乐", 
+    "content" : "“爱情与死亡，永恒的乐章。”这是哪位英雄的台词", 
+    "correct" : [
+        "虞姬", 
+        "蔡文姬", 
+        "鲁班七号"
+    ], 
+    "ans" : [
+        "高渐离"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:29:06.435+0000")
+}
+{ 
+    "_id" : ObjectId("5966e91c1502e04fbea99188"), 
+    "type" : "娱乐", 
+    "content" : "阿珂的定位是什么", 
+    "correct" : [
+        "射手", 
+        "坦克", 
+        "战士"
+    ], 
+    "ans" : [
+        "刺客"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:29:32.012+0000")
+}
+{ 
+    "_id" : ObjectId("5966e98e1502e04fbea99189"), 
+    "type" : "娱乐", 
+    "content" : "阿轲的二技能瞬华标记敌人，被标记的目标攻击阿轲时造成的伤害降低（），阿轲同一时间只能标记一个敌人。", 
+    "correct" : [
+        "10%", 
+        "20%", 
+        "35%"
+    ], 
+    "ans" : [
+        "30%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:31:26.828+0000")
+}
+{ 
+    "_id" : ObjectId("5966ea0b1502e04fbea9918a"), 
+    "type" : "娱乐", 
+    "content" : "阿轲的哪个技能会隐身？", 
+    "correct" : [
+        "死吻", 
+        "弧光", 
+        "瞬华"
+    ], 
+    "ans" : [
+        "幻舞"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:33:31.859+0000")
+}
+{ 
+    "_id" : ObjectId("5966eaa81502e04fbea9918b"), 
+    "type" : "娱乐", 
+    "content" : "姜子牙的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "战士", 
+        "辅助"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:36:08.843+0000")
+}
+{ 
+    "_id" : ObjectId("5966ead71502e04fbea9918c"), 
+    "type" : "娱乐", 
+    "content" : "“非我族类，其心必异！”这是哪位英雄的台词", 
+    "correct" : [
+        "老夫子", 
+        "廉颇", 
+        "白起"
+    ], 
+    "ans" : [
+        "姜子牙"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:36:55.857+0000")
+}
+{ 
+    "_id" : ObjectId("5966eb0c1502e04fbea9918d"), 
+    "type" : "娱乐", 
+    "content" : "姜子牙的被动技能心魔每10秒为友军增加（）点经验", 
+    "correct" : [
+        "15", 
+        "20", 
+        "30"
+    ], 
+    "ans" : [
+        "25"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:37:48.122+0000")
+}
+{ 
+    "_id" : ObjectId("5966eb3c1502e04fbea9918e"), 
+    "type" : "娱乐", 
+    "content" : "周瑜的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "战士", 
+        "辅助"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:38:36.689+0000")
+}
+{ 
+    "_id" : ObjectId("5966eb6a1502e04fbea9918f"), 
+    "type" : "娱乐", 
+    "content" : "周瑜的被动技能将引燃目标，每秒造成目标最大生命值（）的法术伤害，持续4秒.技能命中被引燃目标会造成额外效果", 
+    "correct" : [
+        "1%", 
+        "3%", 
+        "4%"
+    ], 
+    "ans" : [
+        "2%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:39:22.999+0000")
+}
+{ 
+    "_id" : ObjectId("5966eb8f1502e04fbea99190"), 
+    "type" : "娱乐", 
+    "content" : "“身为男人，无法让步的只有两件事：胜利和小乔。”这是哪位英雄的台词", 
+    "correct" : [
+        "吕布", 
+        "刘备", 
+        "诸葛亮"
+    ], 
+    "ans" : [
+        "周瑜"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:39:59.613+0000")
+}
+{ 
+    "_id" : ObjectId("5966ebbd1502e04fbea99191"), 
+    "type" : "娱乐", 
+    "content" : "“姜子牙召唤能量聚集持续3秒，蓄力过程中进行任意操作都会中断蓄力并放出冲击波造成580/730/880（+51%法术加成）点法术伤害，蓄力越久伤害越高”这段话描述的是姜子牙的哪个技能", 
+    "correct" : [
+        "被动技能", 
+        "一技能", 
+        "二技能"
+    ], 
+    "ans" : [
+        "三技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:40:45.226+0000")
+}
+{ 
+    "_id" : ObjectId("5966ec171502e04fbea99192"), 
+    "type" : "娱乐", 
+    "content" : "老夫子的定位是什么", 
+    "correct" : [
+        "法师", 
+        "射手", 
+        "坦克"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:42:15.546+0000")
+}
+{ 
+    "_id" : ObjectId("5966ec401502e04fbea99193"), 
+    "type" : "娱乐", 
+    "content" : "“天不生夫子，万古如长夜。”这是哪位英雄的台词", 
+    "correct" : [
+        "姜子牙", 
+        "庄周", 
+        "李白"
+    ], 
+    "ans" : [
+        "老夫子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:42:56.721+0000")
+}
+{ 
+    "_id" : ObjectId("5966ec761502e04fbea99194"), 
+    "type" : "娱乐", 
+    "content" : "夫子普通攻击命中获得训诫值，训诫值满（）点后获得强化效果，增加老夫子60点移动速度及25%攻击速度", 
+    "correct" : [
+        "6", 
+        "4", 
+        "3"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:43:50.268+0000")
+}
+{ 
+    "_id" : ObjectId("5966ecd11502e04fbea99195"), 
+    "type" : "娱乐", 
+    "content" : "“天上天下，唯朕独尊！”这是哪位英雄的台词", 
+    "correct" : [
+        "武则天", 
+        "刘备", 
+        "成吉思汗"
+    ], 
+    "ans" : [
+        "嬴政"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:45:21.406+0000")
+}
+{ 
+    "_id" : ObjectId("5966ed0d1502e04fbea99196"), 
+    "type" : "娱乐", 
+    "content" : "嬴政的大招至尊王权5秒内号令（）只飞剑持续对前方敌人进行打击", 
+    "correct" : [
+        "50", 
+        "60", 
+        "65"
+    ], 
+    "ans" : [
+        "55"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:46:21.005+0000")
+}
+{ 
+    "_id" : ObjectId("5966ed5d1502e04fbea99197"), 
+    "type" : "娱乐", 
+    "content" : "嬴政售价多少点券", 
+    "correct" : [
+        "288", 
+        "388", 
+        "588"
+    ], 
+    "ans" : [
+        "688"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:47:41.391+0000")
+}
+{ 
+    "_id" : ObjectId("5966ed761502e04fbea99198"), 
+    "type" : "娱乐", 
+    "content" : "曹操的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:48:06.991+0000")
+}
+{ 
+    "_id" : ObjectId("5966ed991502e04fbea99199"), 
+    "type" : "娱乐", 
+    "content" : "“宁教我负天下人！”这是哪位英雄的台词", 
+    "correct" : [
+        "刘备", 
+        "嬴政", 
+        "成吉思汗"
+    ], 
+    "ans" : [
+        "曹操"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:48:41.500+0000")
+}
+{ 
+    "_id" : ObjectId("5966edc31502e04fbea9919a"), 
+    "type" : "娱乐", 
+    "content" : "曹操的被动技能释放技能时提升自身攻击速度（），至多增加50%，持续3秒", 
+    "correct" : [
+        "15%", 
+        "20%", 
+        "25%"
+    ], 
+    "ans" : [
+        "10%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:49:23.471+0000")
+}
+{ 
+    "_id" : ObjectId("5966ee561502e04fbea9919b"), 
+    "type" : "娱乐", 
+    "content" : "\"庄周幻化梦域保护附近友军，解除他们所受的控制效果，并使他们免控并提高伤害减免持续2秒\"这段话描述的是庄周的哪个技能", 
+    "correct" : [
+        "蝴蝶效应", 
+        "自然意志", 
+        "化蝶"
+    ], 
+    "ans" : [
+        "天人合一"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:51:50.845+0000")
+}
+{ 
+    "_id" : ObjectId("5966eebc1502e04fbea991a1"), 
+    "type" : "娱乐", 
+    "content" : "庄周的被动技能每隔（）秒，庄周会进入自然梦境，解除所有控制效果，并提高伤害免疫15%及15%移速持续2秒", 
+    "correct" : [
+        "7", 
+        "5", 
+        "4"
+    ], 
+    "ans" : [
+        "6"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:53:32.776+0000")
+}
+{ 
+    "_id" : ObjectId("5966eed91502e04fbea991a2"), 
+    "type" : "娱乐", 
+    "content" : "庄周的定位是什么？", 
+    "correct" : [
+        "法师", 
+        "辅助", 
+        "战士"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:54:01.741+0000")
+}
+{ 
+    "_id" : ObjectId("5966ef5e1502e04fbea991a3"), 
+    "type" : "娱乐", 
+    "content" : "“人生有涯，而梦，无边无际。”这是哪位英雄的台词", 
+    "correct" : [
+        "老夫子", 
+        "姜子牙", 
+        "程咬金"
+    ], 
+    "ans" : [
+        "庄周"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:56:14.529+0000")
+}
+{ 
+    "_id" : ObjectId("5966ef821502e04fbea991a4"), 
+    "type" : "娱乐", 
+    "content" : "蝴蝶效应是庄周的哪个技能", 
+    "correct" : [
+        "被动技能", 
+        "一技能", 
+        "三技能"
+    ], 
+    "ans" : [
+        "二技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:56:50.984+0000")
+}
+{ 
+    "_id" : ObjectId("5966efe11502e04fbea991a5"), 
+    "type" : "娱乐", 
+    "content" : "“如果世上还有什么我不懂的学问，那就是女孩子们……”这是哪位英雄的台词", 
+    "correct" : [
+        "诸葛亮", 
+        "嬴政", 
+        "项羽"
+    ], 
+    "ans" : [
+        "张良"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:58:25.705+0000")
+}
+{ 
+    "_id" : ObjectId("5966efff1502e04fbea991a6"), 
+    "type" : "娱乐", 
+    "content" : "张良的定位是什么", 
+    "correct" : [
+        "射手", 
+        "辅助", 
+        "刺客"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T03:58:55.553+0000")
+}
+{ 
+    "_id" : ObjectId("5966f0511502e04fbea991a7"), 
+    "type" : "娱乐", 
+    "content" : "刘邦曾自叹“夫运筹筴帷帐之中，决胜千里外，吾不如子房”。中的子房指的是哪位英雄", 
+    "correct" : [
+        "韩信", 
+        "萧何", 
+        "诸葛亮"
+    ], 
+    "ans" : [
+        "张良"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T04:00:17.430+0000")
+}
+{ 
+    "_id" : ObjectId("5966f0a11502e04fbea991aa"), 
+    "type" : "娱乐", 
+    "content" : "张良的被动技能和第（）次普攻给目标叠加咒印。", 
+    "correct" : [
+        "4", 
+        "2", 
+        "1"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T04:01:37.405+0000")
+}
+{ 
+    "_id" : ObjectId("5966f1961502e04fbea991ad"), 
+    "type" : "娱乐", 
+    "content" : "钟无艳的被动技能，所有伤害会有（）几率将敌方英雄石化，每个敌方英雄在8秒内只会受到一次石化效果", 
+    "correct" : [
+        "45%", 
+        "60%", 
+        "80%"
+    ], 
+    "ans" : [
+        "50%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T04:05:42.656+0000")
+}
+{ 
+    "_id" : ObjectId("5966f1b01502e04fbea991ae"), 
+    "type" : "娱乐", 
+    "content" : "钟无艳的定位是什么", 
+    "correct" : [
+        "坦克", 
+        "法师", 
+        "辅助"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T04:06:08.680+0000")
+}
+{ 
+    "_id" : ObjectId("59671a07adc5e762813a12ee"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是钟无艳的二技能？", 
+    "correct" : [
+        "石之炼金", 
+        "狂飙突进", 
+        "飓风之锤"
+    ], 
+    "ans" : [
+        "震慑打击"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T06:58:15.820+0000")
+}
+{ 
+    "_id" : ObjectId("59672ed72b66436a51aeec7b"), 
+    "type" : "娱乐", 
+    "content" : "芈月的被动技能中，暗影仆从最多存在多少个", 
+    "correct" : [
+        "7", 
+        "5", 
+        "4"
+    ], 
+    "ans" : [
+        "6"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-13T08:27:03.396+0000")
+}
+{ 
+    "_id" : ObjectId("5968257be5e1f46c9f0458c3"), 
+    "type" : "娱乐", 
+    "content" : "廉颇的被动技能友情守护释放技能的过程中处于霸体状态（不会受到控制效果），并减少所受到的伤害（）", 
+    "correct" : [
+        "15%", 
+        "25%", 
+        "30%"
+    ], 
+    "ans" : [
+        "20%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T01:59:23.102+0000")
+}
+{ 
+    "_id" : ObjectId("59682623e5e1f46c9f0458c4"), 
+    "type" : "娱乐", 
+    "content" : "廉颇的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(3), 
+    "created_date" : ISODate("2017-07-14T02:02:11.036+0000")
+}
+{ 
+    "_id" : ObjectId("59682ad96ca551b92de51aee"), 
+    "type" : "娱乐", 
+    "content" : "白起的定位是什么？", 
+    "correct" : [
+        "辅助", 
+        "战士", 
+        ""
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(3), 
+    "created_date" : ISODate("2017-07-14T02:22:17.442+0000")
+}
+{ 
+    "_id" : ObjectId("59682efbcf5802bad559d13d"), 
+    "type" : "娱乐", 
+    "content" : "白起的被动技能每次击败英雄或助攻会回复生命值，击杀英雄回复最大生命（），击败小兵野怪回复最大生命1%", 
+    "correct" : [
+        "7%", 
+        "5%", 
+        "4%"
+    ], 
+    "ans" : [
+        "6%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:39:55.262+0000")
+}
+{ 
+    "_id" : ObjectId("59682fcbcf5802bad559d141"), 
+    "type" : "娱乐", 
+    "content" : "有“正义爆轰”之称的是以下哪位英雄", 
+    "correct" : [
+        "白起", 
+        "程咬金", 
+        "张飞"
+    ], 
+    "ans" : [
+        "廉颇"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:43:23.646+0000")
+}
+{ 
+    "_id" : ObjectId("5968301ccf5802bad559d142"), 
+    "type" : "娱乐", 
+    "content" : "“身在黑暗，心向光明”是哪位英雄的台词", 
+    "correct" : [
+        "典韦", 
+        "牛魔", 
+        "宫本武藏"
+    ], 
+    "ans" : [
+        "白起"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:44:44.237+0000")
+}
+{ 
+    "_id" : ObjectId("596830b8cf5802bad559d143"), 
+    "type" : "娱乐", 
+    "content" : "“狰”是哪位英雄的皮肤", 
+    "correct" : [
+        "廉颇", 
+        "张飞", 
+        "吕布"
+    ], 
+    "ans" : [
+        "白起"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:47:20.710+0000")
+}
+{ 
+    "_id" : ObjectId("5968318ccf5802bad559d146"), 
+    "type" : "娱乐", 
+    "content" : "“心有猛虎！”是哪位英雄的台词", 
+    "correct" : [
+        "吕布", 
+        "杨戬", 
+        "曹操"
+    ], 
+    "ans" : [
+        "张飞"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:50:52.168+0000")
+}
+{ 
+    "_id" : ObjectId("596831eacf5802bad559d147"), 
+    "type" : "娱乐", 
+    "content" : "有“禁血狂兽”之称的是哪位英雄", 
+    "correct" : [
+        "吕布", 
+        "周瑜", 
+        "廉颇"
+    ], 
+    "ans" : [
+        "张飞"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:52:26.171+0000")
+}
+{ 
+    "_id" : ObjectId("5968320ecf5802bad559d148"), 
+    "type" : "娱乐", 
+    "content" : "张飞的被动技能变身前普攻增加微量狂意.变狂后的张飞真身每次施放技能时，都会使周围的地面震动，造成范围减速（），持续2秒，并且大幅度增加普攻伤害.", 
+    "correct" : [
+        "55%", 
+        "45%", 
+        "30%"
+    ], 
+    "ans" : [
+        "50%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:53:02.417+0000")
+}
+{ 
+    "_id" : ObjectId("596832adcf5802bad559d149"), 
+    "type" : "娱乐", 
+    "content" : "“画地为牢”是张飞的哪个技能", 
+    "correct" : [
+        "二技能", 
+        "三技能", 
+        "被动技能"
+    ], 
+    "ans" : [
+        "一技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:55:41.764+0000")
+}
+{ 
+    "_id" : ObjectId("596832d8cf5802bad559d14a"), 
+    "type" : "娱乐", 
+    "content" : "“出来混，最重要的是讲义气！”是哪位英雄的台词", 
+    "correct" : [
+        "刘邦", 
+        "曹操", 
+        "嬴政"
+    ], 
+    "ans" : [
+        "刘备"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:56:24.261+0000")
+}
+{ 
+    "_id" : ObjectId("5968334dcf5802bad559d14c"), 
+    "type" : "娱乐", 
+    "content" : "“汉烈昭帝”是哪位英雄的皮肤", 
+    "correct" : [
+        "成吉思汗", 
+        "嬴政", 
+        "武则天"
+    ], 
+    "ans" : [
+        "刘备"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:58:21.717+0000")
+}
+{ 
+    "_id" : ObjectId("59683376cf5802bad559d14d"), 
+    "type" : "娱乐", 
+    "content" : "刘备的一技能双重射击短时间提高移动速度（），持续1.5秒，并在下次射击时击发两次，每颗弹丸造成120（+40%物理加成）点物理伤害", 
+    "correct" : [
+        "30%", 
+        "35%", 
+        "45%"
+    ], 
+    "ans" : [
+        "40%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T02:59:02.677+0000")
+}
+{ 
+    "_id" : ObjectId("596835dfcf5802bad559d14f"), 
+    "type" : "娱乐", 
+    "content" : "“刀锋所划之地，便是疆土。”是哪位英雄的台词", 
+    "correct" : [
+        "宫本武藏", 
+        "李白", 
+        "韩信"
+    ], 
+    "ans" : [
+        "兰陵王"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:09:19.960+0000")
+}
+{ 
+    "_id" : ObjectId("596835facf5802bad559d150"), 
+    "type" : "娱乐", 
+    "content" : "张飞的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(3), 
+    "created_date" : ISODate("2017-07-14T03:09:46.416+0000")
+}
+{ 
+    "_id" : ObjectId("59683627cf5802bad559d152"), 
+    "type" : "娱乐", 
+    "content" : "兰陵王的被动技能向附近敌方英雄移动时提升移动速度（）", 
+    "correct" : [
+        "25%", 
+        "30%", 
+        "35%"
+    ], 
+    "ans" : [
+        "20%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:10:31.639+0000")
+}
+{ 
+    "_id" : ObjectId("59683653cf5802bad559d153"), 
+    "type" : "娱乐", 
+    "content" : "秘技·分身 是兰陵王的哪个技能", 
+    "correct" : [
+        "被动技能", 
+        "二技能", 
+        "三技能"
+    ], 
+    "ans" : [
+        "一技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:11:15.777+0000")
+}
+{ 
+    "_id" : ObjectId("59683916cf5802bad559d154"), 
+    "type" : "娱乐", 
+    "content" : "不知火舞的定位是什么", 
+    "correct" : [
+        "刺客", 
+        "射手", 
+        "战士"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:23:02.763+0000")
+}
+{ 
+    "_id" : ObjectId("59683ac9cf5802bad559d155"), 
+    "type" : "娱乐", 
+    "content" : "“大河之剑天上来！”是哪位英雄的台词", 
+    "correct" : [
+        "兰陵王", 
+        "宫本武藏", 
+        "阿轲"
+    ], 
+    "ans" : [
+        "李白"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:30:17.669+0000")
+}
+{ 
+    "_id" : ObjectId("59683b6ccf5802bad559d156"), 
+    "type" : "娱乐", 
+    "content" : "钟馗的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助", 
+        "坦克"
+    ], 
+    "ans" : [
+        "法师"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:33:00.591+0000")
+}
+{ 
+    "_id" : ObjectId("59683bb5cf5802bad559d157"), 
+    "type" : "娱乐", 
+    "content" : "李元芳的定位是什么", 
+    "correct" : [
+        "辅助", 
+        "战士", 
+        "坦克"
+    ], 
+    "ans" : [
+        "射手"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:34:13.296+0000")
+}
+{ 
+    "_id" : ObjectId("59683e53cf5802bad559d158"), 
+    "type" : "娱乐", 
+    "content" : "“秘密的密，探案的探！”是哪位英雄的台词", 
+    "correct" : [
+        "狄仁杰", 
+        "刘邦", 
+        "白起"
+    ], 
+    "ans" : [
+        "李元芳"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:45:23.527+0000")
+}
+{ 
+    "_id" : ObjectId("59683fe2cf5802bad559d15b"), 
+    "type" : "娱乐", 
+    "content" : "“传说中的长安城管，登场！”是哪位英雄的台词", 
+    "correct" : [
+        "刘备", 
+        "刘备", 
+        "白起"
+    ], 
+    "ans" : [
+        "钟馗"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T03:52:02.685+0000")
+}
+{ 
+    "_id" : ObjectId("596842bacf5802bad559d15c"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个是李元芳的被动技能", 
+    "correct" : [
+        "谍影重重", 
+        "刃遁", 
+        "无间刃风"
+    ], 
+    "ans" : [
+        "密探谛听"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T04:04:10.257+0000")
+}
+{ 
+    "_id" : ObjectId("59685f04cf5802bad559d16b"), 
+    "type" : "娱乐", 
+    "content" : "“花蝶扇“是不知火舞的哪个技能？", 
+    "correct" : [
+        "被动技能", 
+        "一技能", 
+        "三技能"
+    ], 
+    "ans" : [
+        "二技能"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T06:04:52.494+0000")
+}
+{ 
+    "_id" : ObjectId("596869fbcf5802bad559d17c"), 
+    "type" : "娱乐", 
+    "content" : "李白的被动技能，施展侠客行，连续（3秒内）的第四次普通攻击（对建筑除外）会触发侠客行，提升自身攻击力（），并解除青莲剑歌的使用限制持续5秒.", 
+    "correct" : [
+        "7%", 
+        "6%", 
+        "4%"
+    ], 
+    "ans" : [
+        "5%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T06:51:39.936+0000")
+}
+{ 
+    "_id" : ObjectId("59686b5fcf5802bad559d17d"), 
+    "type" : "娱乐", 
+    "content" : "刘邦的定位是什么", 
+    "correct" : [
+        "战士", 
+        "辅助", 
+        "法师"
+    ], 
+    "ans" : [
+        "坦克"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T06:57:35.688+0000")
+}
+{ 
+    "_id" : ObjectId("59686e71cf5802bad559d17f"), 
+    "type" : "娱乐", 
+    "content" : "有“青莲剑仙”之称的英雄是哪位", 
+    "correct" : [
+        "兰陵王", 
+        "韩信", 
+        "赵云"
+    ], 
+    "ans" : [
+        "李白"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T07:10:41.834+0000")
+}
+{ 
+    "_id" : ObjectId("596877bacf5802bad559d184"), 
+    "type" : "娱乐", 
+    "content" : "“不客观的说，我是个好人！”是哪位英雄的台词", 
+    "correct" : [
+        "刘备", 
+        "张良", 
+        "马克波罗"
+    ], 
+    "ans" : [
+        "刘邦"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T07:50:18.006+0000")
+}
+{ 
+    "_id" : ObjectId("59689300cf5802bad559d19e"), 
+    "type" : "娱乐", 
+    "content" : "妲己的大招女王崇拜最多能放出（）团狐火", 
+    "correct" : [
+        "6", 
+        "4", 
+        "3"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-14T09:46:40.812+0000")
+}
+{ 
+    "_id" : ObjectId("596c5b821c24c5f3720afd2a"), 
+    "type" : "娱乐", 
+    "content" : "小乔的被动技能释放技能命中敌人时，短时间2秒内提升自身移动速度（）", 
+    "correct" : [
+        "20%", 
+        "30%", 
+        "15%"
+    ], 
+    "ans" : [
+        "25%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T06:38:58.482+0000")
+}
+{ 
+    "_id" : ObjectId("596c5bcb1c24c5f3720afd2b"), 
+    "type" : "娱乐", 
+    "content" : "安琪拉使用被动技能会对敌人造成额外灼烧伤害，可以在短时间内叠加至多（）层", 
+    "correct" : [
+        "8", 
+        "12", 
+        "15"
+    ], 
+    "ans" : [
+        "10"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T06:40:11.292+0000")
+}
+{ 
+    "_id" : ObjectId("596c5c701c24c5f3720afd2c"), 
+    "type" : "娱乐", 
+    "content" : "铠的定位是什么", 
+    "correct" : [
+        "法师", 
+        "辅助", 
+        "坦克"
+    ], 
+    "ans" : [
+        "战士"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T06:42:56.877+0000")
+}
+{ 
+    "_id" : ObjectId("596c608e1c24c5f3720afd2e"), 
+    "type" : "娱乐", 
+    "content" : "哪吒的被动技能每次用枪造成的伤害和使用乾坤圈都会在敌人身上残留炙炼火种造成3秒灼烧伤害并且限制目标（）的生命回复", 
+    "correct" : [
+        "15%", 
+        "20%", 
+        "30%"
+    ], 
+    "ans" : [
+        "25%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T07:00:30.620+0000")
+}
+{ 
+    "_id" : ObjectId("596c78b11c24c5f3720afd31"), 
+    "type" : "娱乐", 
+    "content" : "铠的一技能回旋之刃在敌人中最多能弹射几次", 
+    "correct" : [
+        "2", 
+        "3", 
+        "5"
+    ], 
+    "ans" : [
+        "4"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T08:43:29.792+0000")
+}
+{ 
+    "_id" : ObjectId("596c7a791c24c5f3720afd32"), 
+    "type" : "娱乐", 
+    "content" : "水晶猎龙者的故事中，炎龙袭击了哪一个小镇?", 
+    "correct" : [
+        "揽仙镇", 
+        "深蓝小镇", 
+        "哈奇小镇"
+    ], 
+    "ans" : [
+        "火山镇"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T08:51:05.174+0000")
+}
+{ 
+    "_id" : ObjectId("596c8cdf1c24c5f3720afd33"), 
+    "type" : "娱乐", 
+    "content" : "鬼谷子的哪个技能能将敌人拉向自己并造成短暂眩晕？", 
+    "correct" : [
+        "众横兵法", 
+        "先知·神隐", 
+        "先知·雾隐"
+    ], 
+    "ans" : [
+        "万物有灵"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T10:09:35.417+0000")
+}
+{ 
+    "_id" : ObjectId("596c8dcf1c24c5f3720afd34"), 
+    "type" : "娱乐", 
+    "content" : "老夫子使用3技能圣人之威后会将目标捆在明灯上多少秒？", 
+    "correct" : [
+        "6", 
+        "4", 
+        "3"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-17T10:13:35.606+0000")
+}
+{ 
+    "_id" : ObjectId("596d882eb4eb9c1f788a661b"), 
+    "type" : "娱乐", 
+    "content" : "有“善恶怪医”之称的是哪位英雄", 
+    "correct" : [
+        "蔡文姬", 
+        "太乙真人", 
+        "鬼谷子"
+    ], 
+    "ans" : [
+        "扁鹊"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T04:01:50.869+0000")
+}
+{ 
+    "_id" : ObjectId("596dab7cb4eb9c1f788a661e"), 
+    "type" : "娱乐", 
+    "content" : "冰霜法杖的被动-结霜：英雄技能造成伤害会附带多少的减速效果，持续几秒？", 
+    "correct" : [
+        "20% 1s", 
+        "25% 2s", 
+        "25% 1s"
+    ], 
+    "ans" : [
+        "20% 2s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:32:28.596+0000")
+}
+{ 
+    "_id" : ObjectId("596daba7b4eb9c1f788a661f"), 
+    "type" : "娱乐", 
+    "content" : "贤者的庇护唯一被动-复生：死亡后__秒原地复活，并获得__血量，这个效果有3分钟CD。", 
+    "correct" : [
+        "3s 60%", 
+        "2s 50%", 
+        "3s 50%"
+    ], 
+    "ans" : [
+        "2s 60%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:33:11.724+0000")
+}
+{ 
+    "_id" : ObjectId("596dabebb4eb9c1f788a6620"), 
+    "type" : "娱乐", 
+    "content" : "闪电匕首唯一被动-电弧：普通攻击有__几率释放连锁闪电，对目标造成100法术伤害（该被动有__cd）", 
+    "correct" : [
+        "20% 1s", 
+        "25% 1s", 
+        "25% 0.5s"
+    ], 
+    "ans" : [
+        "20% 0.5s "
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:34:19.598+0000")
+}
+{ 
+    "_id" : ObjectId("596dac34b4eb9c1f788a6621"), 
+    "type" : "娱乐", 
+    "content" : "新装备辉月的属性是哪个？", 
+    "correct" : [
+        "160法术攻击 15%冷却缩减", 
+        "160法术攻击 10%冷却缩减", 
+        "200法术攻击 15%冷却缩减"
+    ], 
+    "ans" : [
+        "200法术攻击 10%冷却缩减"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:35:32.814+0000")
+}
+{ 
+    "_id" : ObjectId("596dacdbb4eb9c1f788a6622"), 
+    "type" : "娱乐", 
+    "content" : "巨人之握唯一被动-磨砺叠加满后会增加多少属性？", 
+    "correct" : [
+        "1050生命", 
+        "700生命", 
+        "1500生命"
+    ], 
+    "ans" : [
+        "1000生命"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:38:19.218+0000")
+}
+{ 
+    "_id" : ObjectId("596dad25b4eb9c1f788a6623"), 
+    "type" : "娱乐", 
+    "content" : "召唤师技能-治疗，回复自己和附近队友__生命值，提高附近友军移动速度__持续2s。", 
+    "correct" : [
+        "15% 20%", 
+        "20% 15%", 
+        "20% 20%"
+    ], 
+    "ans" : [
+        "15% 15%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:39:33.359+0000")
+}
+{ 
+    "_id" : ObjectId("596daf9cb4eb9c1f788a6624"), 
+    "type" : "娱乐", 
+    "content" : "亚瑟的被动圣光守护:每__秒恢复相当于自身1%的最大生命值", 
+    "correct" : [
+        "1s", 
+        "3s", 
+        "4s"
+    ], 
+    "ans" : [
+        "2s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:50:04.361+0000")
+}
+{ 
+    "_id" : ObjectId("596daffdb4eb9c1f788a6625"), 
+    "type" : "娱乐", 
+    "content" : "露娜-紫霞仙子在下列选项中并没有这个皮肤特性的是", 
+    "correct" : [
+        "紫霞仙子经典造型", 
+        "大话西游经典语音", 
+        "紫霞仙子式技能特效"
+    ], 
+    "ans" : [
+        "紫霞仙子经典动作"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:51:41.028+0000")
+}
+{ 
+    "_id" : ObjectId("596db01db4eb9c1f788a6626"), 
+    "type" : "娱乐", 
+    "content" : "貂蝉的圣诞恋歌皮肤售价是多少？", 
+    "correct" : [
+        "288", 
+        "588", 
+        "888"
+    ], 
+    "ans" : [
+        "788"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:52:13.695+0000")
+}
+{ 
+    "_id" : ObjectId("596db09fb4eb9c1f788a6627"), 
+    "type" : "娱乐", 
+    "content" : "点券夺宝的水晶商店没有哪样东西？", 
+    "correct" : [
+        "武则天", 
+        "小乔 天鹅之梦", 
+        "芈月 大秦宣太后"
+    ], 
+    "ans" : [
+        "昭君 我是歌手"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T06:54:23.643+0000")
+}
+{ 
+    "_id" : ObjectId("596dbbbcb4eb9c1f788a662a"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀S7赛季版本中阿轲的三招幻舞能够持续恢复生命值几秒？", 
+    "correct" : [
+        "2", 
+        "4", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T07:41:48.699+0000")
+}
+{ 
+    "_id" : ObjectId("596dbcc7b4eb9c1f788a662b"), 
+    "type" : "娱乐", 
+    "content" : "高渐离为了自己的冷血计划，用美妙乐音治愈她的伤痕，获得她的信任，洗涤她的头脑，安排她像 被琴弦操纵的木偶……这个“她”指的是哪个英雄？", 
+    "correct" : [
+        "同样手持杀人琴的蔡文姬", 
+        "暗夜刺客阿轲", 
+        "千金大小姐孙尚香"
+    ], 
+    "ans" : [
+        "一直拥有不了青春的芈月"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T07:46:15.654+0000")
+}
+{ 
+    "_id" : ObjectId("596dbcfbb4eb9c1f788a662c"), 
+    "type" : "娱乐", 
+    "content" : "一言不合就开车，江湖人称烟老师的蓝烟可谓命途多舛，玩啥削啥，那叫一个惨，所以传说中他被 削的最惨的本命英雄是？", 
+    "correct" : [
+        "刀剑生锈的兰陵王", 
+        "跳不起来的韩跳跳", 
+        "妾身舞不起来的貂蝉"
+    ], 
+    "ans" : [
+        "将近残废的宫本武藏"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T07:47:07.060+0000")
+}
+{ 
+    "_id" : ObjectId("596dbd83b4eb9c1f788a662d"), 
+    "type" : "娱乐", 
+    "content" : "英雄貂蝉的台词中提到过哪个英雄？", 
+    "correct" : [
+        "万年备胎之赵云", 
+        "宁负天下人之曹操 ", 
+        "耿直boy之韩信"
+    ], 
+    "ans" : [
+        "自带须须之吕布"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T07:49:23.356+0000")
+}
+{ 
+    "_id" : ObjectId("596dc066b4eb9c1f788a662e"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀S7赛季版本中，哪名英雄被设计了全新的形象？", 
+    "correct" : [
+        "刘邦", 
+        "阿轲", 
+        "狄仁杰"
+    ], 
+    "ans" : [
+        "墨子"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T08:01:42.295+0000")
+}
+{ 
+    "_id" : ObjectId("596dc104b4eb9c1f788a662f"), 
+    "type" : "娱乐", 
+    "content" : "庄周是战国时期哪家代表人物？", 
+    "correct" : [
+        "儒家", 
+        "墨家", 
+        "法家"
+    ], 
+    "ans" : [
+        "道家"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T08:04:20.510+0000")
+}
+{ 
+    "_id" : ObjectId("596dc319b4eb9c1f788a6630"), 
+    "type" : "娱乐", 
+    "content" : "《大风歌》与《鸿鹄歌》是历史上哪位英雄的作品？", 
+    "correct" : [
+        "仁主刘备", 
+        "枭雄曹操", 
+        "琴师高渐离"
+    ], 
+    "ans" : [
+        "霸主刘邦"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T08:13:13.817+0000")
+}
+{ 
+    "_id" : ObjectId("596dc46eb4eb9c1f788a6631"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀S7赛季版本中，“破灭君主”被调整为什么？", 
+    "correct" : [
+        "辉月", 
+        "影刃", 
+        "名刀司命"
+    ], 
+    "ans" : [
+        "末世"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T08:18:54.614+0000")
+}
+{ 
+    "_id" : ObjectId("596dc55cb4eb9c1f788a6632"), 
+    "type" : "娱乐", 
+    "content" : "大乔的台词“羡慕，因为是我希望的模样。”是说的英雄（），因为她的生活姿态正是大乔所不能拥有的。", 
+    "correct" : [
+        "小乔", 
+        "王昭君", 
+        "虞姬"
+    ], 
+    "ans" : [
+        "孙尚香"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T08:22:52.084+0000")
+}
+{ 
+    "_id" : ObjectId("596dcf83b4eb9c1f788a6633"), 
+    "type" : "娱乐", 
+    "content" : "三圣之力提供的攻速加成为（）", 
+    "correct" : [
+        "10%", 
+        "12%", 
+        "20&"
+    ], 
+    "ans" : [
+        "15%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T09:06:11.366+0000")
+}
+{ 
+    "_id" : ObjectId("596dd46db4eb9c1f788a6634"), 
+    "type" : "娱乐", 
+    "content" : "熔炼之心提供的生命加成为（）", 
+    "correct" : [
+        "300", 
+        "400", 
+        "600"
+    ], 
+    "ans" : [
+        "500"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T09:27:09.684+0000")
+}
+{ 
+    "_id" : ObjectId("596dd4b3b4eb9c1f788a6635"), 
+    "type" : "娱乐", 
+    "content" : "月光之女-露娜，她的二技能炙热剑芒 所标记后造成持续（）秒的50%减速?", 
+    "correct" : [
+        "1.5s", 
+        "2.5s", 
+        "3s"
+    ], 
+    "ans" : [
+        "2s"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T09:28:19.624+0000")
+}
+{ 
+    "_id" : ObjectId("596dd7f7b4eb9c1f788a6636"), 
+    "type" : "娱乐", 
+    "content" : "霸王-项羽的焰阵之志[被动]当他的生命值低于30%时可在6秒恢复（）最大生命值?", 
+    "correct" : [
+        "12%", 
+        "18%", 
+        "30%"
+    ], 
+    "ans" : [
+        "24%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-18T09:42:15.948+0000")
+}
+{ 
+    "_id" : ObjectId("596ec41c64e33855edfc312a"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个由力量腰带合成而来的装备提升270物理防御和1200最大生命?", 
+    "correct" : [
+        "霸者重装", 
+        "红莲斗篷", 
+        "魔女斗篷"
+    ], 
+    "ans" : [
+        "不祥征兆"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T02:29:48.232+0000")
+}
+{ 
+    "_id" : ObjectId("596ec87764e33855edfc312b"), 
+    "type" : "娱乐", 
+    "content" : "以下装备的属性为+20%攻击速度+100法术攻击+15%冷却缩减，且唯一被动为灼热的是", 
+    "correct" : [
+        "元素杖", 
+        "圣杯", 
+        "时之预言"
+    ], 
+    "ans" : [
+        "金色圣剑"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T02:48:23.296+0000")
+}
+{ 
+    "_id" : ObjectId("596ed71264e33855edfc312c"), 
+    "type" : "娱乐", 
+    "content" : ".以下哪个英雄被动携带持续中毒伤害?", 
+    "correct" : [
+        "安琪拉", 
+        "老夫子", 
+        "姜子牙"
+    ], 
+    "ans" : [
+        "扁鹊"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T03:50:42.006+0000")
+}
+{ 
+    "_id" : ObjectId("596ed8db64e33855edfc312e"), 
+    "type" : "娱乐", 
+    "content" : "倍受玩家喜爱的打野英雄韩信大招为以下哪种属性?", 
+    "correct" : [
+        "对范围外敌人造成一段210+(34%)物伤", 
+        "对范围内敌人造成三段180+(52%)物伤", 
+        "对范围外敌人造成多段130+(34%)物伤"
+    ], 
+    "ans" : [
+        "对范围内敌人造成多段120+(62%)物伤"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T03:58:19.317+0000")
+}
+{ 
+    "_id" : ObjectId("596ed9b564e33855edfc312f"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个英雄不属于ADC行列?", 
+    "correct" : [
+        "千金重弩-孙尚香", 
+        "森之风灵-虞姬", 
+        "王都密探-李元芳"
+    ], 
+    "ans" : [
+        "暴走机关-刘禅"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T04:01:57.944+0000")
+}
+{ 
+    "_id" : ObjectId("596edccd64e33855edfc3130"), 
+    "type" : "娱乐", 
+    "content" : "“人家那么可爱，当然是男孩子”是哪个角色的台词？", 
+    "correct" : [
+        "蔡文姬", 
+        "鲁班七号", 
+        "李元芳"
+    ], 
+    "ans" : [
+        "孙膑"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T04:15:09.820+0000")
+}
+{ 
+    "_id" : ObjectId("596edda764e33855edfc3131"), 
+    "type" : "娱乐", 
+    "content" : ".战争骑士是哪位英雄的皮肤", 
+    "correct" : [
+        "曹操", 
+        "白起", 
+        "关羽"
+    ], 
+    "ans" : [
+        "夏侯惇"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T04:18:47.552+0000")
+}
+{ 
+    "_id" : ObjectId("596edf6264e33855edfc3132"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，每天最多可以领取多少好友的金币？", 
+    "correct" : [
+        "6", 
+        "4", 
+        "3"
+    ], 
+    "ans" : [
+        "5"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T04:26:10.820+0000")
+}
+{ 
+    "_id" : ObjectId("596ef5fe64e33855edfc3133"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一项是正确的", 
+    "correct" : [
+        "剑圣——李白", 
+        "暗鸦之灵——嬴政", 
+        "暗夜贵公子——诸葛亮"
+    ], 
+    "ans" : [
+        "朋克王者-曹操"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T06:02:38.210+0000")
+}
+{ 
+    "_id" : ObjectId("596ef62f64e33855edfc3134"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个昵称能在王者荣耀中使用", 
+    "correct" : [
+        "梦露baby", 
+        "Smile", 
+        "我干杯你随意"
+    ], 
+    "ans" : [
+        "改个名字先啊"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T06:03:27.673+0000")
+}
+{ 
+    "_id" : ObjectId("596efab264e33855edfc3135"), 
+    "type" : "娱乐", 
+    "content" : "被称为女版后羿的是", 
+    "correct" : [
+        "孙尚香", 
+        "虞姬", 
+        "花木兰"
+    ], 
+    "ans" : [
+        "艾琳"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T06:22:42.155+0000")
+}
+{ 
+    "_id" : ObjectId("596efae364e33855edfc3136"), 
+    "type" : "娱乐", 
+    "content" : "以下哪一项是错误的", 
+    "correct" : [
+        "青莲剑仙——李白", 
+        "鹰之守护——娜可露露", 
+        "暗影刀锋——兰陵王"
+    ], 
+    "ans" : [
+        "传说之刃——荆轲"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T06:23:31.655+0000")
+}
+{ 
+    "_id" : ObjectId("596efdaca3dd006b4b0337f7"), 
+    "type" : "娱乐", 
+    "content" : "以下哪个不是刘禅的台词", 
+    "correct" : [
+        "龙城是我家，老爹最伟大", 
+        "我老爹都没打过我", 
+        "少爷我从不坑爹", 
+        ""
+    ], 
+    "ans" : [
+        "我爸是李刚"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T06:35:24.157+0000")
+}
+{ 
+    "_id" : ObjectId("596efee3a3dd006b4b0337f8"), 
+    "type" : "娱乐", 
+    "content" : "判断题：露娜是魔种。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T06:40:35.746+0000")
+}
+{ 
+    "_id" : ObjectId("596f038fa3dd006b4b0337f9"), 
+    "type" : "娱乐", 
+    "content" : "判断题：.老夫子是刺客。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T07:00:31.401+0000")
+}
+{ 
+    "_id" : ObjectId("596f03a4a3dd006b4b0337fa"), 
+    "type" : "娱乐", 
+    "content" : "判断题：达摩不是王者之子。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T07:00:52.082+0000")
+}
+{ 
+    "_id" : ObjectId("596f047aa3dd006b4b0337fb"), 
+    "type" : "娱乐", 
+    "content" : "判断题：军团荣耀的被动是唯一的。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T07:04:26.718+0000")
+}
+{ 
+    "_id" : ObjectId("596f0499a3dd006b4b0337fc"), 
+    "type" : "娱乐", 
+    "content" : "判断题：辉月的主动技能是“守护”。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T07:04:57.028+0000")
+}
+{ 
+    "_id" : ObjectId("596f057aa3dd006b4b0337fd"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，以下几位英雄，谁的皮肤数量最少？", 
+    "correct" : [
+        "项羽", 
+        "妲己", 
+        "赵云"
+    ], 
+    "ans" : [
+        "宫本武藏"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:08:42.681+0000")
+}
+{ 
+    "_id" : ObjectId("596f066ba3dd006b4b033803"), 
+    "type" : "娱乐", 
+    "content" : "以下几件装备，哪件在游戏中提供的冷却缩减最少？", 
+    "correct" : [
+        "凶残之力", 
+        "辉月", 
+        "破甲弓 "
+    ], 
+    "ans" : [
+        "名刀司命"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:12:43.986+0000")
+}
+{ 
+    "_id" : ObjectId("596f0739a3dd006b4b033804"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，以下哪位英雄没有带有真实伤害效果的技能？", 
+    "correct" : [
+        "张良", 
+        "夏侯惇", 
+        "典韦"
+    ], 
+    "ans" : [
+        "项羽"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:16:09.509+0000")
+}
+{ 
+    "_id" : ObjectId("596f0861a3dd006b4b033808"), 
+    "type" : "娱乐", 
+    "content" : "道具奔狼纹章的主动技能“奔腾号令”，可以增加（）输出以及（）移速加成？", 
+    "correct" : [
+        "10%，20%", 
+        "20%，30%", 
+        "20%，20%"
+    ], 
+    "ans" : [
+        "10%，30%"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:21:05.247+0000")
+}
+{ 
+    "_id" : ObjectId("596f0a15a3dd006b4b033809"), 
+    "type" : "娱乐", 
+    "content" : "达摩的2技能“真言明王”在命中敌人时可以增加攻速及攻击力，持续（）秒时间？", 
+    "correct" : [
+        "1", 
+        "2", 
+        "5"
+    ], 
+    "ans" : [
+        "3"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:28:21.072+0000")
+}
+{ 
+    "_id" : ObjectId("596f0ae7a3dd006b4b03380a"), 
+    "type" : "娱乐", 
+    "content" : "以下哪件装备，没有增加法术防御的属性？", 
+    "correct" : [
+        "圣杯", 
+        "贤者的庇护", 
+        "梦魇之牙"
+    ], 
+    "ans" : [
+        "雪山圆盾"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:31:51.919+0000")
+}
+{ 
+    "_id" : ObjectId("596f0b82a3dd006b4b03380b"), 
+    "type" : "娱乐", 
+    "content" : "对召唤师技能“斩杀”，以下哪个描述最为准确？", 
+    "correct" : [
+        "立即对身边敌军英雄造成其已损失生命值16%的真实伤害  ", 
+        "立即对身边敌军英雄造成其已损失生命值14%的物理伤害  ", 
+        "立即对身边敌军英雄造成其已损失生命值16%的物理伤害"
+    ], 
+    "ans" : [
+        "立即对身边敌军英雄造成其已损失生命值14%的真实伤害"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:34:26.750+0000")
+}
+{ 
+    "_id" : ObjectId("596f0d85a3dd006b4b03380c"), 
+    "type" : "娱乐", 
+    "content" : "以下哪些属性，是装备“狂暴双刃”所不具备的？", 
+    "correct" : [
+        "攻击速度", 
+        "移速", 
+        "暴击率"
+    ], 
+    "ans" : [
+        "冷却缩减"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:43:01.302+0000")
+}
+{ 
+    "_id" : ObjectId("596f0d9ea3dd006b4b03380d"), 
+    "type" : "娱乐", 
+    "content" : "游戏装备“元素杖”可以增加携带者（）法术攻击？", 
+    "correct" : [
+        "60", 
+        "100", 
+        "120"
+    ], 
+    "ans" : [
+        "80"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:43:26.089+0000")
+}
+{ 
+    "_id" : ObjectId("596f0e94a3dd006b4b03380e"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，最贵的鞋子是", 
+    "correct" : [
+        "隐忍之足", 
+        "冷静之靴", 
+        "急速战靴"
+    ], 
+    "ans" : [
+        "秘法之靴"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(4), 
+    "created_date" : ISODate("2017-07-19T07:47:32.261+0000")
+}
+{ 
+    "_id" : ObjectId("596f0ec1a3dd006b4b03380f"), 
+    "type" : "娱乐", 
+    "content" : "橘右京释放技能无需耗蓝，因此蓝buff对于他来说没有任何作用。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T07:48:17.318+0000")
+}
+{ 
+    "_id" : ObjectId("596f1598a3dd006b4b033811"), 
+    "type" : "娱乐", 
+    "content" : "理论上来说，只要你移速足够快，或者位移足够多，你可以躲掉防御塔子弹的追踪。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:17:28.810+0000")
+}
+{ 
+    "_id" : ObjectId("596f17eda3dd006b4b033812"), 
+    "type" : "娱乐", 
+    "content" : "王者荣耀中，除五级铭文以外，其他铭文出售获得铭文碎片数量都是购买所需铭文碎片数量的一半。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:27:25.814+0000")
+}
+{ 
+    "_id" : ObjectId("596f1982a3dd006b4b033813"), 
+    "type" : "娱乐", 
+    "content" : "游戏中，装备破军的被动“破军”，效果可对防御塔生效。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:34:10.724+0000")
+}
+{ 
+    "_id" : ObjectId("596f1996a3dd006b4b033814"), 
+    "type" : "娱乐", 
+    "content" : "能够增加暴击效果，除了装备无尽战刃外，只有铭文无双了。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:34:30.475+0000")
+}
+{ 
+    "_id" : ObjectId("596f19a8a3dd006b4b033815"), 
+    "type" : "娱乐", 
+    "content" : "截止到封神前传这个版本，游戏中总共有8位射手英雄。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:34:48.113+0000")
+}
+{ 
+    "_id" : ObjectId("596f19c2a3dd006b4b033816"), 
+    "type" : "娱乐", 
+    "content" : "合成“无尽战刃”，需要“搏击拳套”这件小件装备。", 
+    "correct" : [
+        "是"
+    ], 
+    "ans" : [
+        "否"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:35:14.185+0000")
+}
+{ 
+    "_id" : ObjectId("596f19daa3dd006b4b033817"), 
+    "type" : "娱乐", 
+    "content" : "刘备是刘禅他爹，因此自带刘禅的被动技能——即所有技能对防御塔有效。", 
+    "correct" : [
+        "否"
+    ], 
+    "ans" : [
+        "是"
+    ], 
+    "multi" : false, 
+    "picture" : [
+
+    ], 
+    "feedback" : NumberInt(2), 
+    "created_date" : ISODate("2017-07-19T08:35:38.207+0000")
+}

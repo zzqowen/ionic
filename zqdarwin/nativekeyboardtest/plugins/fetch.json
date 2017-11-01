@@ -1,0 +1,26 @@
+{
+    "cordova-plugin-native-keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-native-keyboard"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-actionsheet": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-actionsheet"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

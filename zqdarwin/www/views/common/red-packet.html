@@ -1,0 +1,32 @@
+<div ng-if="redPacket" class="packet-style" background-img src="data/red-packet.png" height="380px" width="300px" background-position="center">
+    <div class="flex-colomn-space-container">
+        <div class="packet-img"><img ng-src="{{avatar(post) ? avatar(post) : user.avatar}}" class="packet-img" style="border: none;"></div>
+        <div class="packet-name"><span class="packet-color">{{post.author.displayName}}</span></div>
+    </div>
+</div>
+
+<div ng-if="!redPacket" class="get-red-packet">
+    <div class="red-packet-box flex-colomn-space-container">
+        <div class="title flex-space-container">
+            <h1 class="packet-color" ng-click="close()">关闭</h1>
+            <h1 class="packet-color">领赏红包</h1>
+            <h1 style="width: 42px;"></h1>
+        </div>
+        <div class="main-box">
+            <div class="img-box">
+                <div class="packet-img"><img src="{{user.avatar}}" class="packet-img" style="border: none;"></div>
+            </div>
+            <div class="price-box">
+                <div><span style="color:#ccc;">已收到</span></div>
+                <div class="packet-price">
+                    <span class="packet-font">{{post.price*10 | number : 0}}</span>
+                    <span class="packet-font-2">金币</span>
+                </div>
+            </div>
+        </div>
+        
+        <span class="ps">已存入钱包，可直接消费</span>
+    </div>
+    <div class="ps-bottom"><span>查看我的红包</span></div>
+
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "darwin",
+  "app_id": "com.aihuawen.darwin",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ],
+  "documentRoot": "www",
+	"proxies": [
+		{
+			"path": "/api",
+			"proxyUrl": "http://localhost:8888/api"
+		},
+		{
+			"path": "/oauth",
+			"proxyUrl": "http://localhost:8888/api"
+		}]
+}

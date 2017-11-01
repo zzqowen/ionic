@@ -1,0 +1,12 @@
+{
+  "name": "darwin",
+  "description": "darwin",
+  "repository": {
+    "type": "git",
+    "url": "ssh://huawen@git.aihuawen.com/huawen/darwin.git/"
+  },
+  "logo": "to be added",
+  "keywords": [
+    "darwin"
+  ]
+}

@@ -1,0 +1,34 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="bar-positive flex-space-container">
+    <h1 class="bar-title">联系人</h1>
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+    <button class="button icon ion-plus-round" style="background-color:transparent;" ui-sref="search"></button>
+  </ion-header-bar>
+  <ion-content scroll="true">
+    <div style="text-align:center;">
+      <div class="friends-search">
+        <i class="friends-icon icon ion-search" id="friends-search-icon" style="left: 30%;" ng-show="!myValueStr"></i>
+        <input type="search" placeholder="ID搜索" ng-model="myValueStr" maxLength="7" ng-change="changeText()">
+      </div>
+    </div>
+    <div ng-if="isEmpty" style="text-align: center; padding-top: 60px;">目前你还没有朋友</div>
+    <div ng-repeat="friends in friendArr">
+      <div ng-show="friends.value!=''">
+        <h2 class="theLetter" ng-show="!myValueStr">{{friends.name}}</h2>
+        <ul class="list circleFriends">
+          <li class="item" ng-repeat='item in friends.value| filter:{"id":myValueStr} | orderBy : "id"' ng-click="pkFriends(item)">
+            <div class="flex-space-container" style="align-items: flex-start; border-bottom: 1px solid #f2f2f2;">
+              <div class="flex-start-container" ui-sref="userInfo({id: item._id})" nav-direction="forward" ng-click="$event.stopPropagation()">
+                <div background-img src="{{item.avatar}}" round width="40px" height="40px" border="1px solid #ccc"></div>
+                <div class="flex-column-container" style="align-self: center; padding-left: 16px; padding-bottom: 6px;">
+                  <span style="font-size: 16px;">{{item.displayName}}</span>
+                  <span class="friend-id" style="align-self: flex-start;line-height: 1.4;">ID : {{item.id}}</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

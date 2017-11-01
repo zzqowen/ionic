@@ -1,0 +1,104 @@
+<ion-view class="post-view">
+  <ion-header-bar align-title="center" class="flex-space-container">
+    <button class="button buttonLeft self-bar-button-left" ng-click="goBack()">取消</button>
+    <h1 class="bar-title">发布问题{{post.categoryName}}</h1>
+    <div class="buttons titleButtons">
+      <button class="button buttonRight self-bar-button-right" ng-disabled="!canSubmit()" ng-click="submitNewPost()">发布</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content class="newPost">
+    <div class="addPhotos" ng-click="post.photoFiles.length > 0 || showPhotoChoice($event)">
+      <div class="back" ng-if="post.photoFiles.length > 0" background-img src="{{currentPhoto.photo.src}}" height='100%' width='100%'></div>
+      <div class="up flex-column-center-space-container" ng-click="!post.photoFiles.length || previewPhoto(currentPhoto.index, $event)">
+        <div class="top flex-right-container">
+          <button class="delete" ng-if="post.photoFiles.length > 0" ng-click="removePhoto(currentPhoto.index, $event)"></button>
+        </div>
+        <div class="remaind-box flex-column-center-container" ng-if="!post.photoFiles || !post.photoFiles.length">
+          <span>+添加图片</span>
+          <span>最多可添加至九张</span>
+        </div>
+        <div class="photo-box flex-right-bottom-container">
+          <div class="photo-show" ng-class="{current:currentPhoto.index == $index}" ng-repeat="photo in post.photoFiles track by $index">
+            <div background-img src="{{photo.src}}" height='8vmin' width='8vmin' ng-click="choosCurrentPhoto($index, $event)"></div>
+          </div>
+          <div background-img src="data/tianjia.png" height='8vmin' width='8vmin' margin='0 0 1px 3px' huge ng-click="showPhotoChoice($event)" ng-if="post.photoFiles.length > 0 && post.photoFiles.length < 9"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="textInput">
+      <textarea class="input" style="resize: none;" auto-input-height ng-model="post.content" placeholder="请输入问题描述(无文字不发布）"></textarea>
+    </div>
+
+    <div class="newPostCard flex-column-container">
+      <div class="title">录音</div>
+      <div class="remind">{{post.audioFiles.length ? "点右侧按钮删除录音":"长按右侧按钮录音（可不录）"}}</div>
+        <div class="flex-space-container">
+          <div class="postVoice" ng-if="!post.audioFiles || !post.audioFiles.length">
+            <div class="trigon-border"></div>
+            <div class="trigon-border trigon" ng-class="{'play':voiceProgressBarLenth,'playright':voiceProgressBarLenth == 100}"></div>
+            <div class="voiceContainer" ng-if="!post.audioFiles.length">
+            <div ng-class="{'voice': true, 'noborder': noborder}">
+              <img src="data/voice-play.png" ng-if="!isPlaying && !flip" style="width: 16px; height: 16px;" />
+              <span class="lenth">{{messageBoxText}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container voice-content" ng-if="post.audioFiles && post.audioFiles.length">
+          <div voice-button seconds="{{post.audioFiles[0].dur}}" file="{{recordingName}}" class="postVoice"></div>
+        </div>
+        <div class="voice voice-btn" ng-class="{'change-color': isRecording}" ng-if="post.audioFiles.length == 0" on-touch="startRecord()" on-release="stopRecord()">
+          <div style="margin:0 auto; line-height:32px; font-size:15px; color: #fff;" ng-class="{'change-textcolor': isRecording}">{{isRecording ? "松开结束" : "长按说话"}}</div>
+        </div>
+        <div class="voice voice-btn" style="background:#fc0035" ng-if="post.audioFiles.length > 0" ng-click="delRecord()">
+          <div style="margin:0 auto; line-height:32px; font-size:15px; color: #fff;" ng-class="{'change-textcolor': isRecording}">删除语音</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="newPostCard flex-column-container" style="padding-top: 0;">
+      <div class="title">分类</div>
+      <div class="remind">请选择问题类别</div>
+      <div class="flex-space-container">
+        <ul class="flex-around-container" style="width:100%">
+          <li ng-repeat="list in categories" class="flex-space-container" style="width:100%">
+            <div ng-repeat='category in list' class="theLable  category-box flex-column-center-container" ng-click="selectionChanged(category)" ng-class='{"selected": category.selected}'>
+              <span>{{category.name}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="newPostCard flex-column-container" style="padding-top: 0; padding-bottom:30px">
+      <div class="title">赏金</div>
+      <div class="remind">重金悬赏帮你解决问题的用户（最低10金币）</div>
+      <div class="flex-space-container">
+        <ul class="flex-around-container" style="width:100%">
+          <li ng-repeat="list in prices" class="flex-space-container" style="width:100%">
+            <div ng-repeat='price in list' class="theLable  category-box flex-column-center-container" ng-click="choosePrice(price.value)" ng-class='{"selected": price.value == post.price}'>
+              <span>{{price.name}}</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-start-container" style="margin-top:12px; border-radius:6px; height:60px;background: #f3f3f4; font-size:30px;">
+        <input class="price-input" placeholder="请输入10的倍数" ng-blur="changeNumber()" ng-change="isNumber()" type="text" ng-model="price.current"/>
+      </div>
+    </div>
+
+    <div class="posts page anonymous" style="padding: 0;">
+      <div class="inner post-card new-post-container flex-space-container">
+        <span>匿名</span>
+        <ion-toggle class="no-outline tog" toggle-class="toggle-positive" ng-model="post.anonymous">&nbsp;</ion-toggle>
+      </div>
+    </div>
+
+    <div class="bar-footer">
+      <div class="flex-center-container flex-item-expand grab" ng-class="{send:!canSubmit()}" ng-click="!canSubmit() || submitNewPost()">
+        <span>确定发布</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

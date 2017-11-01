@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/common/js/jquery-1.11.3.min.js"></script>
+    <script src='/common/js/bootstrap.min.js'></script>
+    <!--<script src="/common/js/angular.js"></script>-->
+    <script src="/question/view/questionadd.js"></script>
+    <link rel="stylesheet" href='/common/css/bootstrap.min.css'／>
+<style>
+  html,
+  body {
+    overflow-x: hidden!important;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+    background: #f9f9f9;
+  }
+  a {
+    color: #3c8dbc;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #72afd2;
+  }
+  .right-side{
+    min-height: 100%;
+    display: block;
+    background-color: #f9f9f9;
+    margin-left: 220px;
+  }
+</style>
+</head>
+<body>
+    <div class="container">
+        <aside class="right-side">
+            <section class="content-header">
+                <h1>
+                    PK文章添加<br>
+                    <small>author by Kerian.Huang</small>
+                </h1>
+            </section>
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box">
+                            <form id="fontSubmit" action="/question/add" method="post" enctype="multipart/form-data" >
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <textarea name="content" class="form-control" id="inputContent" cols="25" placeholder="请输入pk内容" rows="2"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="type" id="option1" value="四六级">四六级
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="type" id="option2" value="国语">国语
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="type" id="option3" value="娱乐">娱乐
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="type" id="option3" value="美食">美食
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="type" id="option3" value="音乐">音乐
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputCover">pk图片</label>
+                                        <input type="file" name="photo" id="inputCover" class="">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="ans" class="form-control" id="trueContent" cols="25" placeholder="请输入正确答案,如有多条，请换行输入" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="correct" class="form-control" id="falseContent" cols="25" placeholder="请输入错误答案,如有多条，请换行输入" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="feedback" placeholder="显示问题数" id="inputSubject" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-default">
+                                                <input type="radio" value="false" selected="true" name="multi">单选
+                                            </label>
+                                            <label class="btn btn-default">
+                                                <input type="radio" value="true" name="multi">多选
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer clearfix">
+                                    <input class="btn btn-primary" name="submit" value="发布"/>
+                                    <input class="btn btn-danger" name="next" value="添加并增加另一条" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+    </div>
+</body>
+</html>

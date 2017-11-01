@@ -1,0 +1,10 @@
+<div class="trigon-border"></div>
+<div class="trigon-border trigon" ng-class="{'play':voiceProgressBarLenth,'playright':voiceProgressBarLenth == 100}"></div>
+<div class="voiceContainer">
+  <div ng-class="{'voice': true, 'noborder': noborder}" ng-click="playFile($event)">
+    <div class="voiceProgressBar" ng-style="{width:voiceProgressBarLenth + '%'}"></div>
+    <img class="imgPlay" ng-if="!voiceProgressBarLenth || voiceProgressBarLenth == 0 || voiceProgressBarLenth == 100" style="width: 16px; height: 16px;" />
+    <img class="imgStop" ng-if="voiceProgressBarLenth > 0 && voiceProgressBarLenth < 100" style="width: 16px; height: 16px;" />
+    <span class="lenth">{{content}}</span>
+  </div>
+</div>

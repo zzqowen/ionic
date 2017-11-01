@@ -1,0 +1,10 @@
+#!/bin/bash
+function ensureAppName {
+  echo change app name if necessary
+  sed -i.bak '0,/darwin/s//答尔文/' ./platforms/ios/darwin/darwin-Info.plist
+  rm ./platforms/ios/darwin/darwin-Info.plist.bak
+}
+
+gulp
+ensureAppName
+ionic build ios

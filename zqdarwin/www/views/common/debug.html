@@ -1,0 +1,25 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="bar-title">Debug</h1>
+    <div class="button button-clear" ng-click="closeDebug()"><span class="icon ion-close"></span></div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="item">
+      <ion-checkbox ng-model="debug.isCustomServer">Custom Server</ion-checkbox>
+      <div class="item" ng-if="debug.isCustomServer">
+        <input type="text" autofocus ng-model="debug.customServer"></input>
+      </div>
+      <div class="item" ng-if="!debug.isCustomServer">
+        <span>Server</span>
+        <select class="row" ng-model="debug.current" ng-options="server.value as server.name for server in debug.servers"/>
+      </div>
+      <div class="item" ng-if="debug.isAndroid">
+        <span>Push</span>
+        <select class="row" ng-model="debug.push.current" ng-options="push as push for push in debug.push.options"/>
+      </div>
+      <div class="item">
+        <button type="button" name="button" ng-click="showLogOutMenu()">Logout</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

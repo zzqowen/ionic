@@ -1,0 +1,82 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">信用积分</div>
+    <div class="buttons pull-right">
+      <button class="button self-bar-button-right" style="color: #242624;font-size: 15px;" ui-sref="accessToCredit" nav-direction="forward">获取信用</button>
+    </div>
+  </ion-header-bar>
+  <ion-content style="background-color:#f3f3f4;">
+    <div width="100%" height="422px" background-img src="data/v_bj@3x.png">
+      <p style="color:#CFCBD5;font-size:19px;padding:50px 0 13px;margin:0;text-align: center;">我的信用积分{{user.score}}</p>
+      <p style="color:#CFCBD5;font-size:12px;padding:0px 0 22px;margin:0;text-align: center;">击败{{theAbsolutely}}的答友</p>
+      <div width="171px" height="125px" background-img ng-src="{{integralIcon}}" margin="0 auto"></div>
+      <div style="padding:46px 15px 42px;">
+      <div style="position:relative;">
+      <ul class="flex-start-container" style="position:relative;z-index:2000;">
+        <li class="flex-column-center-container" style="flex:1;position:relative;">
+          <div width="29px" height="29px" background-img ng-src="{{user.score>0 ? 'data/v_1_small@3x.png' : 'data/v_1_small_gray@3x.png'}}" margin="0 0 15px 0" z-index="2000"></div>
+          <div style="font-size: 12px;color:#CFCBD5;" margin="0 0 8px 0">lv1</div>
+          <div style="font-size:12px;transform: scale(0.8);color:#CFCBD5;">1000以下</div>
+          <div style="width:50%;height:2px;background-color:#f56741;position:absolute;left:0;top:14.5px;" ng-if="user.score>0"></div>
+          <div style="width:100%;height:2px;background: linear-gradient(to right, #f56741, #fee893);position:absolute;left:0;top:14.5px;" ng-if="user.score>500"></div>
+        </li>
+        <li class="flex-column-center-container" style="flex:1;position:relative;">
+          <div width="29px" height="29px" background-img ng-src="{{user.score>=1000 ? 'data/v_2_small@3x.png' : 'data/v_2_small_gray@3x.png'}}" margin="0 0 15px 0" z-index="2000"></div>
+          <div style="font-size: 12px;color:#CFCBD5;" margin="0 0 8px 0">lv2</div>
+          <div style="font-size:12px;transform: scale(0.8);color:#CFCBD5;">1000-1999</div>
+        </li>
+        <li class="flex-column-center-container" style="flex:1;position:relative;">
+          <div width="29px" height="29px" background-img ng-src="{{user.score>=2000 ? 'data/v_3_small@3x.png' : 'data/v_3_small_gray@3x.png'}}" margin="0 0 15px 0" z-index="2000"></div>
+          <div style="font-size: 12px;color:#CFCBD5;" margin="0 0 8px 0">lv3</div>
+          <div style="font-size:12px;transform: scale(0.8);color:#CFCBD5;">2000-2499</div>
+        </li>
+        <li class="flex-column-center-container" style="flex:1;position:relative;">
+          <div width="29px" height="29px" background-img ng-src="{{user.score>=2500 ? 'data/v_4_small@3x.png' : 'data/v_4_small_gray@3x.png'}}" margin="0 0 15px 0" z-index="2000"></div>
+          <div style="font-size: 12px;color:#CFCBD5;" margin="0 0 8px 0">lv4</div>
+          <div style="font-size:12px;transform: scale(0.8);color:#CFCBD5;">2500-3499</div>
+        </li>
+        <li class="flex-column-center-container" style="flex:1;position:relative;">
+          <div width="29px" height="29px" background-img ng-src="{{user.score>=3500 ? 'data/v_5_small@3x.png' : 'data/v_5_small_gray@3x.png'}}" margin="0 0 15px 0" z-index="2000"></div>
+          <div style="font-size: 12px;color:#CFCBD5;" margin="0 0 8px 0">lv5</div>
+          <div style="font-size:12px;transform: scale(0.8);color:#CFCBD5;">3500-4500</div>
+        </li>
+      </ul>
+      <div style="border:1px solid #c8c8c8;;position:absolute;left:0;top:14.5px;width:100%;z-index:1000;"></div>
+      <div style="border:1px solid #fee893;position:absolute;left:0;top:14.5px;z-index:1000;" ng-style="{width:theLength}"></div>
+      <div style="width:7px;height:7px;border-radius: 50%;background-color:#fee893;position:absolute;top:13px;z-index:1500;margin-left:-3.5px;" ng-style="{left:theLength}"></div>
+      </div>
+      </div>
+    </div>
+
+    <div style="padding: 0 15px;" ng-repeat="item in creditInstructions">
+      <h2 style="color:#242624;font-size:22px;margin:44px 0 20px;">{{item.title}}</h2>
+      <div style="background-color:white;padding:30px 0 30px;margin-bottom:15px;border-radius: 3px;" ng-repeat="item1 in item.value">
+        <ul class="flex-space-container" style="margin-bottom: 20px;">
+          <li class="flex-start-container" style="color:#242624;font-size:19px;line-height: 19px;"><div width="8px" height="19px" background-img ng-src="data/v_kuai@3x.png" margin="0 25px 0 0"></div>{{item1.number}}</li>
+          <li style="color:#242624;font-size:19px;margin-right:25px;" ng-class="{'colorGreen': $index==0, 'colorRed1': $index==4}">{{item1.level}}</li>
+        </ul>
+        <p style="margin:0 33px;font-size: 14px;color:#242624;">{{item1.content}}</p>
+      </div>
+    </div>
+
+    <div style="padding: 0 15px;">
+      <h2 style="color:#242624;font-size:22px;margin:44px 0 20px;">信用积分规则</h2>
+      <div style="background-color:white;padding:30px 0 30px;align-items: flex-start;border-radius: 5px;" class="flex-start-container">
+        <div width="8px" height="19px" background-img ng-src="data/v_kuai@3x.png" margin="0 25px 0 0"></div>
+        <div style="margin:0 25px 0 0;font-size: 14px;color: #242624;flex:1;line-height: 19px;">
+          <p style="margin:0 ;">初始积分为2000分，注册账号并完善账号信息奖励20积分(包括:头像、昵称、性别等)</p>
+          <p style="margin:26px 0 ;">正常回答一个问题获得1个积分</p>
+          <p style="margin:0 0 26px;">提问并且满意结束问题可获得10积分</p>
+          <p style="margin:0 ;">经用户投诉或违反答尔文规定，经官方核实一次性扣除50积分</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin:44px 0 15px;font-size: 12px;color:#ABABAB;text-align: center;line-height: 19px;">
+      <p style="margin-bottom: 0px;">注:信用积分关系到你正常使用答尔文的全部功能</p>
+      <p style="margin-bottom: 0px;">请珍惜你的信用积分</p>
+    </div>
+  </ion-content>
+</ion-view>

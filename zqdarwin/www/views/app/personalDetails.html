@@ -1,0 +1,42 @@
+<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <button class="button self-bar-button-left" ng-click="goBack()" style="background-color:transparent;padding:0;border:0;">
+      <div background-img src="data/goBack.png" width="22px" height="22px"></div>
+    </button>
+    <div class="h1 bar-title">个人信息</div>
+    <button class="button self-bar-button-right" ng-show="hasSettingChange" ng-click="submitSettingChanges()">保存</button>
+  </ion-header-bar>
+  <ion-content style="background-color:#f3f3f4;">
+    <div style="padding: 30px 0;">
+      <ul style="width: 70px;margin:0 auto;"class="flex-column-center-container" ng-click="changeAvatarImg()">
+        <li background-img src="{{user.avatar}}" round width="70px" height="70px" class="per-img"></li> 
+        <li style="font-size: 14px;color: #1AAD19;padding-top: 14px;">修改头像</li>
+      </ul>
+    </div>
+    <ion-list class="setting-style">
+      <ul>
+        <li style="padding: 0 15px;background-color:white;">
+          <div style="color:#242624;font-size:19px;padding: 32px 0;border-bottom:1px solid #242624;" class="flex-start-container"><div background-img src="data/f_bianji@3x.png" width="20px" height="20px" class="per-img" margin="0 5px 0 0"></div>编辑个人信息</div>
+          <div style="padding:19px 0;"><input type="text" minlength="1" maxlength="6" placeholder="昵称(长度为1到6位)" content="{{user.displayName}}" ng-model="user.displayName" ng-change="findSettingChange()" style="color:#ABABAB;width:100%;font-size: 16px;line-height: 16px;" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" ng-style="{width: pkObj.opponentProgressBar,color:theClickColor1}" ng-click="changeColor(1)"></div>
+          <div style="padding:11px 0;font-size: 16px;text-align: center;border-top:1px solid #ebebeb;border-bottom: 1px solid #ebebeb;" class="flex-start-container" ng-if="!user.gender">
+            <span style="width:62px;height:32px;border:1px solid #ebebeb;display: block;line-height: 32px;margin-right:15px;border-radius: 50px;background-color:black;color:white;" ng-click="changeGender('M')">男</span>
+            <span style="width:62px;height:32px;border:1px solid #ebebeb;display: block;line-height: 32px;margin-right:15px;border-radius: 50px;background-color:white;color:#242624;" ng-click="changeGender('F')">女</span>
+          </div>
+          <div style="padding:11px 0;font-size: 16px;text-align: center;border-top:1px solid #ebebeb;border-bottom: 1px solid #ebebeb;" class="flex-start-container" ng-if="user.gender">
+            <span style="width:62px;height:32px;display: block;line-height: 32px;color:#242624;text-align: left;">{{user.sex}}</span>
+          </div>
+          <textarea class="post-input" ng-model="user.myProfile" placeholder="个人简介" ng-change="findSettingChange()" style="font-size:16px;height:60px; resize:none; line-height:22px; overflow:hidden; text-align:justify; width:100%; padding:0; margin-top: 17px;" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" ng-style="{color:theClickColor2}" ng-click="changeColor(2)"></textarea>
+        <li>
+        <li style="padding: 0 15px;background-color:white;margin-top:15px;">
+          <div style="color:#242624;font-size:19px;padding: 32px 0;border-bottom:1px solid #242624;" class="flex-start-container"><div background-img src="data/f_xinxi@3x.png" width="20px" height="20px" class="per-img" margin="0 5px 0 0"></div>账号信息</div>
+          <p class="flex-column-center-container" style="text-align: left;font-size: 16px;margin:0;height:75px;"><span style="width:100%;color:#666;padding-bottom: 14px;">成就</span><span  style="width:100%;color:#242624;">初来乍到</span></p>
+          <p class="flex-column-center-container" style="text-align: left;font-size: 16px;margin:0;height:75px;border-top:1px solid #ebebeb;border-bottom: 1px solid #ebebeb;"><span style="width:100%;color:#666;padding-bottom: 14px;">ID</span><span  style="width:100%;color:#242624;">{{user.id}}</span></p>
+          <p class="flex-column-center-container" style="text-align: left;font-size: 16px;margin:0;height:75px;"><span style="width:100%;color:#666;padding-bottom: 14px;">注册日期</span><span  style="width:100%;color:#242624;">{{user.registered.slice(0,10)}}</span></p>
+        <li>
+        <li style="padding:78px 0 8px;">
+          <div background-img src="data/the_end@3x.png" width="90px" height="9px" margin="0 auto"></div>
+        </li>
+      </ul>
+    </ion-list>
+</ion-content>
+</ion-view>

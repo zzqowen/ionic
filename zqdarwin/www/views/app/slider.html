@@ -1,0 +1,24 @@
+<ion-modal-view class="imageView">
+  <ion-content class="has-no-header" scroll="false">
+    <ion-slides options="options" slider="slider" class="listContainer">
+      <ion-slide-page ng-repeat="single in ionGalleryItems track by $index" data-tap-disabled="true" ng-click="close($index)">
+        <ion-scroll direction="xy"
+                    locking="false"
+                    zooming="true"
+                    min-zoom="1"
+                    scrollbar-x="false"
+                    scrollbar-y="false"
+                    ion-slide-action
+                    overflow-scroll="false"
+                    >
+          <div class="item item-image gallery-slide-view" style="border-width:0">
+            <img ng-src="{{single.src}}">
+          </div>
+          <div ng-if="single.sub.length > 0" class="image-subtitle" ng-show="!hideAll">
+              <span ng-bind-html='single.sub'></span>
+          </div>
+        </ion-scroll>
+      </ion-slide-page>
+    </ion-slides>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,15 @@
+<ion-modal-view class="showReminder">
+  <ion-content style="padding: 0 9%;" ng-click="closeModal(false)">
+    <div style="height: 348px;border-radius: 5px;width:100%;background-color:white;padding:0 6%;">
+      <h2 style="font-size:20px;color:#242624;text-align: center;padding:25px 0;margin:0;border-bottom:1px solid #efefef;">我要举报TA</h2>
+      <ul style="font-size:15px;color:#242624;text-align: center;line-height:15px;">
+        <li style="padding-top:23px;" ng-click="closeModal(true,'头像违规')">头像违规</li>
+        <li style="padding:29px 0;" ng-click="closeModal(true,'昵称违规')">昵称违规</li>
+        <li style="padding-bottom:29px;" ng-click="closeModal(true,'发布内容违规')">发布内容违规</li>
+        <li style="padding-bottom:25px;" ng-click="closeModal(true,'骚扰')">骚扰</li>
+        <li style="padding-bottom:25px;" ng-click="closeModal(true,'广告')">广告</li>
+        <li style="padding-bottom:53px;" ng-click="closeModal(true,'其它')">其它</li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-modal-view>

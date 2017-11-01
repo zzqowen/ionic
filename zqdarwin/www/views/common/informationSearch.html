@@ -1,0 +1,14 @@
+<ion-modal-view>
+  <ion-header-bar align-title="center" class="bar-dark flex-space-container">
+    <div class="friends-search">
+        <label>
+          <input type="search" placeholder="请输入好友ID" ng-model="myValue" maxLength="4" ng-change="friendsSearchChange()" ng-keyup="friendsSearchKeyup($event, myValue)" id="id-search">
+          <i class="friends-icon icon ion-search" id="friends-search-icon"></i>
+        </label>
+        <span ng-click="searchCloseModal()">取消</span>
+    </div>
+  </ion-header-bar>
+  <ion-content scroll="false">
+    <span class="tip-information" ng-if="accountError">查询的用户不存在</span>
+  </ion-content>
+</ion-modal-view>

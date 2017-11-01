@@ -1,0 +1,15 @@
+<ion-view class="home-view">
+  <ion-header-bar align-title="center" class="bar-light flex-space-container">
+    <button class="button icon ion-chevron-left self-bar-button" ng-click="goBack()"></button>
+    <h1 class="bar-title">荣誉榜</h1>
+  </ion-header-bar>
+  <ion-content>
+    <!-- Refresh to get the new posts -->
+    <ion-refresher pulling-text="下拉更新..." on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <div>
+      <h1 style="text-align:center;padding:10px 0;">敬请期待，下版更精彩！</h1>
+    </div>
+  </ion-content>
+</ion-view>

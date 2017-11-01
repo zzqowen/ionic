@@ -1,0 +1,28 @@
+<ion-view class="invite-view">
+  <ion-content>
+    <div class="flex-column-center-space-container full-height">
+      <div class="flex-column-center-container" style="flex: 4; width:100%;">
+        <ul class="list" style="width:94%;">
+          <div class="item flex-space-container" ng-click="share(user)">
+            <div class="item-title flex-wrap-container">
+              <div background-img src="data/shareGetCash.png" round width="24px" height="24px" background-size="85%"></div>
+              <span style="margin-left:20px;">邀请好友，一起获得现金奖励</span>
+            </div>
+            <div class="flex-container">
+              <i class="icon ion-chevron-right self-ion-right"></i>
+            </div>
+          </div>
+        </ul>
+        <p class="explain" ng-if="fromInvite">进个人中心，点击推荐，即可重新进入该页面</p>
+      </div>
+      <div style="flex: 3;height: 200px;width: 100%;position: relative;" ng-if="fromInvite && credit && credit != 0">
+         <div  style="position: absolute;left:54%;top: 28%; color: red;font-size: 20px;">{{credit}}金币</div>
+         <img src="data/ready-credit.png" style="height: 70%;display: block;margin: 0 auto;">
+      </div>
+      <div class="flex-column-center-container" style="padding: 12px; flex: 1;" ng-click="togo()">
+          <div><i class="icon ion-chevron-down" style='color:black;'></i></div>
+          <div>{{btnName}}</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

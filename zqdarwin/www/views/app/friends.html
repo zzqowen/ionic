@@ -1,0 +1,112 @@
+<ion-view class="settings-view">
+  <!--<ion-header-bar align-title="center" class="flex-space-container bar-bgcolor">
+    <div class="bar-title friends-bar-title" style="display: block;"> 
+      <div class="button-bar" >
+        <a class="button" ng-class="{changeBgColor: $index == currentIndex}" ng-repeat="slide in slides track by $index" ng-click="slideChanged(1)">{{slide.name}}</a>
+      </div>
+    </div>
+  </ion-header-bar>-->
+  <ion-header-bar align-title="center" class="bar-bgcolor flex-space-container">
+    <div class="h1 bar-title">嘿嘿</div>
+  </ion-header-bar>
+   <ion-content scroll="false" class="has-header" style="background-color: #f3f4f3;">
+     <ion-slide-box style="height: 100%;" delegate-handle="friendsSlideBox" show-pager="false" does-continue="false" class="home-content" on-slide-changed="slideChanged($index)"> 
+      <ion-slide ng-repeat="slide in slides track by $index" style="height: 100%;">
+        <ion-content delegate-handle="friends">
+          <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh($index)" refreshing-icon="ion-load-d" class="ion-refresh"></ion-refresher>
+          <div ng-if="!slide.isEmpty" class="primary-text" style="text-align: center; padding-top: 20px;">暂时没有新动态哟</div>  
+          <div class="full-height" auto-height on-swipe-up="canSwipe(false)" on-swipe-down="canSwipe(false)"> 
+            <!--<div ng-repeat="item in slide.userFriends track by $index" style="white-space: normal; margin: -1px; padding: 5px 16px;">
+              <div class="flex-start-container" style="border-bottom: 1px solid #f2f2f2; padding-bottom: 5px;">
+                <div style="width: 50px; height: 50px;" ui-sref="userInfo({id: item.author._id})" nav-direction="forward" ng-click="$event.stopPropagation()">
+                  <div background-img src="{{item.author.avatar}}" round width="35px" height="35px"></div>
+                </div>
+                <div class="flex-column-container" style="width: 90%;">
+                  <span class="friend-name" nav-direction="forward" ui-sref="post({postId: item._id})">{{item.author.displayName}}</span>
+                  <div class="flex-space-container" style="padding-right: 0px;">
+                    <h1 class="friends-content" nav-direction="forward" ui-sref="post({postId: item._id})" style="width: 85%;">{{item.content | textOverflow : 3}}</h1>
+                    <div class="see-btn" ng-if="!item.isPaid" ng-click="payForAnswers(item._id, item.price, $index)">偷看</div>
+                    <div class="see-btn see-btn1" ng-if="item.isPaid" ng-click="lookAnswers(item._id)">查看</div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            <ul>
+              <li style="background-color:white;padding: 20px 4vw 0px;margin-bottom:20px;" ng-repeat="item in slide.userFriends track by $index">
+                <div style="font-size:15px;color:#242624;text-align: justify;">{{item.content | textOverflow : 4}}</div>
+                <div ng-if="item.photoFiles.length>=3" class="flex-center-container" style="margin-top:15px; position:relative; width:100%;">
+                  <div ng-repeat="img in item.photoFiles | limitTo : 3" background-img ng-src="{{ theServe + '/file/thumb_' + img.src}}" height="30vw" width="30vw" style="flex:1;" ng-class="$index==1 ? 'margin7' : ''"></div>
+                </div>
+                <div ng-if="item.photoFiles.length!= 0&& item.photoFiles.length<3" class="flex-center-container"  style="margin-top:15px; position:relative; width:100%;">
+                  <div ng-repeat="img in item.photoFiles | limitTo : 1" background-img ng-src="{{ theServe + '/file/thumb_' + img.src}}" height="52vw" width="100vw" style="flex:1;" ng-show="$index==0"></div>
+                </div>
+                <div ng-if="item.audioFiles && item.audioFiles.length && item.content.length > 0" class="flex-container postVoice" style="padding-top:40px;position:relative;">
+                  <!--<div class="trigon-border"></div>
+                  <div class="trigon-border trigon" ng-class="{play:isPlaying}"></div>-->
+                  <div voice-button file="{{item.audioFiles[0].src}}" seconds="{{item.audioFiles[0].dur}}"></div>
+                </div>
+                <div style="padding:15px 0;border-bottom:1px solid #ebebeb;font-size: 12px;color:#ABABAB;" ng-class="item.audioFiles.length>0||item.photoFiles.length>0 ? '' : 'margin25'">#{{item.category | categoryName}}<span style="padding-left:18px;color:#ABABAB;">被偷看{{item.peeknum}}次</span></div>
+                <div style="padding: 12px 0;" class="flex-space-container">
+                  <div class="flex-start-container" style="justify-content: flex-start;">
+                    <div background-img src="{{item.author.avatar}}" round width="38px" height="38px" ui-sref="userInfo({id: item.author._id})" nav-direction="forward" ng-click="$event.stopPropagation()"></div>
+                    <span style="padding-left:10px;font-size:16px;color:#242624;">{{item.author.displayName}}</span>
+                  </div>
+                  <div class="see-btn" ng-if="!item.isPaid" ng-click="payForAnswers(item._id, item.price, $index)" style="font-size:15px;color:#1AAD19;width:90px;height:37px;line-height: 37px;border-radius: 4px;background-color:white;border:1px solid #ebebeb;" ng-click="payForAnswers(item._id, item.price)">掷金偷看</div>
+                  <div class="see-btn see-btn1" ng-if="item.isPaid" ng-click="lookAnswers(item._id)" style="font-size:15px;color:#242624;width:90px;height:37px;line-height: 37px;border-radius: 4px;background-color:white;border:1px solid #ebebeb;">免费看看</div>
+                </div>
+              </li>
+            </ul>
+          </div> 
+          <div ng-if="slide.isEmpty && !slide.hasMore" style="padding:60px 0 10px;">
+            <div background-img src="data/the_end@3x.png" width="90px" height="9px" margin="0 auto"></div>
+          </div>
+          <div ng-if="slide.hasMore" class="flex-space-container load-waiting">
+            <span class="has-more">正在加载中</span>
+            <i class="icon ion-load-c"></i>
+          </div>
+          <ion-infinite-scroll ng-if="slide.hasMore" class="infinite-scroll" on-infinite="getFriendsList()" immediate-check="false" distance="1%"></ion-infinite-scroll>
+        </ion-content>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content> 
+</ion-view>
+
+
+
+
+
+<!--<ion-view class="settings-view">
+  <ion-header-bar align-title="center" class="bar-bgcolor flex-space-container">
+    <div class="h1 bar-title">嘿嘿</div>
+  </ion-header-bar>
+  <ion-content class="has-header" style="background-color: #f3f4f3;">
+    <ion-refresher pulling-text="下拉刷新..." on-refresh="doRefresh('1')" refreshing-icon="ion-load-d" class="ion-refresh"></ion-refresher>
+    <ul>
+      <li style="background-color:white;padding: 20px 10px 0px;margin-bottom:20px;" ng-repeat="item in seeSingle">
+        <div style="font-size:15px;color:#242624;text-align: justify;">{{item.content | textOverflow : 4}}</div>
+        <div ng-if="item.photoFiles.length!= 0&& item.photoFiles.length>=3" class="flex-center-container" style="margin-top:15px;">
+          <div ng-repeat="img in item.photoFiles" background-img ng-src="{{ theServe + '/file/thumb_' + img.src}}" height="90px" style="flex:1;" ng-class="$index==1 ? 'margin7' : ''"></div>
+        </div>
+        <div ng-if="item.photoFiles.length!= 0&& item.photoFiles.length<3" class="flex-center-container"  style="margin-top:15px;">
+          <div ng-repeat="img in item.photoFiles" background-img ng-src="{{ theServe + '/file/thumb_' + img.src}}" height="180px" style="flex:1;" ng-show="$index==0"></div>
+        </div>
+        <div voice-button ng-if="item.audioFiles && item.audioFiles.length && item.content.length > 0" file="{{item.audioFiles[0].src}}" seconds="{{item.audioFiles[0].dur}}" style="padding-top:40px;"></div>
+        <div style="padding:15px 0;border-bottom:1px solid #ebebeb;font-size: 12px;color:#ABABAB;" ng-class="item.audioFiles.length>0||item.photoFiles.length>0 ? '' : 'margin25'">#{{item.category | categoryName}}<span style="padding-left:18px;color:#ABABAB;">被偷看多少次</span></div>
+        <div style="padding: 12px 0;" class="flex-space-container">
+          <div class="flex-space-container" style="justify-content: flex-start;">
+            <div background-img src="{{item.author.avatar}}" round width="38px" height="38px" ui-sref="userInfo({id: item.author._id})" nav-direction="forward" ng-click="$event.stopPropagation()"></div>
+            <span style="padding-left:10px;font-size:16px;color:#242624;">{{item.author.displayName}}</span>
+          </div>
+          <div class="see-btn" ng-if="!item.isPaid" ng-click="payForAnswers(item._id, item.price, $index)" style="font-size:15px;color:#1AAD19;width:90px;height:37px;line-height: 37px;border-radius: 4px;background-color:white;border:1px solid #ebebeb;" ng-click="payForAnswers(item._id, item.price)">一毛偷看</div>
+          <div class="see-btn see-btn1" ng-if="item.isPaid" ng-click="lookAnswers(item._id)" style="font-size:15px;color:#242624;width:90px;height:37px;line-height: 37px;border-radius: 4px;background-color:white;border:1px solid #ebebeb;">免费偷看</div>
+        </div>
+      </li>
+    </ul>
+    <div class="has-nomore" ng-if="slide.isEmpty && !slide.hasMore"><span class="no-more">没有更多了</span></div>
+      <div ng-if="slide.hasMore" class="flex-space-container load-waiting">
+        <span class="no-more">正在加载中</span>
+        <i class="icon ion-load-c"></i>
+      </div>
+    <ion-infinite-scroll ng-if="slide.hasMore" class="infinite-scroll" on-infinite="getFriendsList()" immediate-check="false" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>-->

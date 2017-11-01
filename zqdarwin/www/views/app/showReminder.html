@@ -1,0 +1,26 @@
+<ion-modal-view class="showReminder">
+  <ion-content>
+    <div class="flex-column-container showContent" ng-class="{true:'height60',false: 'height30'}[isKnow]">
+      <div style="padding:0 13px;">
+        <!--<h3 style="font-size:18px;font-weight:normal;">请选择等待时间</h3>
+          <ul style="width:95px;height:37px;overflow: hidden;margin: 0 auto; justify-content: center;"  class="flex-center-container">
+            <li style="height:37px;width:95px;line-height: 37px;text-align: center;background-color: #efefef;" >
+              <select ng-change="selectChange(dateValue)" ng-model="dateValue" ng-options="time.text for time in toChooseTime" style="width:100%;height:100%;padding-left:20px; padding-right:0; border: none;text-align: center;background-color:transparent;">
+              </select>
+            </li>
+          </ul>-->
+        <div style="width:100%;margin: 10px auto; padding: 5px;" ng-if="isKnow">
+          <!--<p><img src="data/star.png"/>等待时间为抢单后愿意等待提问者确定人选的时长;</p>
+          <p><img src="data/star.png"/>被选中后必须在30分钟内答完;</p>-->
+          <p><img src="data/star.png"/>被选中后必须在5分钟内开始解答;</p>
+          <p><img src="data/star.png"/>如果你的回答不合理或超时，可能会被提问者投诉，届时你的红包将会取消，并扣除信用积分。</p>
+          <label><input type="checkbox" ng-true-value="true" ng-false-value='false' ng-model='data.understood'/><em>我知道了(以后不再提示)</em></label>
+        </div>
+      </div>
+      <div ng-class="{true:'addMargin'}[!isKnow]" style="padding:10px 0; width:100%; height: 47px;" class="flex-center-container">
+        <button class="button buttonLeft" ng-click="closeModal(false)">取消</button>
+        <button class="button buttonRight" ng-click="closeModal(true)">确定</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
